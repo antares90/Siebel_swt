@@ -1,0 +1,35 @@
+<!-- Template Start: CCButtons_Standard.swt -->
+<div id = "OUIBarcodeButtons" name = "OUIBarcodeButtons">
+  <swe:control id="10672" property="FormattedHtml" hintText="Barcode New Button"/>
+  <swe:control id="10673" property="FormattedHtml" hintText="Barcode Update Button"/>
+  <swe:control id="10674" property="FormattedHtml" hintText="Barcode Combo Box"/>
+  <swe:control id="10675" property="FormattedHtml" hintText="Barcode Text Area"/>
+</div>
+<swe:control id="131"><!-- CreateRecord, 131 --><swe:this property="FormattedHtml" hintMapType="Control" hintText="New"/></swe:control>
+<swe:control id="132"><!-- EditRecord, 132   --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Edit" /></swe:control>
+<swe:control id="133"><!-- DeleteRecord, 133 --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Delete"/></swe:control>
+
+<swe:control id="136"><!-- Save, 136         --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Save"  /></swe:control>
+<swe:control id="599"><!-- Mvg Save, 599     --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Save - shows only in HI"  /></swe:control>
+<swe:control id="134"><!-- Reset, 134        --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Reset" /></swe:control>
+<swe:control id="135"><!-- Cancel, 135       --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Cancel"/></swe:control>
+
+<swe:control id="106"><!-- NewQuery, 106     --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Query" /></swe:control>
+<swe:control id="107"><!-- ExecuteQuery, 107 --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Go (ExecuteQuery)" /></swe:control>
+<swe:control id="108"><!-- CancelQuery, 108  --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Cancel (Query)" /></swe:control>
+<swe:control id="126"><!-- QueryAssistant,126--><swe:this property="FormattedHtml" hintMapType="Control" hintText="Query Assistant" /></swe:control>
+<div class="siebui-btn-grp-optional">
+  <swe:control id="139"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+  <swe:control id="140"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+  <swe:control id="141"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+  <swe:control id="142"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+  <swe:control id="143"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+</div>
+<swe:pageitem id="2"> <!-- Back Button       --><swe:this property="FormattedHtml" hintText="Back" /></swe:pageitem>
+<div class="siebui-btn-grp-search">
+  <swe:control id="99999000"><!-- QueryComboBox,99999000--><swe:this property="FormattedHtml" hintMapType="Control" hintText="QueryComboBox" /></swe:control>
+  <swe:control id="99999001"><!-- QuerySrchSpec,99999001--><swe:this property="FormattedHtml" hintMapType="Control" hintText="QuerySrchSpec" /></swe:control>
+  <swe:control id="99999002"><!-- QueryExecute,99999002--><swe:this property="FormattedHtml" hintMapType="Control" hintText="QueryExecute" /></swe:control>  
+</div>
+
+<!-- Template End: CCButtons_Standard.swt -->

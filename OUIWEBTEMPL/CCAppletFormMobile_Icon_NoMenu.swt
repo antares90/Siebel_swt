@@ -1,0 +1,123 @@
+<!-- Template Start: CCAppletFormMobile_Icon_NoMenu.swt -->
+
+<swe:include file="CCApplet_NamedSpacer.swt"/>    
+
+<swe:form>
+
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+    <div class="swe:this.SelectStyle">    
+</swe:if>
+<swe:switch>                        
+    <swe:case condition="Web Engine State Properties, IsMobileApplicationMode">
+        <table datatable="0" summary="" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="swe:class AppletBack"><tr><td class="AppletHIFormBorder" style="display:none;">
+    </swe:case>                         
+    <swe:default>
+        <table datatable="0" summary="" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="swe:class AppletBack"><tr><td class="AppletHIFormBorder">
+    </swe:default>
+</swe:switch>
+
+    <swe:include file="CCTitle_Named.swt"/>
+        <swe:include file="CCFormButtonsTop_OUIMobile_NoMenu.swt"/>
+            
+        <swe:error type="Popup">
+            <table datatable="0" summary="" class="swe:class AppletBack" width="100%" cellpadding="0" cellspacing="5" border="0"><tr><td class="error"><swe:this property="FormattedHtml"/></td></tr></table>
+        </swe:error>
+        
+        <div id="_FormAppletMobile" class="siebui-formappletmobile">
+        <table datatable="0" width="100%">
+        <tr>
+        <td width="10%" align="middle" class = "siebui-iconMap">
+           <swe:control id="100" hintMapType="FormItem">            
+                <swe:this property="FormattedHtml" hintText="Field" />
+           </swe:control>
+        </td>
+        <td width="80%"> 
+        
+        <!-- **********Start Large Fields on Top Left of Form ************** -->
+        <div id="_FormAppletH1" class="siebui-formappleth1">
+        <table datatable="0" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr valign="left">
+        <!-- **********To increase number of fields increase the count below************** -->
+         <swe:for-each startValue="1301" count="1" iteratorName="currentId">
+           <swe:control id="swe:currentId" hintMapType="FormItem">            
+            <td>
+                <swe:this property="FormattedHtml" hintText="Field" />
+            </td>
+           </swe:control>
+          </swe:for-each>
+         </tr>
+        </table>           
+        </div>
+        <!-- **********End Large Fields of Form ************** -->         
+        
+        <!-- **********Start Medium Fields on Left of Form ************** -->
+        <div id="_FormAppletH2" class="siebui-formappleth2">
+        <table datatable="0" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <!-- **********To increase number of fields increase the count below************** -->
+          <swe:for-each startValue="2301" count="5" iteratorName="currentId">
+           <swe:control id="swe:currentId" hintMapType="FormItem">            
+            <tr valign="left">
+                <td nowrap>
+                    <swe:this property="DisplayName" hintText="Label"/>:
+                </td>
+                <td>
+                    <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                </td>
+            </tr>
+           </swe:control>
+          </swe:for-each>
+        </table>           
+        </div>
+        <!-- **********End Medium Fields of Form ************** -->          
+        
+        <!-- **********Start Normal Fields on Left of Form ************** -->
+        <div id="_FormAppletH3" class="siebui-formappleth3">
+        <table datatable="0" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <!-- **********To increase number of fields increase the count below************** -->
+          <swe:for-each startValue="3301" count="10" iteratorName="currentId">
+           <swe:control id="swe:currentId" hintMapType="FormItem">    
+            <tr valign="left">           
+            <td>
+                <swe:this property="FormattedHtml" hintText="Field" />
+            </td>
+            <tr valign="left">
+           </swe:control>
+          </swe:for-each>
+          </swe:for-each>    
+        </table>  
+        </div> 
+        <!-- **********End Normal Fields of Form ************** -->        
+        </td></tr>
+        </table>
+        </div>
+        <div id="_FormAppletMobileSection2" class="siebui-formappletmobilesection2">
+        <!-- <hr> -->
+        </div>
+        
+        <div id="_FormAppletMobileSection3" class="siebui-formappletmobilesection3">
+        
+        <table datatable="0" summary="" width="100%" align="left">
+        <swe:for-each startValue="5301" count="7" iteratorName="currentId">
+        <swe:control id="swe:currentId" hintMapType="FormItem">
+        <tr>        
+        <td align="right" class="siebui-labeltd">
+                    <swe:this property="DisplayName" hintText="Label"/> 
+        </td>
+        <td align="left" class="siebui-valuetd">
+                    <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+        </td>
+        
+        </tr>
+        </swe:control>
+        </swe:for-each>            
+        </table>
+        </div>
+        
+    </span>
+</td></tr></table>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+    </div>    
+</swe:if>
+</swe:form>
+
+<!-- Template End: CCAppletFormMobile_Icon_NoMenu.swt -->

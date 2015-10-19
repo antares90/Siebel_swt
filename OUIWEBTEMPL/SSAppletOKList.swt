@@ -1,0 +1,17 @@
+<!-- Template Start: SSAppletOKList.swt -->
+
+<div class="siebui-applet-title">
+    <swe:this property="Title"/>
+</div>
+<!-- Container for Oracle Knowledge List widget -->
+<div id="ok-list-container">
+    <div id="ok-list">
+    </div>
+</div>
+<swe:control id="150">
+    <div class="siebui-btn-info">
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
+    </div>
+</swe:control>
+
+<!-- Template End: SSAppletOKList.swt -->

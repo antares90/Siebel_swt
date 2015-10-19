@@ -1,0 +1,36 @@
+<!-- Template Start SSAppletLogin.swt -->
+
+<swe:control id="90">
+    <div class="siebui-applet-title">
+        <swe:this property="FormattedHtml" hintMapType="Control" hintText="Title" />
+    </div>
+</swe:control>
+<div class="siebui-login-body">
+    <swe:for-each startValue="1201" count="3" iteratorName="currentId">
+        <swe:control id="swe:currentId" hintMapType="FormItem">
+            <swe:this property="DisplayName" hintText="Label"/>
+            <div align="swe:this.TextAlignment">
+                <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+            </div>
+        </swe:control>
+    </swe:for-each>
+    <div class="siebui-form-section-2">
+        <swe:control id="190">
+            <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </swe:control>
+        <div>
+            <swe:control id="150">
+                <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </swe:control>
+            <swe:control id="151">
+                <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </swe:control>
+        </div>
+        <swe:control id="191">
+            <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </swe:control>
+    </div>
+    <swe:include file="HTML5BrowserCompatibility.swt"/>
+</div>
+
+<!-- Template End SSAppletLogin.swt -->

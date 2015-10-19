@@ -1,0 +1,20 @@
+<!-- Template Start: CCAppletHead.swt -->
+<swe:control id="1100">
+  <div class=CmdTxt><swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/></div>
+</swe:control>
+<div class="AppletStyle1">
+  <div class="siebui-applet-header siebui-collapsible">
+    <swe:include file="CCTitle.swt"/>
+    <div class="siebui-btn-grp-applet">
+      <swe:include file="CCButtonsCRUD.swt"/>
+    </div>
+  </div>
+  <!--button row-->
+  <div class="AppletButtons">
+    <swe:form>
+      <swe:include file="CCButtons_Search.swt"/>
+      <swe:include file="CCButtonsExtras.swt"/>
+    </swe:form>
+  </div>
+</div>
+<!-- Template End: CCAppletHead.swt -->

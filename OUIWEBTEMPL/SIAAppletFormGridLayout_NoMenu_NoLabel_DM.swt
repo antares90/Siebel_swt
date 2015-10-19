@@ -1,0 +1,15 @@
+<!-- Template Start: SIAAppletFormGridLayout_NoMenu_NoLabel_DM.swt -->
+<div class="log-panel">
+	<div><swe:include file="CCTitle_Named.swt"/></div>
+	<div class="siebui-applet-buttons">
+		<!-- Clear, 139 -->
+		<swe:control id="139" property="FormattedHtml"/>
+		<!-- Upload, 1550 -->
+		<swe:control id="1550" property="FormattedHtml"/>
+	</div>
+	<div class="log-field">
+		<!-- Log, 3003 -->
+		<swe:control id="3003" property="FormattedHtml"/>
+	</div>
+</div>
+<!-- Template End: SIAAppletFormGridLayout_NoMenu_NoLabel_DM.swt-->

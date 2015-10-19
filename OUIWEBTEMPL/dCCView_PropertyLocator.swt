@@ -1,0 +1,12 @@
+<!--  Template Start: dCCView_PropertyLocator.swt -->
+<swe:include file="CCHTMLHeader.swt"/>
+<div>
+  <swe:for-each count="10" iteratorName="currentId" startValue="102">
+    <!-- start applet-->
+    <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml" var="Parent"/>
+    </swe:applet>
+    <!-- end applet-->
+  </swe:for-each>
+</div>
+<!--  Template End: dCCView_PropertyLocator.swt -->
+<swe:include file="CCHTMLFooter.swt"/>

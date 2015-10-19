@@ -1,0 +1,50 @@
+<!--  Template Start: dCCView_25_50_25_home.swt -->
+<swe:include file="dCCHTMLHeader.swt"/>
+<!-- ---------- Tier 2 Nav and Search Applet ----------------->
+
+<!-- ---------- Threadbar And/Or Greeting ----------------->
+<swe:if condition="Web Engine State Properties, IsLowInteractive">
+<swe:include file="CCThreadbar.swt"/>
+</swe:if>
+<!-- ---------- Threadbar And/Or Greeting  ------------->
+
+<!-- ---------- Main Content Area ---------------------------->
+<div class="siebui-view-multi-column">
+  <!--  2-Column Wide -->
+  <div class="siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12">
+    <swe:applet id="101" hintText="Salutation Applet"/>
+    <swe:applet id="201" hintMapType="Applet"/>
+  </div>
+  <!--  2-Column Wide -->
+</div>
+
+<div class="siebui-view-multi-column">
+  <!--  Column 1 -->
+  <div class="siebui-span-lg-3 siebui-span-md-3 siebui-span-sm-12">
+    <swe:for-each count=10 iteratorName="currentId" startValue="102">
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml" var="Parent"/>
+    </swe:for-each>
+  </div>
+  <!--  End Column 1 -->
+  <!--  Column 2 -->
+  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+    <swe:for-each count=10 iteratorName="currentId" startValue="202">
+      <!-- start applet-->
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml" var="Parent"/>
+      <!-- end applet-->
+    </swe:for-each>
+  </div>
+  <!--  End Column 2 -->
+  <!--  Column 3 -->
+  <div class="siebui-span-lg-3 siebui-span-md-3 siebui-span-sm-12">
+    <swe:for-each count=10 iteratorName="currentId" startValue="302">
+      <!-- start applet-->
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml" var="Parent"/>
+      <!-- end applet-->
+    </swe:for-each>
+  </div>
+  <!--  End Column 3 -->
+</div>
+<!-- ---------- End Main Content Area ------------------------>
+<swe:include file="dCCHTMLFooter.swt"/>
+<!--  Template End: dCCView_25_50_25_home.swt -->

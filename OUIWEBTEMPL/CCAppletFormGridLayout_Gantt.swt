@@ -1,0 +1,453 @@
+<!-- Template Start: CCAppletFormGridLayout_Gantt.swt -->
+
+<swe:form>
+<div class="swe:this.SelectStyle">
+    <div class="siebui-primaryTemplate">
+      <div  class="siebui-appletTitleSection siebui-span-xs-12 siebui-span-sm-12 siebui-span-md-12 siebui-span-lg-12 siebui-span-xl-12">
+        <div class="siebui-span-xs-12 siebui-span-sm-2 siebui-span-md-2 siebui-span-lg-3 siebui-span-xl-3">
+          <table datatable="0" summary="" cellspacing="0" cellpadding="2" border="0" width="100%">
+            <tr align="left" class="AppletButtons">
+              <!-- No applet menu on Task Views -->
+              <swe:if condition="Task UI Service (SWE),IsNotInTask">
+
+                <!-- Menu Button Area -->
+                <swe:if-var name="Parent">
+                  <td width="2%" nowrap="" class="swe:class AppletMenu">
+                    <swe:menu type="Button" width="38" height="16" bgcolor="#6666cc" fgcolor="#ffffff" />
+                  </td>
+                  <td width="5%">
+                    <div id="siebui-iconSection"></div>
+                  </td>
+                </swe:if-var>
+
+                <swe:if-var name="ParentWithPointer">
+                  <td width="2%" nowrap="" class="swe:class AppletMenu">
+                    <swe:menu type="Button" width="38" height="16" bgcolor="#6666cc" fgcolor="#ffffff" />
+                  </td>
+                  <td width="5%">
+                    <div id="siebui-iconSection"></div>
+                  </td>
+                </swe:if-var>
+
+                <swe:if-var name="AppletFilter-No">
+                  <td width="2%" nowrap="" class="swe:class AppletMenu">
+                    <swe:menu type="Button" width="38" height="16" bgcolor="#ccccff" fgcolor="#000000" />
+                  </td>
+                  <td width="5%">
+                    <div id="siebui-iconSection"></div>
+                  </td>
+                </swe:if-var>
+
+                <swe:if-var name="Child">
+                  <td width="2%" nowrap="" class="swe:class AppletMenu">
+                    <swe:menu type="Button" width="38" height="16" bgcolor="#ccccff" fgcolor="#000000" />
+                  </td>
+                  <td width="5%">
+                    <div id="siebui-iconSection">
+                    </div>
+                  </td>
+                </swe:if-var>
+
+                <swe:if-var name="ChildWithPointer">
+                  <td width="2%" nowrap="" class="swe:class AppletMenu">
+                    <swe:menu type="Button" width="38" height="16" bgcolor="#ccccff" fgcolor="#000000" />
+                  </td>
+                  <td width="5%">
+                    <div id="siebui-iconSection"></div>
+                  </td>
+                </swe:if-var>
+
+                <swe:if-var name="Grandchild">
+                  <td width="2%" nowrap="" class="swe:class AppletMenu">
+                    <swe:menu type="Button" width="38" height="16" bgcolor="#ccccff" fgcolor="#000000" />
+                  </td>
+                  <td width="5%">
+                    <div id="siebui-iconSection"></div>
+                  </td>
+                </swe:if-var>
+
+              </swe:if>
+              <!-- Toggle Bar Area -->
+              <td>
+                <swe:include file="CCTogglebar_drop.swt"/>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="siebui-span-xs-12 siebui-span-sm-8 siebui-span-md-8 siebui-span-lg-6 siebui-span-xl-6">
+          <swe:if condition="Web Engine State Properties, IsPrintOff">
+            <!-- Applet Buttons Area (Row 2) -->
+            <swe:control id="3000" hintMapType="FormItem">
+            </swe:control>
+          </swe:if>
+        </div>
+
+        <div class="siebui-span-xs-12 siebui-span-sm-2 siebui-span-md-2 siebui-span-lg-3 siebui-span-xl-3">
+          <swe:control id="2023" hintMapType="FormItem">
+            <div class="mceGridField siebui-formControlLabel">
+              <swe:this property="DisplayName" hintText="Label"/>:
+            </div>
+            <div class="mceGridField siebui-formControlField">
+              <swe:this property="FormattedHtml" hintText="Field"/>
+            </div>
+          </swe:control>
+        </div>
+
+      </div>
+
+      <div  id ="siebui-formControls" class="siebui-formControlsRow1" width="15%" height="100%">
+        <div class="siebui-formControl">
+          <swe:control id="200" hintMapType="FormItem">
+            <div class="mceGridField siebui-formControlLabel">
+              <swe:this property="DisplayName" hintText="Label"/>:
+            </div>
+            <div class="mceGridField siebui-formControlField">
+              <swe:this property="FormattedHtml" hintText="Field"/>
+            </div>
+          </swe:control>
+        </div>
+
+        <div class="siebui-formControl">
+          <div id="timescalebuttons" class="siebui-time-scale-buttons">
+            <div class="siebui-option-bar-parent">
+              <div class="siebui-option-bar">
+
+                <div class="siebui-button siebui-first-item siebui-item-focus">
+                  <swe:control id="339">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="340">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="341">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="342">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="343">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="344">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="345">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="346">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="347">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="348">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button siebui-last-item">
+                  <swe:control id="349">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="siebui-formControl">
+          <swe:control id="202" hintMapType="FormItem">
+            <div class="mceGridField siebui-formControlLabel">
+              <swe:this property="DisplayName" hintText="Label"/>:
+            </div>
+            <div class="mceGridField siebui-formControlField">
+              <swe:this property="FormattedHtml" hintText="Field"/>
+            </div>
+          </swe:control>
+        </div>
+      </div>
+
+      <div id="s_ganttleft" class="siebui-ganttLeft">
+          <div id="s_ganttFilterPane" class="siebui-report-pane">
+            <div id="reportList" class="reportlist1">
+
+              <div id="multiaccordion1" class="siebui-accordion siebui-report-header">
+                <swe:control id="1001">
+                  <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+                </swe:control>
+              </div>
+
+              <div id="multiaccordion1" class="siebui-accordion">
+                <swe:control id="1002">
+                  <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+                </swe:control>
+              </div>
+
+              <div>
+                <swe:for-each count="5" startValue="1110" iteratorName="currentId">
+                  <div class="siebui-formFilterPaneControl">
+                    <swe:control id="swe:currentId+200" hintMapType="FormItem">
+
+                      <div class="siebui-formFilterPaneControlLabel">
+                        <div class="mceGridLabel siebui-formControlLabel">
+                          <swe:this property="DisplayName" hintText="Label"/>:
+                        </div>
+                      </div>
+
+                      <div class="siebui-formFilterPaneControlField">
+                        <div class="mceGridField siebui-formControlField" align="swe:this.TextAlignment">
+                          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+                        </div>
+                      </div>
+                    </swe:control>
+                  </div>
+                </swe:for-each>
+              </div>
+
+
+              <div id="multiaccordion1" class="siebui-accordion">
+                <swe:control id="1003">
+                  <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+                </swe:control>
+              </div>
+
+              <div>
+                <swe:for-each count="5" startValue="1120" iteratorName="currentId">
+                  <div class="siebui-formFilterPaneControl">
+                    <swe:control id="swe:currentId+200" hintMapType="FormItem">
+
+                      <div class="siebui-formFilterPaneControlLabel">
+                        <div class="mceGridLabel siebui-formControlLabel">
+                          <swe:this property="DisplayName" hintText="Label"/>:
+                        </div>
+                      </div>
+
+                      <div class="siebui-formFilterPaneControlField">
+                        <div class="mceGridField siebui-formControlField" align="swe:this.TextAlignment">
+                          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+                        </div>
+                      </div>
+
+                    </swe:control>
+                  </div>
+                </swe:for-each>
+              </div>
+
+
+              <div id="reportFooter" class="siebui-report-footer">
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="169">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="170">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="171">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="172">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="173">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="174">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="175">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+              </div>
+
+              <div id="multiaccordion1" class="siebui-accordion siebui-report-header">
+                <swe:control id="1004">
+                  <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+                </swe:control>
+              </div>
+
+              <div id="multiaccordion1" class="siebui-accordion">
+                <swe:control id="1005">
+                  <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+                </swe:control>
+              </div>
+
+              <div>
+                <swe:for-each count="5" startValue="1130" iteratorName="currentId">
+
+                  <div class="siebui-formFilterPaneControl">
+                    <swe:control id="swe:currentId+200" hintMapType="FormItem">
+
+                      <div class="siebui-formFilterPaneControlLabel">
+                        <div class="mceGridLabel siebui-formControlLabel">
+                          <swe:this property="DisplayName" hintText="Label"/>:
+                        </div>
+                      </div>
+
+                      <div class="siebui-formFilterPaneControlField">
+                        <div class="mceGridField siebui-formControlField" align="swe:this.TextAlignment">
+                          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+                        </div>
+                      </div>
+
+                    </swe:control>
+                  </div>
+                </swe:for-each>
+              </div>
+
+              <div id="multiaccordion1" class="siebui-accordion">
+                <swe:control id="1006">
+                  <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+                </swe:control>
+              </div>
+
+              <div>
+                <swe:for-each count="5" startValue="1150" iteratorName="currentId">
+                  <div class="siebui-formFilterPaneControl">
+                    <swe:control id="swe:currentId+200" hintMapType="FormItem">
+
+                      <div class="siebui-formFilterPaneControlLabel">
+                        <div class="mceGridLabel siebui-formControlLabel">
+                          <swe:this property="DisplayName" hintText="Label"/>:
+                        </div>
+                      </div>
+
+                      <div class="siebui-formFilterPaneControlField">
+                        <div class="mceGridField siebui-formControlField" align="swe:this.TextAlignment">
+                          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+                        </div>
+                      </div>
+
+                    </swe:control>
+                  </div>
+                </swe:for-each>
+              </div>
+
+
+              <div id="reportFooter" class="siebui-report-footer">
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="139">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="140">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="141">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="142">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="143">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="157">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-filterPaneButtons">
+                  <swe:control id="158">
+                    <!-- optional control  -->
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      <div class="siebui-customControls">
+        <div id="s_ganttRight" class="siebui-ganttRight">
+          <swe:control id="2001">
+            <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+          </swe:control>
+          <div id="s_Diary"/>
+          <div id="s_Legend"/>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</swe:form>
+
+<!-- Template End: CCAppletFormGridLayout_Gantt.swt -->

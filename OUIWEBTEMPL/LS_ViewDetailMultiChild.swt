@@ -1,0 +1,100 @@
+<!--  Template Start: LS_ViewDetailMultiChild.swt -->
+
+<swe:include file="CCHTMLHeader.swt"/>
+<swe:include file="CCTaskViewTitle.swt"/>
+
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+   <!-- ---------- Threadbar and Mini-Applet ----------------->
+   <table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%">
+   <tr>
+      <swe:applet id="201" hintText="Mini-Applet">
+         <td align="right"><swe:this property="FormattedHTML"/></td>
+      </swe:applet>
+   </tr>
+   </table>
+   <!-- ---------- End Threadbar and Mini-Applet ------------->
+</swe:if>
+
+<!-- ---------- Main Content Area ---------------------------->
+
+<swe:applet hintMapType="Applet" id="1" hintText="Parent Applet" property="FormattedHtml" var="Parent"/>
+
+<!-- ---------- Tier 3 & Tier 4 navigation ----------------->
+<!-- ---------- Will display regardless of view type ------->
+<swe:include file="CCViewbar_Tabs_DropList_Always.swt"/>
+<!-- ---------- End Tier 3 & Tier 4 navigation ------------->
+<div class="siebui-sub-applets">
+
+<swe:switch>
+   <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
+      <swe:for-each count=1 iteratorName="currentId" startValue="2">
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet" property="FormattedHtml" var="Child"/>
+      </swe:for-each>
+
+      <swe:for-each count=3 iteratorName="currentId" startValue="3">
+         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      </swe:for-each>
+
+      <swe:applet hintMapType="Applet" id="6" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      <swe:applet hintMapType="Applet" id="7" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      <swe:applet hintMapType="Applet" id="10" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+
+      <swe:applet hintMapType="Applet" id="8" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      <swe:applet hintMapType="Applet" id="9" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      <swe:applet hintMapType="Applet" id="11" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+   </swe:case>
+
+   <swe:default>
+    <div class="siebui-view-multi-column">
+      <div class="siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12">
+        <swe:for-each count=1 iteratorName="currentId" startValue="2">
+          <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet" property="FormattedHtml" var="Child"/>
+        </swe:for-each>
+
+        <swe:for-each count=3 iteratorName="currentId" startValue="3">
+          <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        </swe:for-each>
+      </div>
+      <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet hintMapType="Applet" id="6" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="7" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="10" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      </div>
+      <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet-tree-list var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="8" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="9" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="11" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      </div>
+    </div>
+    </div>
+    <div class="siebui-view-multi-column">
+      <div class="siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12">
+        <swe:for-each count=1 iteratorName="currentId" startValue="12">
+          <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Apple" property="FormattedHtml" var="Grandchild"/>
+        </swe:for-each>
+
+        <swe:for-each count=3 iteratorName="currentId" startValue="13">
+          <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        </swe:for-each>
+    </div>
+		 <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet hintMapType="Applet" id="16" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="17" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="18" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      </div>
+      <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet-tree-list var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="19" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="20" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        <swe:applet hintMapType="Applet" id="21" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+      </div>
+    </div>
+	</swe:default>
+
+</swe:switch>
+</div>
+<swe:include file="CCHTMLFooter.swt"/>
+<!-- ---------- End Main Content Area ------------------------>
+
+<!--  Template End: LS_ViewDetailMultiChild.swt -->

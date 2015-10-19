@@ -1,0 +1,18 @@
+<!-- Template Start: CCAppletFormGridLayoutCatalog.swt -->
+
+<!-- <swe:include file="CCApplet_NamedSpacer.swt"/> -->
+<swe:form>
+    <div class="siebui-catalog-pick">
+        <swe:control id="1001" hintMapType="FormItem">
+            <span class="mceGridLabel siebui-label mceLabel" align="swe:this.TextAlignmentLabel">
+                <swe:this property="DisplayName" hintText="Label"/>
+            </span>
+        </swe:control>
+        <swe:control id="1016" hintMapType="FormItem">
+            <span class="mceGridField siebui-value mceField" align="swe:this.TextAlignment">
+                <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+            </span>
+        </swe:control>
+    </div>
+</swe:form>
+<!-- Template End: CCAppletFormGridLayoutCatalog.swt -->

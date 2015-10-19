@@ -1,0 +1,14 @@
+<!-- Template Start: eCfgTopLevelButtonsJS.swt -->
+<!-- Oliver: [code redesign] -->
+
+<span class="siebui-applet-button"><swe:control id="swe:EnableEngine" CfgUIControl="EnableEngine" CfgHtmlType="MiniButton" InvokeMethod="EnableEngine"/></span>
+<span class="siebui-applet-button"><swe:control id="swe:CheckPrice" CfgUIControl="Check the price" CfgHtmlType="MiniButton" InvokeMethod="CalculatePriceCX"/></span>
+<span class="siebui-applet-button"><swe:control id="swe:Save" CfgUIControl="Save" CfgHtmlType="MiniButton" InvokeMethod="SyncInstance"/></span>
+<span class="siebui-applet-button"><swe:control id="swe:Cancel" CfgUIControl="Cancel" CfgHtmlType="MiniButton" InvokeMethod="PrevView"/></span>
+<span class="siebui-applet-button"><swe:control id="swe:Interact" CfgUIControl="Interact" CfgHtmlType="MiniButton" InvokeMethod="InteractMultiSelect" /></span>
+<span class="siebui-applet-button"><swe:control id="swe:Reset" CfgUIControl="Reset" CfgHtmlType="MiniButton" InvokeMethod="ResetMultiSelect" /></span>
+<span class="siebui-applet-button"><swe:control id="swe:Done" CfgUIControl="sDone" CfgHtmlType="MiniButton" InvokeMethod="DoneConfig" /></span>
+<span class="siebui-applet-button"><swe:control id="swe:FinishIt" CfgUIControl="FinishIt" CfgHtmlType="MiniButton" InvokeMethod="FinishIt"/></span>
+<span class="siebui-applet-button"><swe:control id="swe:CheckErrors" CfgUIControl="lblCheckErrors" CfgHtmlType="MiniButton" InvokeMethod="ExternalValidate"/></span>
+
+<!-- Template End: eCfgTopLevelButtonsJS.swt -->

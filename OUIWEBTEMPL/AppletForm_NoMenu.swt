@@ -1,0 +1,61 @@
+<!-- Template Start: AppletForm_NoMenu.swt -->
+<swe:form>
+  <div class="swe:this.SelectStyle AppletBack siebui-applet-back AppletHIFormBorder siebui-applet-form-border">
+    <swe:include file="CCTitle_Named.swt"/>
+    <swe:include file="CCFormButtonsTopNoMenu.swt"/>
+    <swe:error type="Popup">
+      <div class="swe:class AppletBack siebui-applet-back">
+        <div class="siebui-error">
+          <swe:this property="FormattedHtml"/>
+        </div>
+      </div>
+    </swe:error>
+    <div class="siebui-collapsible-applet-content siebui-collapsible">
+      <div id="_FormAppletH1" class="siebui-form-subsection-1">
+        <swe:for-each startValue="1301" count="1" iteratorName="currentId">
+          <swe:control id="swe:currentId" hintMapType="FormItem">
+            <div class="mceGridField siebui-value"><swe:this property="FormattedHtml" hintText="Field"/></div>
+          </swe:control>
+        </swe:for-each>
+      </div>
+      <div id="_FormAppletH2" class="siebui-form-subsection-2">
+        <swe:for-each startValue="2301" count="5" iteratorName="currentId">
+          <swe:control id="swe:currentId" hintMapType="FormItem">
+            <div class="mceGridLabel siebui-label"><swe:this property="DisplayName" hintText="Label"/>:</div>
+            <div class="mceGridField siebui-value"><swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/></div>
+          </swe:control>
+        </swe:for-each>
+      </div>
+      <div id="_FormAppletH3" class="siebui-form-subsection-3">
+        <swe:for-each startValue="3301" count="10" iteratorName="currentId">
+          <swe:control id="swe:currentId" hintMapType="FormItem">
+            <div class="mceGridField siebui-value"><swe:this property="FormattedHtml" hintText="Field"/></div>
+          </swe:control>
+        </swe:for-each>
+      </div>
+      <!-- Form Applet: label-value pairs -->
+      <swe:for-each startValue="5301" count="10" iteratorName="currentId">
+        <swe:control id="swe:currentId" hintMapType="Column1FormItem">
+          <div class="siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-6">
+            <div class="siebui-label"><swe:this property="DisplayName" hintText="Label"/>
+              <swe:this property="RequiredIndicator" hintText="Required"/>
+            </div>
+            <div class="siebui-value"><swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/></div>
+          </div>
+        </swe:control>
+      </swe:for-each>
+      <swe:for-each startValue="6301" count="10" iteratorName="currentId">
+        <swe:control id="swe:currentId" hintMapType="Column2FormItem">
+          <div class="siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-6">
+            <div class="siebui-label"><swe:this property="DisplayName" hintText="Label"/>
+              <swe:this property="RequiredIndicator" hintText="Required"/>
+            </div>
+            <div class="siebui-value"><swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/></div>
+          </div>
+        </swe:control>
+      </swe:for-each>
+    </div>
+    </span>
+  </div>
+</swe:form>
+<!-- Template End: AppletForm_NoMenu.swt -->

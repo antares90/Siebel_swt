@@ -1,0 +1,78 @@
+<!-- Template Start: TCCAppletList_B_EL_NoMenu_CustDir.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+<swe:control id="1100">
+    <div class="CmdTxt">
+        <swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/>
+    </div>
+</swe:control>
+<swe:form>
+    <swe:include file="CCTitle_Named.swt"/>
+    <div class="swe:this.SelectStyle">
+        <swe:include file="CCListButtonsTopNoMenuButton.swt"/>
+        <swe:error type="Popup">
+            <table class="swe:class AppletBack siebui-AplietListB_El_NoMenu_table">
+                <tr>
+                    <td class="error">
+                        <swe:this property="FormattedHtml"/>
+                    </td>
+                </tr>
+            </table>
+        </swe:error>
+        <div class="AppletHIListBorder">
+            <swe:list>
+                <table class="siebui-common" datatable="1" summary="swe:this.ListSummary">
+                    <swe:include file="CCListHeader.swt"/>
+                    <swe:include file="CCListBody.swt"/>
+                </table>
+            </swe:list>
+            <swe:control id="155">
+                <!-- optional control  -->
+                <div nowrap>
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </div>
+            </swe:control>
+        </div>
+    </div>
+    </span>
+</swe:form>
+
+<div data-content-id="siebui-custdir-drop-content">
+    <div class="siebui-custdir-Dropapplet siebui-custdir-drop-applet">
+        <swe:for-each startValue="4000" count="3" iteratorName="currentId">
+            <div class="siebui-custdir-field-wrap siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+                <swe:control id="swe:currentId+100">
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <swe:this property="FormattedHtml" hintText="Label"/></swe:control>
+                    <swe:control id="swe:currentId+200" property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+            </div>
+        </swe:for-each>
+
+        <swe:for-each startValue="5000" count="3" iteratorName="currentId">
+            <div class="siebui-custdir-field-wrap siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+                <swe:control id="swe:currentId+100">
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <swe:this property="FormattedHtml" hintText="Label"/></swe:control>
+                    <swe:control id="swe:currentId+200" property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+            </div>
+        </swe:for-each>
+
+        <swe:for-each startValue="6000" count="3" iteratorName="currentId">
+            <div class="siebui-custdir-field-wrap siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+                <swe:control id="swe:currentId+100">
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <swe:this property="FormattedHtml" hintText="Label"/></swe:control>
+                    <swe:control id="swe:currentId+200" property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+            </div>
+        </swe:for-each>
+
+        <swe:for-each startValue="7000" count="3" iteratorName="currentId">
+            <div class="siebui-custdir-field-wrap siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+                <swe:control id="swe:currentId+100">
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <swe:this property="FormattedHtml" hintText="Label"/></swe:control>
+                    <swe:control id="swe:currentId+200" property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId+200"/>
+            </div>
+        </swe:for-each>
+    </div>
+</div>
+<!-- Template End: TCCAppletList_B_EL_NoMenu_CustDir.swt -->

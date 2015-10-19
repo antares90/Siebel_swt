@@ -1,0 +1,15 @@
+<!-- Template Start: CCButtonsCRUD.swt -->
+<swe:control id="131"><!-- CreateRecord, 131 --><swe:this property="FormattedHtml" hintMapType="Control" hintText="New"/></swe:control>
+<swe:control id="132"><!-- EditRecord, 132   --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Edit" /></swe:control>
+<swe:control id="133"><!-- DeleteRecord, 133 --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Delete"/></swe:control>
+
+<swe:control id="136"><!-- Save, 136         --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Save"  /></swe:control>
+<swe:control id="599"><!-- Mvg Save, 599     --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Save - shows only in HI"/></swe:control>
+<swe:control id="134"><!-- Reset, 134        --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Reset" /></swe:control>
+<swe:control id="135"><!-- Cancel, 135       --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Cancel"/></swe:control>
+
+<swe:control id="106"><!-- NewQuery, 106     --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Query" /></swe:control>
+<swe:control id="107"><!-- ExecuteQuery, 107 --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Go (ExecuteQuery)" /></swe:control>
+<swe:control id="108"><!-- CancelQuery, 108  --><swe:this property="FormattedHtml" hintMapType="Control" hintText="Cancel (Query)" /></swe:control>
+<swe:control id="126"><!-- QueryAssistant,126--><swe:this property="FormattedHtml" hintMapType="Control" hintText="Query Assistant" /></swe:control>
+<!-- Template End: CCButtonsCRUD.swt -->

@@ -1,0 +1,39 @@
+<!--  Template Start: dCCView_75_25.swt -->
+<swe:include file="dCCHTMLHeader.swt"/>
+
+<!-- ---------- Threadbar And/Or Greeting ----------------->
+<swe:if condition="Web Engine State Properties, IsLowInteractive">
+<swe:include file="CCThreadbar.swt"/>
+</swe:if>
+<swe:applet id="101" hintText="Salutation Applet">
+<table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%">
+	<tr><td>&nbsp;&nbsp;</td><td width="75%"><swe:this property="FormattedHtml"/></td><td width="25%"><img src="images/spacer.gif" width="100%" height="1" alt=""></td></tr>
+</table>
+</swe:applet>
+<!-- ---------- Threadbar And/Or Greeting  ------------->
+
+<!-- ---------- Main Content Area ---------------------------->
+<div class="siebui-view-multi-column">
+  <!--  Column 1 -->
+  <div class="siebui-span-lg-9 siebui-span-md-9 siebui-span-sm-12">
+    <swe:for-each count=10 iteratorName="currentId" startValue="102">
+      <!-- start applet-->
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml" var="Parent"/>
+      <!-- end applet-->
+    </swe:for-each>
+  </div>
+  <!--  End Column 1 -->
+  <!--  Column 2 -->
+  <div class="siebui-span-lg-3 siebui-span-md-3 siebui-span-sm-12">
+    <swe:for-each count=10 iteratorName="currentId" startValue="202">
+      <!-- start applet-->
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml" var="Parent"/>
+      <!-- end applet-->
+    </swe:for-each>
+  </div>
+  <!--  End Column 2 -->
+</div>
+<!-- ---------- End Main Content Area ------------------------>
+
+<swe:include file="dCCHTMLFooter.swt"/>
+<!--  Template End: dCCView_75_25.swt -->

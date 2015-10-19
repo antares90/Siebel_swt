@@ -1,0 +1,62 @@
+<!-- Template Start: CCAppletList_NoCRUDNoMenu.swt -->
+<swe:control id="1100">
+  <div class=CmdTxt>
+    <swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/>
+  </div>
+</swe:control>
+<swe:form>
+
+<div class="siebui-epui-integrated-applet">
+    <div class="swe:this.SelectStyle">
+        <div class="siebui-epui-header-applet siebui-edetailing-title-prev-container">
+          <div class="siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12">
+            <!-- Title for the applet-->
+            <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-6">
+              <div class="siebui-epui-rule-head">
+                  <swe:this property="Title"/>
+              </div>
+            </div>
+            <!-- buttons for the applet.. in the same row as title.-->
+            <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-6 siebui-epui-control-align">
+                <swe:for-each startValue="551" count="2" iteratorName="currentId">
+                    <swe:control id="swe:currentId">
+                        <span class="siebui-epui-reg-elem">
+                            <swe:this property="FormattedHtml"  hintText="Control" hintMapType="Control"/>
+                        </span>
+                    </swe:control>
+                </swe:for-each>
+            </div>
+          </div>
+        </div>
+        <div class="AppletHIListBorder siebui-applet-content siebui-collapsible">
+          <swe:list>
+            <table valign="top" width="100%" datatable="1" summary="swe:this.ListSummary">
+              <swe:include file="CCListHeader.swt"/>
+              <swe:include file="CCListBody.swt"/>
+            </table>
+          </swe:list>
+        </div>
+    </div>
+</div>
+</swe:form>
+<!--
+  <swe:include file="CCTitle_Named.swt"/>
+  <div class="swe:this.SelectStyle">
+    <swe:include file="CCListButtonsNoCRUDNoMenu.swt"/>
+    <swe:error type="Popup">
+      <div class="swe:class AppletBack error siebui-error">
+        <swe:this property="FormattedHtml"/>
+      </div>
+    </swe:error>
+    <div class="AppletHIListBorder siebui-applet-content siebui-collapsible">
+      <swe:list>
+        <table valign="top" width="100%" datatable="1" summary="swe:this.ListSummary">
+          <swe:include file="CCListHeader.swt"/>
+          <swe:include file="CCListBody.swt"/>
+        </table>
+      </swe:list>
+    </div>
+  </div>
+  </span>
+
+<!-- Template End: CCAppletList_NoCRUDNoMenu.swt -->

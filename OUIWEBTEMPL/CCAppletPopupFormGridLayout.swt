@@ -1,0 +1,19 @@
+<!-- Template Start: CCAppletPopupFormGridLayout.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+
+<swe:form>
+  <swe:error type="Popup">
+    <div class="siebui-error-txt"><swe:this property="FormattedHtml"/></div>
+  </swe:error>
+
+  <swe:form-applet-layout></swe:form-applet-layout>
+  <table datatable="0" summary="" width="100%">   
+    <tr class="AppletButtons">
+      <td class="siebui-popup-action">
+        <swe:include file="CCButtons_oui.swt"/>   
+        <swe:include file="CCButtons_Popup_oui.swt"/>
+      </td>
+    </tr>
+  </table>
+</swe:form>
+<!-- Template End: CCAppletPopupFormGridLayout.swt -->

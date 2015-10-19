@@ -1,0 +1,345 @@
+<!-- Template Start: FlaggedObjForm.swt -->
+<!-- link href="files/exprdsgn.css" rel="stylesheet"/ -->
+<swe:form>
+  <table datatable="0" summary="" class="AppletBack" cellpadding="0" cellspacing="20" border="0">
+    <!--Side-by-Side Label Row-->
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="1041">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="1043">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="1045">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+    </tr>
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="1225" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1225"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="1230" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1230"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+    </tr>
+  </table>
+  <!--button row-->
+  <table datatable="0" summary="" cellpadding="" cellspacing="" border="0" class="AppletStylePopup">
+    <tr>
+       <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+       <td>
+          <div id="AddElement">
+          </div>
+       </td>
+      <swe:control id="131">
+        <!-- optional control, 131 -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="132">
+        <!-- optional control, 132   -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+    </tr>
+  </table>
+  <table datatable="0" summary="" class="AppletBack" cellpadding="0" cellspacing="0" border="0">
+    <!--Side-by-Side Label Row-->
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="2041">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="2043">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="2045">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+    </tr>
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="2225" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="2225"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="2230" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="2230"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="2235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="2235"/>
+        </swe:control>
+      </td>
+    </tr>
+  </table>
+  <table datatable="0" summary="" class="AppletBack" cellpadding="0" cellspacing="0" border="0">
+    <!--Side-by-Side Label Row-->
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="3041">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+        <div id="OR">
+        </div>
+        <div id="AND">
+        </div>
+        <div id="NOT">
+        </div>
+        <div id="EQUAL">
+        </div>
+        <div id="GREATER_THAN">
+        </div>
+        <div id="LESS_THAN">
+        </div>
+        <div id="NOT_EQUAL">
+        </div>
+        <div id="LESS_THAN_EQUAL">
+        </div>
+        <div id="GREATER_THAN_EQUAL">
+        </div>
+        <div id="IS_NULL">
+        </div>
+        <div id="IS_NOT_NULL">
+        </div>
+        <div id="METHOD">
+        </div>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="3043">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="3045">
+          <div>
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+    </tr>
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <swe:control id="231">
+        <!-- optional control, 131 -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="232">
+        <!-- optional control, 132   -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="233">
+        <!-- optional control, 133 -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="236">
+        <!-- optional control, 136         -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="238">
+        <!-- optional control, 134        -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="239">
+        <!-- optional control, 135       -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="240">
+        <!-- optional control, 106     -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="241">
+        <!-- optional control, 107 -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="242">
+        <!-- optional control, 108  -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="243">
+        <!-- optional control126-->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="245">
+        <!-- optional control  -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="247">
+        <!-- optional control  -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+      <swe:control id="249">
+        <!-- optional control  -->
+        <td nowrap="">
+          <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+    </tr>
+  </table>
+  <table datatable="0" summary="" class="AppletBack" cellpadding="0" cellspacing="0" border="0">
+    <!--Side-by-Side Label Row-->
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="4041">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+      <td width="0%" valign="bottom">
+        <swe:control id="4043">
+          <div >
+            <swe:this property="DisplayName" hintText="Label" />
+          </div>
+        </swe:control>
+      </td>
+    </tr>
+    <tr>
+      <td width="20" valign="bottom">
+        <swe:control id="1235" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="1235"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="4225" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="4225"/>
+        </swe:control>
+      </td>
+      <td>
+        <swe:control id="4230" hintMapType="Control">
+          <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="4230"/>
+        </swe:control>
+      </td>
+    </tr>
+  </table>
+  <!--button row-->
+  <table datatable="0" summary="" cellpadding="2" cellspacing="0" border="0" class="AppletStylePopup">
+    <swe:control id="333">
+      <!-- optional control, 131 -->
+      
+      <td nowrap="">
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
+      </td>
+    </swe:control>
+    <swe:control id="331">
+      <!-- optional control, 131 -->
+      
+      <td nowrap="">
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
+      </td>
+    </swe:control>
+    <swe:control id="332">
+      <!-- optional control, 132   -->
+      <td nowrap="">
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
+      </td>
+    </swe:control>
+  </table>
+</swe:form>
+<!--  Template End: FlaggedObjForm.swt -->
+
+
+
+

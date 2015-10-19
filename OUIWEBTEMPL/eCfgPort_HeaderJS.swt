@@ -1,0 +1,53 @@
+<!-- Template Start: eCfgPort_HeaderJS.swt -->
+<!-- Oliver: [code redesign], product modules header-->
+
+<div name="cxRuntimeParam" style="display:none;">
+&lt;a name="<swe:control id="swe:IncId+520" CfgFieldName="Parent Path" CfgHtmlType="CfgLabel" />_<swe:control id="swe:IncId+520" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel" />"&gt;&lt;/a&gt;
+</div>
+
+<div class="NotSelected siebui-ecfg-module">
+    <div class="div-table" datatable="0" summary="" style="width:100%;">
+
+    <swe:switch>
+        <swe:case condition="Default, AreEmptyFields, Operator:and, FieldName0:.Description, FieldName1:.LearnMore">
+            <div class="AppletButtons div-table-row">
+                <div class="div-table-col">
+                    <div class="siebui-ecfg-header-title">
+                        <div class="siebui-ecfg-header-label"><swe:control id="swe:IncId + 350" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+                        <div class="siebui-ecfg-header-label-ext"><swe:control id="swe:IncId + 2550" CfgHtmlType="CfgGenerics" /></div>
+                    </div>
+        </swe:case>
+        <swe:default>
+
+            <div class="AppletButtons div-table-row">
+                <div class="div-table-col">
+                    <div class="siebui-ecfg-header-title">
+                        <div class="siebui-ecfg-header-label"><swe:control id="swe:IncId + 350" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+                        <div class="siebui-ecfg-header-label-ext"><swe:control id="swe:IncId + 2550" CfgHtmlType="CfgGenerics" /></div>
+                    </div>
+        </swe:default>
+    </swe:switch>
+
+            <div name="cxRuntimeParam" style="display:none;">
+            &lt;img id="img_<swe:control id="swe:IncId+520" CfgFieldName="Parent Path" CfgHtmlType="CfgLabel" />_<swe:control id="swe:IncId+520" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel" />" border="0" src="<swe:control id="swe:IncId + 50" CfgFieldName=".Image" CfgHtmlType="CfgLabel" />" alt="" align="right"&gt;&lt;/img&gt;
+            </div>
+
+    <swe:switch>
+        <swe:case condition="Default, AreEmptyFields, Operator:and, FieldName0:.Description, FieldName1:.LearnMore">
+        </swe:case>
+        <swe:default>
+                <div class="siebui-ecfg-header-subtitle">
+                    <swe:control id="swe:IncId + 150" CfgFieldName=".Description" CfgHtmlType="CfgLabel" />
+                    <div name="cxRuntimeParam" style="display:none;">
+                    &lt;a href="<swe:control id="swe:IncId + 250" CfgFieldName=".LearnMore" CfgHtmlType="CfgLabel" />" target="_blank"&gt;&lt;img border="0" src="images/icon_opensearch.gif"&gt;<swe:control id="LearnMore" CfgUIControl="lblLearnMore" CfgHtmlType="CfgLabel"/>&lt;/a&gt;
+                    </div>
+                </div>
+        </swe:default>
+    </swe:switch>
+
+      </div>
+   </div>
+ </div>
+ <table class="siebui-ecfg-module-content" datatable="0" summary="" width="100%"> <!-- DIV & TABLE closed in ecfg-footer... -->
+
+<!-- Template End: eCfgPort_HeaderJS.swt -->

@@ -1,0 +1,52 @@
+<!-- Template Start: CCAppletList_SolutionTile.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+<swe:control id="1100">
+  <div class="CmdTxt">
+    <swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/>
+  </div>
+</swe:control>
+<swe:form>
+  <swe:include file="CCTitle_Named.swt"/>
+  <div class="swe:this.SelectStyle">
+    <swe:error type="Popup">
+      <div class="swe:class AppletBack">
+        <div class="error">
+          <swe:this property="FormattedHtml"/>
+        </div>
+      </div>
+    </swe:error>
+    <div class="siebui-applet-header siebui-catalog-applet-hdr">
+      <!-- Record Navigation Area -->
+      <div class="AppletButtons siebui-btn-grp-applet">
+        <swe:include file="CCRecordNav.swt"/>
+      </div>
+    </div>
+    <div class="AppletHIListBorder siebui-tile-container siebui-catalog-tile-container">
+      <swe:this property="NoGrid"/>
+      <swe:this property="Vertical"/>
+      <swe:this property="ScrollVisibleTiles"/>
+      <swe:list>
+        <swe:list-record>
+          <div class="siebui-solution-tile-middle">
+            <div class="siebui-tile-name">
+              <swe:control id="502" hintMapType="FormItem">
+                <span class="">
+                  <swe:this property="FormattedHtml" align="swe:this.TextAlignment" hintText="Field"/>
+                </span>
+              </swe:control>
+            </div>
+            <div class="siebui-catalog-tile-description siebui-solution-desc">
+              <!-- Description -->
+              <swe:control id="504" hintMapType="FormItem">
+                <span class="siebui-catalog-label">
+                  <swe:this property="FormattedHtml" align="swe:this.TextAlignment" hintText="Field"/>
+                </span>
+              </swe:control>
+            </div>
+          </div>
+        </swe:list-record>
+      </swe:list>
+    </div>
+  </div>
+</swe:form>
+<!-- Template End: CCAppletList_SolutionTile.swt-->

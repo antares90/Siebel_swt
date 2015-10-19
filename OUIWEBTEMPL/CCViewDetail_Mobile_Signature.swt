@@ -1,0 +1,32 @@
+<!--  Template Start: CCViewDetail_Mobile_Signature.swt -->
+<swe:include file="CCHTMLHeader.swt"/>
+<div>
+
+<!-- ---------- Main Content Area ---------------------------->
+
+<div id="_FormParentRelatedItemsOuterCont" class="siebui-parent-child-grandchild siebui-span-lg-12" landscape="Default" portrait="Hide">
+  <div id="_FormParentRelatedItems" class="siebui-parent ListAppletContainer">
+    <div enabletoggle="true"></div>
+    <swe:applet hintMapType="Applet" id="1" hintText="Parent List Applet" property="FormattedHtml" var="ParentWithPointer"/>
+  </div>
+  <div name="jqmToggleCtrl" id="jqmToggleCtrl" ctrltype="button" ctrllabel="IDS_SWE_MOBIIE_BACK" style="display:none;"></div> 
+  <div id="_AppletFormRelatedItems1" class="siebui-grandchild-1">
+    <swe:applet hintMapType="Applet" id="3" hintText="Child Form Applet" property="FormattedHtml" var="Child"/>
+  </div>
+  <div id="_AppletListRelatedItems" class="siebui-child">
+    <swe:for-each count=2 iteratorName="currentId" startValue="4">         
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child List Applet" property="FormattedHtml" var="ParentWithPointer" />
+    </swe:for-each>
+  </div>
+  <div id="_AppletFormRelatedItems" class="siebui-grandchild">
+    <swe:applet hintMapType="Applet" id="10" hintText="Child Form Applet" property="FormattedHtml" var="Child"/>
+  </div>
+</div>
+<swe:include file="CCHTMLFooter.swt"/>
+
+<!-- ---------- End Main Content Area ------------------------>
+</div>
+<!--  Template End: CCViewDetail_Mobile_Signature.swt -->
+
+
+

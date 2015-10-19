@@ -1,0 +1,14 @@
+<!--  Template Start: CCListButtonsTop_CalMobile.swt -->
+<div class="swe:class AppletButtons siebui-applet-header" align="left">
+  <div class="swe:class AppletTitle">
+     <swe:this property="Title"/>
+  </div>
+  <div class="swe:class siebui-btn-grp-standard">
+    <swe:include file="CCButtons_Menu.swt"/>
+    <swe:include file="CCButtons_Standard.swt"/>
+  </div>
+</div>
+<div class="swe:class siebui-btn-grp-search">
+  <swe:include file="CCButtons_Search.swt"/>
+</div>
+<!--  Template End: CCListButtonsTop_CalMobile.swt -->

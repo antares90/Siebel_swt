@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="swe:dir">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><swe:this property="Title"/></title>
+  <link href="files/login.css" rel="stylesheet">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/>
+  <link rel="apple-touch-icon" href="images/favicon_touch.png"/>
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,target-densityDpi=device-dpi">
+  <swe:include-script file="login.js"/>
+
+  <script language="JavaScript">
+    function fireEvent(element,event) {
+      if (document.createEvent) {
+        // dispatch for firefox + others
+        var evt = document.createEvent("HTMLEvents");
+        evt.initEvent(event, true, true ); // event type,bubbling,cancelable
+        return !element.dispatchEvent(evt);
+      } else {
+        // dispatch for IE
+        var evt = document.createEventObject();
+        return element.fireEvent('on'+event,evt)
+      }
+    }
+  </script>
+
+</head>
+
+<body class="siebui-login-body" onunload="pwdcleaner()">
+  <swe:form method="post" name="SWEEntryForm" >
+    <div id="content" class="siebui-login-container">
+      <div id="loginLogo" class="siebui-login-logo"></div>
+      <div id="formContent" class="siebui-login-form">
+      <swe:error>
+        <div class="siebui-login-error">
+      </swe:error>
+            <div class="siebui-fieldset">
+              <label for="s_swepi_1" class="siebui-ctrl-label"><swe:pageitem id="7" property="DisplayName" /></label>
+              <span class="siebui-ctrl-input"><swe:pageitem id="1" property="FormattedHtml"/></span>
+            </div>
+            <div class="siebui-fieldset">
+              <label for="s_swepi_2" class="siebui-ctrl-label"><swe:pageitem id="8" property="DisplayName" /></label>
+              <span class="siebui-ctrl-password"><swe:pageitem id="2" property="FormattedHtml"/></span>
+            </div>
+            <div class="siebui-fieldset">
+              <swe:pageitem id="3" property="FormattedHtml" class="siebui-ctrl-cb"/>
+              <label for="s_swepi_3" class="siebui-ctrl-label"><swe:pageitem id="9" property="DisplayName" /></label>
+            </div>
+            <div class="siebui-login-btn">
+              <swe:pageitem id="22" property="FormattedHtml"/>
+            </div>
+            <div class="siebui-login-title">
+              <swe:this property="SplashText"/>
+            </div>
+            <div class="siebui-fieldset siebui-login-footer">
+                <span class="siebui-ctrl-label"><swe:pageitem id="12" property="FormattedHtml"/></span>
+            </div>
+      <swe:error>
+        </div>
+      </swe:error>
+      </div>
+      <div id="statusBar" class="siebui-error">
+          <swe:error><swe:this property="FormattedHtml"/></swe:error>
+      </div>
+      <swe:include file="HTML5BrowserCompatibility.swt"/>
+      <script type="text/javascript">
+        var loginA_tag = document.getElementById('s_swepi_22');
+        var loginIMG_tag = loginA_tag.childNodes[0];
+        loginA_tag.appendChild( document.createTextNode(loginIMG_tag.alt) );
+      </script>
+    </div>
+  </swe:form>
+</body>
+<swe:scripts/>
+<script language="JavaScript">userfocus()</script>
+
+</html>

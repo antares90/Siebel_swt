@@ -1,0 +1,25 @@
+<!-- Template Start: ecfgcontrolcomboprice_v14.swt  -->
+<!-- SYPATEL: The template displays the section for the specified port or relationship. The port items are displayed as combobox options -->
+<!-- Port Header -->
+<swe:include file="ecfgportheader_v14.swt"/>
+<swe:for-each id="1100" CfgLoopType="DomainAndChildren" Automation="N" startValue="1000" count="Dynamic" iteratorName="1100Id"
+ Usage="ComboBox"
+ CfgFieldList="CfgFieldName:Name, CfgUIControl:lblName, HtmlAttrib_class:siebui-ecfg-item-name-combo-col, Default:Y*
+               CfgFieldName:RequireMoreChild, Default:Y*
+               CfgFieldName:Original List Price, CfgUIControl:lblListPrice, DataType:DTYPE_CURRENCY, NeedRefresh:N, HtmlAttrib_class:siebui-ecfg-list-price-col*
+               CfgFieldName:Current Price, CfgUIControl:lblYourPrice, DataType:DTYPE_CURRENCY, HtmlAttrib_class:siebui-ecfg-current-price-col*
+               CfgFieldName:Prod Prom Name, CfgUIControl:lblPromotion, HtmlAttrib_class:siebui-ecfg-promo-col siebui-ecfg-form-group,
+                   PickApplet:ISS Promotion Related Prom Pick Applet, PickList:ISS Promotion Related Prom VBC PickList,
+                   Field01:Product Id, PickField01:CompProd Product Id, Constrain01:Y,
+                   Field02:Prod Prom Name, PickField02:Name,
+                   Field03:Prod Prom Id, PickField03:Promotion Id*
+               CfgFieldName:Explanation, CfgUIControl:lblExplanation, HtmlAttrib_class:siebui-ecfg-explanation-col*
+               CfgFieldName:Customize, CfgUIControl:lblCustomize, HtmlAttrib_class:siebui-ecfg-customize-col"
+ >
+    <swe:control id="swe:111Id + 4000" CfgHtmlType="CfgCombo"
+   CfgJSShow="showCombo" CfgJSUpdateExclusion="updateExcludedItemForPort" CfgJSUpdateSelection="updatePortItemsForComboBox"/>
+</swe:for-each>
+<!-- Port Footer -->
+<swe:include file="ecfgportfooter_v14.swt"/>
+<!-- Template End: ecfgcontrolcomboprice_v14.swt -->
+

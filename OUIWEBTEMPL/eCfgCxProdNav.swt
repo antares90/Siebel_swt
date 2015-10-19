@@ -1,0 +1,223 @@
+<!-- Template Start: eCfgCxProdNav.swt -->
+<div id="cxUIPropPicker" class="cxAppletRoot">
+
+<swe:control id="swe:CFGPARAMETER" TemplateType="CxProdNavigator" RuntimeUIStyle="disable" property="FormattedHtml"/>
+<span class="AppletStyle1">
+   <table align="center">
+      <tr class="AppletBlank">
+         <td class="AppletTitle" valign="top">
+            <img src="images/aplt_opn_d.gif" alt=""></img>
+         </td>
+         <td class="AppletTitle" nowrap>
+            <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+         </td>
+         <td class="AppletTitle" valign="top" align="right">
+            <img src="images/aplt_curve_d.gif" alt=""></img>
+         </td>
+         <td class="AppletBlank" align="right">&nbsp;</td>
+      </tr>
+   </table>
+   <table>
+      <tr>
+         <td class="AppletBorder">
+            <table>
+               <swe:include file="eCfgTrSwitch.swt"/>
+                  <td>
+                     <swe:control id="swe:CurrentRoot+1" CfgUIControl="Active Row" property="FormattedHtml"/>
+                     &nbsp;&nbsp;
+                     <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                     <swe:control id="swe:CurrentRoot2" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <strong>
+                        <swe:control id="Attribute" CfgUIControl="lblAttribute" property="DisplayName"/>
+                     </strong>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <table>
+                        <swe:for-each id="110" CfgLoopType="Attribute" startValue="1000" count="Dynamic" iteratorName="AttId">
+                           <tr>
+                              <td>
+                                 <a name="isCurrentAtt">
+                                    <swe:control id="swe:AttId+2000" CfgFieldName="AttID" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                 </a>
+                              </td>
+                           </tr>
+                           <swe:include file="eCfgTrSwitch.swt"/>
+                              <td>
+                                 <swe:control id="swe:AttId" CfgUIControl="Active Row Attr" property="FormattedHtml"/>
+                              </td>
+                              <td colspan="3">
+                                 <swe:control id="swe:AttId+1000" CfgFieldName="AttName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                 <swe:control id="swe:AttId+3000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                              </td>
+                              <td>
+                                 &nbsp;
+                              </td>
+                           </tr>
+                           <swe:for-each id="120" CfgLoopType="Domain" startValue="2100" count="Dynamic" iteratorName="AttDomainId">
+                              <swe:include file="eCfgTrSwitch.swt"/>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>                                    
+                                 <td>
+                                    <swe:control id="swe:AttDomainId" CfgUIControl="Active Row Attr" property="FormattedHtml"/>
+                                 </td>
+                                 <td colspan="2">
+                                    <swe:control id="swe:AttDomainId+1000" CfgFieldName="AttValue" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                    <swe:control id="swe:AttDomainId+2000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                                 </td>
+                              </tr>
+                           </swe:for-each>
+                        </swe:for-each>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <strong>
+                        <swe:control id="Relationship" CfgUIControl="lblRelationship" property="DisplayName" />
+                     </strong>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <table>
+                        <swe:for-each id="130" CfgLoopType="Port" startValue="3200" count="Dynamic" iteratorName="PortId">
+                           <tr>
+                              <td>
+                                 <a name="isCurrentPort">
+                                    <swe:control id="swe:PortId+2000" CfgFieldName="Port Item Id" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                 </a>
+                              </td>
+                           </tr>
+                           <swe:include file="eCfgTrSwitch.swt"/>
+                              <td>
+                                 <swe:control id="swe:PortId" CfgUIControl="Active Row Port" property="FormattedHtml"/>
+                              </td>
+                              <td colspan="3">
+                                 <swe:control id="swe:PortId+1000" CfgFieldName="CxPortName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                 <swe:control id="swe:PortId+2000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                              </td>
+                              <td>
+                                 &nbsp;
+                              </td>
+                           </tr>
+                           <swe:for-each id="140" CfgLoopType="Domain" startValue="4300" count="Dynamic" iteratorName="PortDomainId">
+                              <swe:include file="eCfgTrSwitch.swt"/>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>                                    
+                                 <td>
+                                    <swe:control id="swe:PortDomainId" CfgUIControl="Active Row Port" property="FormattedHtml"/>
+                                 </td>
+                                 <td colspan="2">
+                                    <swe:control id="swe:PortDomainId+1000" CfgFieldName="CxObjName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                    <swe:control id="swe:PortDomainId+2000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                                 </td>
+                              </tr>
+                           </swe:for-each>
+                        </swe:for-each>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <table>
+                        <tr>
+                           <td>
+                              <a name="CxGroup"></a>&nbsp;
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">
+                              <strong><swe:control id="Group" CfgUIControl="lblGroup" property="DisplayName"/></strong>
+                           </td>
+                           <td>
+                               &nbsp;
+                           </td>
+                        </tr>
+                        <swe:for-each id="150" CfgLoopType="Group" startValue="5400" count="Dynamic" iteratorName="GroupId">
+                           <swe:include file="eCfgTrSwitch.swt"/>
+                              <td>&nbsp;</td>
+                              <td>
+                                 <swe:control id="swe:GroupId+1000" CfgUIControl="Active Row" property="FormattedHtml" Anchor="CxGroup"/>
+                              </td>
+                              <td colspan="2">
+                                 <swe:control id="swe:GroupId+1100" CfgFieldName="CxGroupName" CfgUIControl="CfgLabel" property="FormattedHtml"/>
+                                 <swe:control id="swe:GroupId+2000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                              </td>
+                           </tr>
+                        </swe:for-each>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <table>
+                        <tr>
+                           <td>
+                              <a name="CxLinkedItem"></a>&nbsp;
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">
+                              <strong><swe:control id="LinkedItem" CfgUIControl="lblLinkedItem" property="DisplayName" /></strong>
+                           </td>
+                           <td>
+                              &nbsp;
+                           </td>
+                        </tr>
+                        <swe:for-each id="160" CfgLoopType="LinkedItem" startValue="6400" count="Dynamic" iteratorName="LinkedItemId">
+                           <swe:include file="eCfgTrSwitch.swt"/>
+                              <td>&nbsp;</td>
+                              <td>
+                                 <swe:control id="swe:LinkedItemId+1000" CfgUIControl="Active Row" property="FormattedHtml" Anchor="CxLinkedItem"/>
+                              </td>
+                              <td colspan="2">
+                                 <swe:control id="swe:LinkedItemId+1100" CfgFieldName="CxLnkItmName" CfgUIControl="CfgLabel" property="FormattedHtml"/>
+                                 <swe:control id="swe:LinkedItemId+2000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                              </td>
+                           </tr>
+                        </swe:for-each>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <table>
+                        <tr>
+                           <td>
+                              <a name="CxResource"></a>&nbsp;
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">
+                              <strong><swe:control id="Resource" CfgUIControl="lblResource" property="DisplayName"/></strong>
+                           </td>
+                           <td>&nbsp;</td>
+                        </tr>
+                        <swe:for-each id="170" CfgLoopType="Resource" startValue="7400" count="Dynamic" iteratorName="ResourceId">
+                           <swe:include file="eCfgTrSwitch.swt"/>
+                              <td>&nbsp;</td>
+                              <td>
+                                 <swe:control id="swe:ResourceId+1000" CfgUIControl="Active Row" property="FormattedHtml" Anchor="CxResource"/>
+                              </td>
+                              <td colspan="2">
+                                 <swe:control id="swe:ResourceId+1100" CfgFieldName="CxResourceName" CfgUIControl="CfgLabel" property="FormattedHtml"/>
+                                 <swe:control id="swe:ResourceId+2000" CfgFieldName="UIPropInd" CfgUIControl="IndicateUIProp" property="FormattedHtml"/>
+                              </td>
+                           </tr>
+                        </swe:for-each>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</span>
+</div>
+<!-- Template End: eCfgCxProdNav.swt -->

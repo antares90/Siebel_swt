@@ -1,0 +1,70 @@
+<!-- Template Start SSAppletDetailForm.swt -->
+
+<swe:form>
+    <div class="siebui-applet-read-only">
+        <swe:control id="90">
+            <div class="siebui-applet-title">
+                <swe:this property="FormattedHtml" hintMapType="Control" hintText="Title"/>
+            </div>
+        </swe:control>
+        <swe:control id="91" hintMapType="FormItem">
+            <div class="siebui-applet-title">
+                <span align="swe:this.TextAlignment">
+                    <swe:this property="DisplayName" hintText="Label"/>
+                </span>
+                <span>:</span>
+                <span align="swe:this.TextAlignment">
+                    <swe:this property="FormattedHtml" hintText="Field"/>
+                </span>
+            </div>
+        </swe:control>
+        <div class="siebui-btn-grp-standard">
+            <swe:control id="154">
+                <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </swe:control>
+            <swe:control id="153">
+                <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </swe:control>
+            <swe:control id="152">
+                <div class="siebui-btn-danger">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </div>
+            </swe:control>
+            <swe:control id="151">
+                <div>
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </div>
+            </swe:control>
+            
+        </div>
+        <div class="siebui-form-subsection-1">
+            <swe:for-each count="5" startValue="1200" iteratorName="currentId">
+                <swe:control id="swe:currentId" hintMapType="FormItem">
+                    <div>
+                        <span class="siebui-label" align="swe:this.TextAlignment">
+                            <swe:this property="DisplayName" hintText="Label"/>
+                        </span>
+                        <span>:</span>
+                        <span align="swe:this.TextAlignment">
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </span>
+                    </div>
+                </swe:control>
+            </swe:for-each>
+        </div>
+        <div class="siebui-form-subsection-1">
+            <swe:for-each count="5" startValue="1300" iteratorName="currentId">
+                <swe:control id="swe:currentId" hintMapType="FormItem">
+                    <div class="siebui-label" align="swe:this.TextAlignment">
+                        <swe:this property="DisplayName" hintText="Label"/>
+                    </div>
+                    <div align="swe:this.TextAlignment">
+                        <swe:this property="FormattedHtml" hintText="Field"/>
+                    </div>
+                </swe:control>
+            </swe:for-each>
+        </div>
+    </div>
+</swe:form>
+
+<!-- Template End SSAppletDetailForm.swt -->

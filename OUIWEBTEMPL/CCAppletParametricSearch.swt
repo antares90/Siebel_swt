@@ -1,0 +1,106 @@
+<!-- Template Start: CCAppletParametricSearch.swt -->
+<swe:form>
+    <div class="siebui-collapsible AppletButtons siebui-form-applet-header siebui-collapsible-applet-header">
+        <div class="siebui-applet siebui-collapsible siebui-applet-expanded AppletTitle">
+            <div class="siebui-applet-title">
+                <swe:control id="90" property="DisplayName"/>
+            </div>
+        </div>
+        <div class="siebui-catalog-search-controls siebui-applet-buttons">
+            <span>
+                <swe:control id="1222">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </swe:control>
+            </span>
+            <span>
+                <swe:control id="1322">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </swe:control>
+            </span>
+            <span>
+                <swe:control id="110">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </swe:control>
+            </span>
+            <span>
+                <swe:control id="109">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                </swe:control>
+            </span>
+        </div>
+        <div class="siebui-applet-container siebui-collapsible"></div>
+    </div>
+    <div class="siebui-catalog-search-fields siebui-applet-content siebui-collapsible siebui-applet">
+        <table datatable="0" summary="" class="swe:class AppletBack" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <swe:srchCategoryList>
+                <div class="siebui-span-lg-12">
+                    <!-- Column 1 -->
+                    <swe:srchCategory>
+                        <div class="col1 siebui-span-lg-3">
+                            <div class="col1span1 siebui-span-lg-3 siebui-span-md-3">
+                                <span class="mceGridLabel" align="Right">
+                                    <swe:srchCategoryText/>
+                                    :
+                                </span>
+                            </div>
+                            <div class="col1span2">
+                                <span class="mceGridField">
+                                    <swe:srchCategoryControl/>
+                                </span>
+                            </div>
+                        </div>
+                    </swe:srchCategory>
+                    <!-- Column 2 -->
+                    <swe:srchCategory>
+                        <div class="col2 siebui-span-lg-3">
+                            <div class="col2span1 siebui-span-lg-3 siebui-span-md-3">
+                                <span class="mceGridLabel" align="right">
+                                    <swe:srchCategoryText/>
+                                    :
+                                </span>
+                            </div>
+                            <div class="col2span2">
+                                <span class="mceGridField">
+                                    <swe:srchCategoryControl/>
+                                </span>
+                            </div>
+                        </div>
+                    </swe:srchCategory>
+                    <!-- Column 3 -->
+                    <swe:srchCategory>
+                        <div class="col3 siebui-span-lg-3">
+                            <div class="col3span1 siebui-span-lg-3 siebui-span-md-3">
+                                <span class="mceGridLabel" align="right">
+                                    <swe:srchCategoryText/>
+                                    :
+                                </span>
+                            </div>
+                            <div class="col3span2">
+                                <span class="mceGridField">
+                                    <swe:srchCategoryControl/>
+                                </span>
+                            </div>
+                        </div>
+                    </swe:srchCategory>
+                    <!-- Column 4 -->
+                    <swe:srchCategory>
+                        <div class="col4 siebui-span-lg-3">
+                            <div class="col4span1 siebui-span-lg-3 siebui-span-md-3">
+                                <span class="mceGridLabel" align="right">
+                                    <swe:srchCategoryText/>
+                                    :
+                                </span>
+                            </div>
+                            <div class="col4span2">
+                                <span class="mceGridField">
+                                    <swe:srchCategoryControl/>
+                                </span>
+                            </div>
+                        </div>
+                    </swe:srchCategory>
+                </div>
+            </swe:srchCategoryList>
+        </table>
+    </div>
+</swe:form>
+<!-- Template End: CCAppletParametricSearch.swt -->

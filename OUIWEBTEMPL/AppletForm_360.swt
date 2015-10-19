@@ -1,0 +1,44 @@
+<!-- Template Start: AppletForm_360.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+<swe:form>
+    <div class="siebui-applet-header siebui-collapsible">
+      <div class="siebui-icon-map">
+        <swe:control id="100" hintMapType="FormItem">
+          <swe:this property="FormattedHtml" hintText="Field"/>
+        </swe:control>
+      </div>
+      <div id="_FormAppletH1" class="siebui-form-subsection-1">
+        <swe:for-each startValue="1301" count="5" iteratorName="currentId">
+          <swe:control id="swe:currentId" hintMapType="FormItem">
+            <div class="mceGridField siebui-value">
+              <swe:this property="FormattedHtml" hintText="Field"/>
+            </div>
+          </swe:control>
+        </swe:for-each>
+      </div>
+    </div>
+    <div class="siebui-applet-content siebui-collapsible">
+    <!-- Form Applet: label-value pairs -->
+      <div class="siebui-form-subsection-2">
+        <swe:for-each startValue="5301" count="10" iteratorName="currentId">
+          <swe:control id="swe:currentId" hintMapType="Column1FormItem">
+            <div class="siebui-label-value">
+              <div class="siebui-label"><swe:this property="DisplayName" hintText="Label"/></div>
+              <div class="siebui-value"><swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/></div>
+            </div>
+          </swe:control>
+        </swe:for-each>
+      </div>
+      <div class="siebui-form-subsection-3">
+        <swe:for-each startValue="6301" count="5" iteratorName="currentId">
+          <swe:control id="swe:currentId" hintMapType="Column2FormItem">
+            <div class="siebui-label-value">
+              <div class="siebui-label"><swe:this property="DisplayName" hintText="Label"/></div>
+              <div class="siebui-value"><swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/></div>
+            </div>
+          </swe:control>
+        </swe:for-each>
+      </div>
+    </div>
+</swe:form>
+<!-- Template End: AppletForm_360.swt -->

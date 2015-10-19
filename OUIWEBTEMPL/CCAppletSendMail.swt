@@ -1,0 +1,133 @@
+<!-- Template Start: CCAppletSendMail.swt -->
+<div class="siebui-send-email">
+    <swe:form>
+        <!--Row 1-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-label">
+                <swe:control id="1200"><swe:this property="FormattedHtml" hintText="From: Label"/></swe:control>
+            </div>
+            <swe:control id="1300">
+                <div class="mceWideFields siebui-email-field" >
+                    <span class="mceField siebui-email-from"><swe:this property="FormattedHtml" hintText="From Field"/></span>
+                </div>
+            </swe:control>
+            <div><swe:control id="1400"><swe:this property="FormattedHtml" hintText="Optional Control"/></swe:control></div>
+        </div>
+
+        <!--Row 2-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-label">
+                <swe:control id="1201"><swe:this property="FormattedHtml" hintText="To: Label"/></swe:control>
+            </div>
+            <swe:control id="1301">
+                <div class="mceWideFields siebui-email-field">
+                    <span class="mceField siebui-email-to">
+                        <swe:this property="FormattedHtml" hintText="To Field"/>
+                    </span>
+            </div>
+          </swe:control>
+          <div><swe:control id="1401"><swe:this property="FormattedHtml" hintText="AB Control"/></swe:control></div>
+        </div>
+
+        <!--Row 3-->
+        <div class="siebui-email-row siebui-email-cc-row">
+            <div class="siebui-email-label">
+                <swe:control id="1202"><swe:this property="FormattedHtml" hintText="Cc: Label"/></swe:control>
+            </div>
+            <swe:control id="1302">
+                <div class="mceWideFields siebui-email-field">
+                    <span class="mceField siebui-email-cc"><swe:this property="FormattedHtml" hintText="CC Field"/></span>
+                </div>
+            </swe:control>
+        </div>
+        <div class="siebui-email-row siebui-email-bcc-row">
+            <div class="siebui-email-label">
+                <swe:control id="1203"><swe:this property="FormattedHtml" hintText="Bcc: Label"/></swe:control>
+            </div>
+            <swe:control id="1303">
+                <div class="mceWideFields siebui-email-field">
+                    <span class="mceField siebui-email-bcc"><swe:this property="FormattedHtml" hintText="Bcc Field"/></span>
+                </div>
+            </swe:control>
+            <div><img src="images/spacer.gif" height="1" width="1" alt=""></div>
+        </div>
+
+        <!--Row 4-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-label">
+                <swe:control id="1204"><swe:this property="FormattedHtml" hintText="Subject: Label"/></swe:control>
+            </div>
+            <swe:control id="1304">
+                <div class="mceWideFields siebui-email-field">
+                    <span class="mceField siebui-email-subject"><swe:this property="FormattedHtml" hintText="Subject Field"/></span>
+                </div>
+            </swe:control>
+            <div><swe:control id="1404"><swe:this property="FormattedHtml" hintText="Control"/></swe:control></div>
+        </div>
+
+        <!--Row 5-->
+        <div class="Border1"><img src="images/spacer.gif" width="1" height="1" alt=""></div>
+
+        <!--Row 6-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-label">
+                <swe:control id="1205"><swe:this property="FormattedHtml" hintText="Body: Label"/></swe:control>
+            </div>
+            <swe:control id="1305">
+                <div class="mceWideFields siebui-email-field">
+                    <span class="mceField siebui-email-template"><swe:this property="FormattedHtml" hintText="Templates Field"/></span>
+                </div>
+            </swe:control>
+        </div>
+
+        <!--Row 7-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-label">
+                <swe:control id="1206"><swe:this property="FormattedHtml" hintText="Optional Label"/></swe:control>
+            </div>
+            <swe:control id="1306">
+                <div class="mceWideFields siebui-email-field">
+                    <span class="mceField siebui-email-body"><swe:this property="FormattedHtml" hintText="Body Field"/></span>
+                </div>
+            </swe:control>
+        </div>
+
+        <!--Row 8-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-label">
+                <swe:control id="1207"><swe:this property="FormattedHtml" hintText="Attachments: Label"/></swe:control>
+            </div>
+            <div class=" siebui-email-field">
+                <div class="siebui-email-attch-field">
+                    <swe:control id="1307">
+                        <div class="mceWideFields siebui-email-attch-input" >
+                            <span class="mceField siebui-email-attachment"><swe:this property="FormattedHtml" hintText="Attachments Field"/></span>
+                        </div>
+                    </swe:control>
+                </div>
+                <div class="siebui-email-attch-btn">
+                    <swe:control id="300">
+                        <span class="siebui-icon-add-attachment">
+                        <swe:this property="FormattedHtml" hintText="Icon" hintMapType="Control"/>
+                        </span>
+                        <div><img src="images/btn_div.gif" alt=""></div>
+                    </swe:control>
+                    <swe:control id="301">
+                        <span class="siebui-icon-add-literature">
+                            <swe:this property="FormattedHtml" hintText="Icon" hintMapType="Control"/>
+                        </span>
+                    </swe:control>
+                </div>
+            </div>
+        </div>
+
+        <!--button row-->
+        <div class="siebui-email-row">
+            <div class="siebui-email-buttons">
+                <swe:include file="CCButtons_oui.swt"/>
+                <swe:include file="CCButtons_Popup_oui.swt"/>
+            </div>
+        </div>
+    </swe:form>
+</div>
+<!-- Template End: CCAppletSendMail.swt -->

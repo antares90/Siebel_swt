@@ -1,0 +1,6 @@
+<!-- Template Start SchedulerApplet.swt -->
+<div class="siebui-scheduler-symurl">
+<swe:control id="501"  property="FormattedHtml" hintText="Field" hintMapType="ListItem"/>
+</div>
+
+<!-- Template End 	SchedulerApplet.swt -->

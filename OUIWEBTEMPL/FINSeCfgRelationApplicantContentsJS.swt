@@ -1,0 +1,62 @@
+<!-- Template Start: FINSeCfgRelationApplicantContentsJS.swt -->
+
+<td>
+    <div class='div-table' border="0" cellpadding="0" cellspacing="1" width="100%">
+        <div class='div-table-row'><div class='div-table-col'>&nbsp;</div></div>
+        <div class='div-table-row'><div class='div-table-col'>&nbsp;</div></div>
+        <div class='div-table-row'><div class='div-table-col'>&nbsp;</div></div>
+        <div class='div-table-row'><div class='div-table-col'>&nbsp;</div></div>
+        <div class='div-table-row'>
+
+        <swe:for-each id="500" CfgLoopType="Children" startValue="1500" count="Dynamic" iteratorName="101Id"
+                    CfgFieldList="CfgFieldName:Quantity, CfgUIControl:lblEmpty, HtmlAttrib_width:80, HtmlAttrib_align:left, Default:Y*
+                    CfgFieldName:RequireMoreChild, Default:Y*
+                    CfgFieldName:Customize, CfgUIControl:lblCustomize, HtmlAttrib_width:70, HtmlAttrib_align:center*
+                    CfgFieldName:Remove, CfgUIControl:lblRemove, HtmlAttrib_width:70, HtmlAttrib_align:center, Default:Y"
+        >
+
+            <div class='div-table-col' align="center">
+                <swe:control id="Port Item" CfgHtmlType="CfgPortItem" ForceRefresh="Y"
+                    CfgJSShow="applicantShowPortItemsWithAttr" CfgJSUpdateSelection="applicantUpdatePortItemsForComboAddAttr"/>
+            </div>
+
+            <div id="cxGridPortParams" style="display:none">
+                <div id="cxGridPortId"><swe:control id="PrdId" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel"/></div>
+            </div>
+
+            <swe:for-each id="181" CfgLoopType="Attribute" startValue="1409" count="Dynamic" iteratorName="IncId" >
+                <swe:if condition="Default, TestFieldValue, Operator:==, FieldName:.Grandchild Enabled, FieldValue:Y">			   		      
+
+                <div id="cxGridAttributeParams" style="display:none">
+                    <div id="cxGridAttributeAttName"><swe:control id="AttrId" CfgFieldName="Attribute Display Name" CfgHtmlType="CfgLabel" DisplayMode="EncodeData"/></div>
+                </div>
+
+                    <swe:if condition="Default, TestFieldValue, Operator:==, FieldName:.Grandchild Type, FieldValue:text">
+                        <swe:control id="850" CfgFieldName="AttValue" CfgHtmlType="CfgTextBox"
+                            CfgJSShow="showTextBoxAttr" CfgJSUpdateSelection="updateSelectionInfoForAttribute" />
+                    </swe:if>
+
+                    <swe:if condition="Default, TestFieldValue, Operator:==, FieldName:.Grandchild Type, FieldValue:combo">
+                        <swe:for-each id="550" CfgLoopType="Domain" Automation="N" startValue="1500" count="Dynamic" iteratorName="101Id" Usage="ComboBox" >
+                            <swe:control id="attCombo" CfgHtmlType="CfgCombo" CfgFieldName="AttValue"
+                                CfgJSShow="showComboAttr" CfgJSUpdateExclusion="updateExcludedItemForAttribute" CfgJSUpdateSelection="updateSelectionInfoForAttribute"/>
+                        </swe:for-each>
+                    </swe:if>
+
+                    <swe:if condition="Default, TestFieldValue, Operator:==, FieldName:.Grandchild Type, FieldValue:radio">
+                        <swe:for-each id="500" CfgLoopType="Domain" startValue="1500" count="Dynamic" iteratorName="101Id" >
+                            <swe:control id="attRadio" CfgHtmlType="CfgRadio"
+                                CfgJSShow="showRadioAttr" CfgJSUpdateExclusion="updateExcludedItemForAttribute" CfgJSUpdateSelection="updateSelectionInfoForAttribute"/>
+                        </swe:for-each>
+                    </swe:if>
+
+                </swe:if>
+            </swe:for-each>
+
+        </swe:for-each>
+        </div>
+    </div>
+
+</td>
+
+<!-- Template End: FINSeCfgRelationApplicantContentsJS.swt -->

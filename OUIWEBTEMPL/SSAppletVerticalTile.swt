@@ -1,0 +1,52 @@
+<!-- Template Start SSAppletVerticalTile.swt -->
+
+<div class="swe:this.SelectStyle">
+    <div class="siebui-applet-title siebui-verticaltile-applet-title">
+        <swe:control id="90" hintMapType="FormItem">
+            <swe:this property="FormattedHtml" hintMapType="Control" hintText="Title"/>
+        </swe:control>
+    </div>
+    <swe:include file="CCListButtonsTop.swt"/>
+    <div class="siebui-tile-container siebui-tile-vertical siebui-applet-read-only">
+        <swe:this property="NoGrid"/>
+        <swe:this property="Vertical"/>
+        <swe:this property="ScrollVisibleTiles"/>
+        <swe:list>
+            <swe:list-record>
+                <div class="siebui-tile-name">
+                    <swe:control id="500" hintMapType="FormItem">
+                        <swe:this property="FormattedHtml" hintText="Field"/>
+                    </swe:control>
+                </div>
+                <div>
+                    <div class="siebui-span-md-6 siebui-span-lg-6">
+                        <swe:control id="501" hintMapType="FormItem">
+                            <div class="siebui-label">
+                                <swe:this property="DisplayName" hintText="Label"/>
+                            </div>
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                    <div class="siebui-span-md-3 siebui-span-lg-3">
+                        <swe:control id="502" hintMapType="FormItem">
+                            <div class="siebui-label">
+                                <swe:this property="DisplayName" hintText="Label"/>
+                            </div>
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                    <div class="siebui-span-md-3 siebui-span-lg-3">
+                        <swe:control id="503" hintMapType="FormItem">
+                            <div class="siebui-label">
+                                <swe:this property="DisplayName" hintText="Label"/>
+                            </div>
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                </div>
+            </swe:list-record>
+        </swe:list>
+    </div>
+</div>
+
+<!-- Template End SSAppletVerticalTile.swt -->

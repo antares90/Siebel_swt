@@ -1,0 +1,24 @@
+<!-- Template Start: tccInstalledAssetAppletNoMenu.swt -->
+<swe:form>
+    <div>
+        <div class="siebui-applet-header">
+            <div class="swe:class AppletTitle">
+                <swe:this property="Title"/>
+            </div>
+            <!-- Record Navigation Area -->
+            <div class="AppletButtons siebui-btn-grp-applet">
+                <swe:include file="CCRecordNav.swt"/>
+                <swe:include file="CCListButtonsTopRight.swt"/>
+            </div>
+        </div>
+        <div class="siebui-table">
+            <swe:list>
+                <table class="siebui-Common" datatable="1" summary="swe:this.ListSummary">
+                    <swe:include file="CCListHeader.swt"/>
+                    <swe:include file="CCListBody.swt"/>
+                </table>
+            </swe:list>
+        </div>
+    </div>
+</swe:form>
+<!-- Template End: tccInstalledAssetAppletNoMenu.swt -->

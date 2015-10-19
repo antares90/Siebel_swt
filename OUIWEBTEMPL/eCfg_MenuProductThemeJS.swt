@@ -1,0 +1,124 @@
+<!-- Template Start: eCfg_MenuProductThemeJS.swt -->
+
+<div id="cxProdMenu" class="cxProdTheme">
+
+<div name="cxMenuVariable" style="display:none;" varName="_greenBullet"><img src="images/bullet_green.gif" width="9" height="14" border="0" space="0" hspace="0" alt=""  title="" ></img></div>
+<div name="cxMenuVariable" style="display:none;" varName="_blackBullet"><img src="images/bullet_black.gif" width="9" height="14" border="0" space="0" hspace="0" alt=""  title="" ></img></div>
+<div id="cxCfgMenuButtonHTMLTemplate" class="cfgMenuButtonTemplate">
+<div id="" class="siebui-ecfg-menu-button"><a href="javascript:void(0);"></a></div>
+</div>
+
+<div id="Rel_REF"></div>        <!-- remove class eCfgPosAbs -->
+<div id="Rel_0">                <!-- remove class eCfgPosAbs -->
+
+<table datatable="0" summary="" width="100%" height="100%" cellspacing="3" cellpadding="2" border="0" class="AppletBorder">
+<tr>
+   <td class="AppletBack" valign="top">
+      <table datatable="0" summary="" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+         <tr>
+            <td valign="top">
+
+            <!-- Options Map -->
+            <table datatable="0" summary="" cellpadding="5" cellspacing="5" border="0" width="100%">
+            <tr>
+            <swe:for-each id="110" CfgLoopType="Group" startValue="8100" count="Dynamic" iteratorName="100Id" >
+
+                <div name="cxMenuGroup" style="display:none;">
+                    <div name="cxMenuGroupName"><swe:control id="swe:100Id+51"  CfgHtmlType="CfgLabel" CfgFieldName="CxGroupName" /></div>
+                    <div name="cxIsCurrentGroup"><swe:control id="swe:100Id+500" CfgFieldName="Selected" CfgHtmlType="CfgLabel" /></div>
+                    <div name="cxGroupId"><swe:control id="swe:180Id + 350" CfgFieldName="CxGroupId" CfgHtmlType="CfgLabel" /></div>
+                </div>
+
+                <td width="33%" valign="top">
+                    <div class="div-table" summary="">
+                        <!--Header row-->
+                        <div class="div-table-row">
+                            <div class="div-table-col" colspan="2">
+                                <strong>
+                                    <swe:control id="swe:100Id+50" CfgHtmlType="CfgLabel" CfgFieldName="CxGroupName"/>
+                                </strong>
+                            </div>
+                        </div>
+
+                        <swe:switch>
+                            <swe:case condition="Default, TestFieldValue, Operator:==, FieldName:Selected, FieldValue:Y">
+
+                                <!-- Relationships -->
+                                <div name="cxMenuRelationship">
+                                <swe:for-each id="180" CfgLoopType="Children" startValue="410" count="Dynamic" iteratorName="IncId" >
+                        <div class="div-table-row">
+                            <div class="div-table-col" style="width:100%;">
+
+                                <div id="eCfg_MenuProductThemeJS_PUI_1"></div>
+                                <div name="cxMenuPort" style="display:none;">
+                                    <div name="sGroupId"><swe:control id="swe:180Id + 350" CfgFieldName="CxGroupId" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sPortName"><swe:control id="swe:180Id + 350" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sAttName"><swe:control id="swe:180Id+20" CfgFieldName="AttName" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sPortId"><swe:control id="swe:180Id + 390" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sHasChild"><swe:control id="swe:180Id+280" CfgFieldName="HasChildren" CfgHtmlType="CfgLabel" /></div>
+                                </div>
+                                <swe:control id="swe:180Id + 2550" CfgHtmlType="CfgGenerics" />
+                            </div>
+                        </div>
+                                </swe:for-each>
+                                </div>
+                            </swe:case>
+                            <swe:default>
+
+                            <!-- Relationships -->
+                                <div name="cxMenuRelationship">
+                            <swe:for-each id="180" CfgLoopType="Children" startValue="410" count="Dynamic" iteratorName="IncId" >
+                        <div class="div-table-row">
+                            <div class="div-table-col" style="width:100%;">
+
+                                <div id="eCfg_MenuProductThemeJS_PUI_2"></div>
+                                <div name="cxMenuPort" style="display:none;">
+                                    <div name="sGroupId"><swe:control id="swe:180Id + 350" CfgFieldName="CxGroupId" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sPortName"><swe:control id="swe:180Id + 350" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sAttName"><swe:control id="swe:180Id+20" CfgFieldName="AttName" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sPortId"><swe:control id="swe:180Id + 390" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel" /></div>
+                                    <div name="sHasChild"><swe:control id="swe:180Id+280" CfgFieldName="HasChildren" CfgHtmlType="CfgLabel" /></div>
+                                </div>
+                                <swe:control id="swe:180Id + 3550" CfgHtmlType="CfgGenerics" />
+                            </div>
+                        </div>
+                            </swe:for-each>
+                            </div>
+                            </swe:default>
+                        </swe:switch>
+                    </div>
+                </td>
+
+            <div id="eCfg_MenuProductThemeJS_PUI_3"></div>
+
+            </swe:for-each>
+
+            <div id="eCfg_MenuProductThemeJS_PUI_4"></div>
+            </tr>
+            </table>
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+</table>
+
+</div> <!-- End of DIV for Id="Rel_0" -->
+
+<table datatable="0" summary="" width="100%" cellpadding="0" cellspacing="0" border="0" class="eCfgVisHid">
+   <tr>
+      <td align="right">
+         <div id="POSITION_REF" class="eCfgPosAbs"></div>
+      </td>
+   </tr>
+</table>
+
+<!-- Loop for current group -->
+<swe:for-each id="120" CfgLoopType="CurrentGroup" startValue="210" count="Dynamic" iteratorName="150Id" >
+   <swe:include id="swe:151Id" CfgHtmlType="CurrentGroup"/>
+</swe:for-each>
+
+</div> <!-- end of product theme div -->
+
+<!-- Template End: eCfg_MenuProductThemeJS.swt -->

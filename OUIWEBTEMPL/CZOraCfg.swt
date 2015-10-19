@@ -1,0 +1,9 @@
+<!-- Template Start CZOraCfg.swt -->
+
+<swe:calendar>
+</swe:calendar>
+<div class='siebui-cz-iframewrapper'>
+<swe:control id="501" property="FormattedHtml" hintText="Field" hintMapType="ListItem"/>
+</div>
+
+<!-- Template End CZOraCfg.swt -->

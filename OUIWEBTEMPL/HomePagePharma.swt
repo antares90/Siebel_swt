@@ -1,0 +1,20 @@
+<!--  Template Start: HomePagePharma.swt  -->
+<div class="siebui-homepage">
+  <div class="siebui-calendar-container siebui-span-lg-4">
+    <swe:applet id="1" hintMapType="Applet" property="FormattedHtml" hintText="Applet" var="Parent"/>
+    <swe:applet id="2" hintMapType="Applet" property="FormattedHtml" hintText="Applet" var="Parent"/>
+  </div>
+  <div class="siebui-first-minapplet">
+    <swe:applet id="3" property="FormattedHtml" hintText="Applet"/>
+  </div>
+  <div class="siebui-seccond-minapplet">
+    <swe:applet id="4" property="FormattedHtml" hintText="Applet"/>
+  </div>
+  <div class="siebui-third-minapplet">
+    <swe:applet id="5" property="FormattedHtml" hintText="Applet"/>
+  </div>
+  <div class="siebui-calendar-container">
+    <swe:applet id="6" property="FormattedHtml" hintText="Applet"/>
+  </div>
+</div>
+<!--  Template End: HomePagePharma.swt  -->

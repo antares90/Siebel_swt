@@ -1,0 +1,59 @@
+<!-- Template Start: ISSAppletFormEPUIHeader.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+
+<swe:form>
+
+<div class="siebui-epui-header-applet">
+    <div class="swe:this.SelectStyle">
+        <div name="EditPromHeaderTab">
+          <span class="siebui-span-lg-12">
+            <!-- Title for the two applets combined-->
+            <span class="siebui-epui-section-1">
+              <div class="siebui-epui-rule-head">
+                  <swe:this property="Title"/>
+              </div>
+            </span>
+           <!-- Total MRC, TOTAL NRC comes here -->
+            <span class="siebui-epui-section-1">
+                <swe:for-each startValue="506" count="5" iteratorName="currentId">
+                    <swe:control id="swe:currentId" hintMapType="FormItem">
+                        <div>
+                            <div class="siebui-epui-inline siebui-label">
+                                <swe:this property="DisplayName" hintText="Label"/>:
+                            </div>
+                            <div class="siebui-epui-inline siebui-value">
+                                <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                            </div>
+                        </div>
+                    </swe:control>
+                </swe:for-each>
+            </span>
+             <!--Qty and other Fields -->
+            <span class="siebui-epui-section-1">
+              <swe:for-each startValue="511" count="5" iteratorName="currentId">
+                  <swe:control id="swe:currentId" hintMapType="FormItem">
+                      <div>
+                          <div class="siebui-epui-inline siebui-label">
+                              <swe:this property="DisplayName" hintText="Label"/>:
+                          </div>
+                          <div class="siebui-epui-inline siebui-value">
+                              <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                          </div>
+                      </div>
+                  </swe:control>
+              </swe:for-each>
+            </span>
+            <span class="siebui-epui-section-2 siebui-epui-control-align">
+                <swe:for-each startValue="551" count="5" iteratorName="currentId">
+                    <swe:control id="swe:currentId">
+                        <span class="siebui-epui-reg-elem">
+                            <swe:this property="FormattedHtml"  hintText="Control" hintMapType="Control"/>
+                        </span>
+                    </swe:control>
+                </swe:for-each>
+            </span>
+          </span>
+        </div>
+    </div>
+</div>
+</swe:form>

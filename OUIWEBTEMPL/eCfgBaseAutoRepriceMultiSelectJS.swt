@@ -1,0 +1,97 @@
+<!-- Template Start: eCfgBaseAutoRepriceMultiSelectJS.swt -->
+<!-- YLAN: adapting Oliver's design: [code redesign] default view, click "customize"  -->
+
+<swe:control id="swe:CFGPARAMETER" AutoReprice="Y" DeferUpdate="Y" property="FormattedHtml" />
+
+<div id="cxAutoReprice" class="cxBaseTheme">
+<table width="100%">
+
+    <tr>
+        <td colspan="2">
+            <!-- Product Threadbar -->
+            <swe:include file="eCfgCompThreadJS.swt" />
+        </td>
+        <td align="right" class="siebui-applet-action" id="TopLevelButtons1">
+            <swe:include file="eCfgTopLevelButtonsJS.swt"/>
+        </td>
+    </tr>
+
+    <tr class="siebui-align-top">
+        <td id="imageHolder" width="25%" height="100%" class="siebui-ecfg-image8">
+            <div name="cxRuntimeParam" style="display:none;">
+            &lt;img id="img_product_header" border="0" src="<swe:control id="swe:10" CfgFieldName=".ProductHeaderImage" CfgHtmlType="CfgLabel"/>"&gt;
+            </div>
+        </td>
+        <td width="25%" height="100%">
+
+            <div class="siebui-ecfg-item-summary siebui-applet"><!-- Product Title -->
+
+            <div id="CxObjName" class="cxLabel siebui-applet-title-row">
+                <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgHtmlType="CfgLabel" />
+                <swe:control id="RequireMoreChild" CfgHtmlType="CfgGenerics" />
+            </div>
+            <div class="siebui-applet-content">
+                <table class="siebui-ecfg-bill">
+                    <tr>
+                        <td class="siebui-table-td1"><swe:control id="YourPriceLbl" CfgUIControl="lblYourPrice" CfgHtmlType="CfgLabel"/></td>
+                        <td class="siebui-table-td2"><swe:control id="YourPrice" CfgHtmlType="CfgText" CfgFieldName="Rollup Item Price" DataType="DTYPE_CURRENCY"/></td>
+                    </tr>
+                </table>
+            </div>
+
+            </div>
+        </td>
+
+        <td width="50%" height="100%">
+            <div id="siebui-ecfg-messages" class="siebui-applet">
+                <swe:include file="eCfgObj_GlobalSignalJS.swt" />
+            </div>  
+        </td>
+    </tr>
+
+    <tr class="siebui-align-top">
+        <td>
+            <div class="siebui-ecfg-product-details siebui-applet">
+
+            <div class="siebui-applet-title-row">
+                <div name="cxRuntimeParam" style="display:none;">
+                <swe:control id="ProdDetails" CfgUIControl="lblProdDetails" CfgHtmlType="CfgLabel"/>&lt;span class="siebui-link-icon-e siebui-float-right"&gt;&lt;a id="siebui-ecfg-toggleProdDetails" href="javascript:void(0);"&gt;&lt;img src="images/btn_more.gif"/&gt;&lt;/a&gt;&lt;/span&gt;
+                </div>
+            </div>
+            <div class="siebui-applet-content">
+                <swe:include file="eCfgObj_MessagesJS.swt" />
+            </div>
+
+            </div>
+
+        </td>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+</table>
+
+<div id="ConflictPage" style="display:none">
+    <swe:include file="eCfgObj_Status_ConflictJS.swt" />
+</div>
+<div id="ExplanationPage" style="display:none">
+    <swe:include file="eCfgObj_ExplanationJS.swt" />
+</div>
+<div id="MainPage">
+    <swe:include id="product" CfgHtmlType="Product Theme"/>
+</div>
+
+</div>
+
+<div id="CfgTip" style="display:none;"></div>
+
+<div style="display:none">
+    <swe:form>
+        <swe:control name ="Done" id="HiddenControl" property="FormattedHtml"/>
+    </swe:form>
+</div>
+
+<!-- Template End: eCfgBaseAutoRepriceMultiSelectJS.swt -->

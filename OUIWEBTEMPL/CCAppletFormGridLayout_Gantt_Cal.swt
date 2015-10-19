@@ -1,0 +1,156 @@
+<!-- Template Start: CCAppletFormGridLayout_Gantt.swt -->
+
+<swe:form>
+<div class="swe:this.SelectStyle">
+    <div class="siebui-primaryTemplate">
+
+        <div  class="siebui-appletTitleSection">
+		<div class="siebui-formControl">
+		</div>
+        <div class="siebui-formControl">
+          <swe:if condition="Web Engine State Properties, IsPrintOff">
+            <!-- Applet Buttons Area (Row 2) -->
+            <swe:control id="3000" hintMapType="FormItem">
+            </swe:control>
+          </swe:if>
+        </div>
+		<div class="siebui-formControl">
+			<span id="db_resize" class="siebui-fs-db-common siebui-showmore">
+			  <swe:control id="205" hintMapType="FormItem">
+				<swe:this property="DisplayName" hintText="Label"/>
+			  </swe:control>
+			  <swe:control id="206" hintMapType="FormItem">
+				<swe:this property="DisplayName" hintText="Label"/>
+			  </swe:control>
+			</span>
+		</div>
+        </div>
+      
+        <div  id ="siebui-formControls" class="siebui-formControlsRow1" width="15%" height="100%">
+        <div class="siebui-formControl">
+          <swe:control id="200" hintMapType="FormItem">
+            <div class="mceGridField siebui-fsdb-buttons" align="swe:this.TextAlignment" >
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </div>
+          </swe:control>
+          <swe:control id="201" hintMapType="FormItem">
+            <div class="mceGridField siebui-fsdb-buttons" align="swe:this.TextAlignment">
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </div>
+          </swe:control>
+          <swe:control id="202" hintMapType="FormItem">
+            <div class="mceGridField siebui-fsdb-buttons" align="swe:this.TextAlignment" >
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </div>
+          </swe:control>
+          <swe:control id="203" hintMapType="FormItem">
+            <div class="mceGridField siebui-fsdb-buttons" align="swe:this.TextAlignment">
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </div>
+          </swe:control>
+          <swe:control id="204" hintMapType="FormItem">
+            <div class="mceGridField siebui-fsdb-buttons" align="swe:this.TextAlignment">
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </div>
+          </swe:control>
+        </div>
+
+        <div class="siebui-formControl">
+          <div id="timescalebuttons" class="siebui-time-scale-buttons">
+            <div class="siebui-option-bar-parent">
+              <div class="siebui-option-bar">
+
+                <div class="siebui-button siebui-first-item siebui-item-focus">
+                  <swe:control id="339">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="340">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="341">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="342">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="343">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="344">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="345">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="346">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="347">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button">
+                  <swe:control id="348">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+                <div class="siebui-button siebui-last-item">
+                  <swe:control id="349">
+                    <swe:this property="FormattedHtml" hintMapType="Control"/>
+                  </swe:control>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      
+        <div id="s_ganttleft" class="siebui-ganttLeft">
+        </div>
+
+        <div class="siebui-customControls">
+
+          <div id="s_ganttRight" class="siebui-ganttRight">
+            <swe:control id="2001">
+              <swe:this property="FormattedHtml" hintText="FormSection" hintMapType="FormSection"/>
+            </swe:control>
+            <div id="s_Diary"/>
+            <div id="s_Legend"/>
+          </div>
+
+        </div>
+
+      </div>
+</div>
+</swe:form>
+
+<!-- Template End: CCAppletFormGridLayout_Gantt.swt -->

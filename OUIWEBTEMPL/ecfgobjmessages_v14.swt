@@ -1,0 +1,6 @@
+<!-- Template Start: ecfgobjmessages_v14.swt  -->
+<!-- SYPATEL: The template displays the product details, which currently is just the product detail description. -->
+<div id="CfgProdDetails">
+    <swe:control id="swe:Description" CfgFieldName="Display Description" CfgHtmlType="CfgLabel" />
+</div>
+<!-- Template End: ecfgobjmessages_v14.swt -->

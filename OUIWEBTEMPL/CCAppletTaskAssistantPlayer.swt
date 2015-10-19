@@ -1,0 +1,42 @@
+<!-- Template Start: CCAppletTaskAssistantPlayer.swt -->
+<!-- Oliver: code redesign -->
+
+<div id="s_TaskAssistant" class="siebui-task-assist">
+
+<!-- task list header -->
+
+<div id="taskListHeader" class="siebui-task-assist-header">
+   <div id="titleBox_list" class="siebui-task-assist-title">
+      <span id="taskTitle_list" class="siebui-task-assist-caption"></span>
+   </div>
+   <div id="titleBox_player" class="siebui-task-assist-hide">
+      <span id="IDS_TASKASST_CAPTION" class="siebui-task-assist-caption"></span>
+   </div>
+   <a id="s_taclose" class="siebui-task-assist-close">
+   </a>
+</div><!-- end of taskListHeader -->
+
+<!-- task list -->
+
+<div id="tasklistUI" class="siebui-task-assist-list">
+   <div id="taskListPane" />
+</div><!-- end of tasklistUI -->
+
+<!-- task player -->
+
+<div id="taskPlayerUI" class="siebui-task-assist-hide">
+   <div id="taskPlayerMain" class="siebui-task-assist-player-main" />
+
+   <!-- taskPlayerUI footer -->
+   <div id="taskPlayerUIFooter" class="siebui-task-assist-player-footer">
+      <img src="images/arw_back.gif"/>
+      <a id="s_tadone" class="siebui-task-assist-return-link">
+         <span id="taskListName" />
+      </a>
+   </div>
+
+</div><!-- end of taskPlayerUI -->
+
+</div>
+
+<!-- Template End: CCAppletTaskAssistantPlayer.swt -->

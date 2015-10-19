@@ -1,0 +1,10 @@
+<!-- Template Start: ecfggroupstandard_v14.swt  -->
+<!-- SYPATEL: The template dictates the layout for the given group -->
+<div  id="cxStd" class="siebui-ecfg-group-theme">
+<swe:for-each id="180" CfgLoopType="Children" startValue="410" count="Dynamic" iteratorName="IncId" >
+    <div class="siebui-ecfg-feature-group">
+        <swe:include id="swe:180Id" CfgHtmlType="Children"/>
+    </div>
+</swe:for-each>
+</div>
+<!-- Template End: ecfggroupstandard_v14.swt -->

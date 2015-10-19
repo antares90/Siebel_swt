@@ -1,0 +1,87 @@
+<!--  Template Start: CCListButtonsTop.swt -->
+<div class="siebui-applet-header siebui-collapsible">
+  <swe:if-var name="Parent">
+    <swe:switch>
+      <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+        <swe:nav-control type="Category View" style="Select"/>
+      </swe:case>
+      <swe:default>
+        <div class="swe:class AppletTitle">
+          <swe:this property="Title"/>
+        </div>
+      </swe:default>
+    </swe:switch>
+  </swe:if-var>
+  <swe:if-var name="ParentWithPointer">
+    <swe:switch>
+      <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+        <swe:nav-control type="Category View" style="Select"/>
+      </swe:case>
+      <swe:default>
+        <div class="swe:class AppletTitle">
+          <swe:this property="Title"/>
+        </div>
+      </swe:default>
+    </swe:switch>
+  </swe:if-var>
+  <swe:if-var name="AppletFilter-No">
+    <div class="swe:class AppletTitle">
+      <swe:this property="Title"/>
+    </div>
+  </swe:if-var>
+  <swe:if-var name="Grandchild">
+    <div class="swe:class AppletTitle">
+      <swe:this property="Title"/>
+    </div>
+  </swe:if-var>
+  <!-- No applet menu on Task Views -->
+  <div class="siebui-btn-grp-applet">
+    <!-- CRUD Buttons Area -->
+    <swe:include file="CCButtonsCRUD.swt"/>
+
+    <swe:if condition="Task UI Service (SWE),IsNotInTask">
+      <!-- Menu Button Area -->
+      <swe:if-var name="Parent">
+        <swe:menu type="Button" class="swe:class AppletMenu"/>
+      </swe:if-var>
+
+      <swe:if-var name="ParentWithPointer">
+        <swe:menu type="Button" class="swe:class AppletMenu"/>
+      </swe:if-var>
+
+      <swe:if-var name="AppletFilter-No">
+        <swe:menu type="Button" class="swe:class AppletMenu"/>
+      </swe:if-var>
+
+      <swe:if-var name="Child">
+        <swe:menu type="Button" class="swe:class AppletMenu"/>
+      </swe:if-var>
+
+      <swe:if-var name="ChildWithPointer">
+        <swe:menu type="Button" class="swe:class AppletMenu"/>
+      </swe:if-var>
+
+      <swe:if-var name="Grandchild">
+        <swe:menu type="Button" class="swe:class AppletMenu"/>
+      </swe:if-var>
+    </swe:if>
+    <!-- Query Message Area -->
+    <swe:message type="Query Message"/>
+    <!-- Record Navigation Area -->
+    <swe:message type="Applet Control Message"/>
+    <swe:this property="RowCounter"/>
+    <swe:include file="CCListButtonsTopRight.swt"/>
+    <div class="siebui-applet-container siebui-collapsible"></div>
+  </div>
+</div>
+<div class="swe:class AppletButtons siebui-applet-buttons">
+  <!-- Search Buttons Area -->
+  <div class="swe:class siebui-btn-grp-search">
+    <swe:include file="CCButtons_Search.swt"/>
+  </div>
+  <!-- Other Buttons Area -->
+  <swe:include file="TNTCCButtonsExtras.swt"/>
+  <!-- Toggle Bar Area -->
+  <swe:include file="CCTogglebar_drop.swt"/>
+</div>
+<!--  Template End: CCListButtonsTop.swt -->

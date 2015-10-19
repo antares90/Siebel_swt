@@ -1,0 +1,27 @@
+<!--  Template Start: homepage.swt  -->
+<div class="siebui-homepage">
+  <div class="siebui-calendar-container siebui-span-lg-5">
+    <swe:applet id="1" property="FormattedHtml" hintText="Applet"/>
+  </div>
+  <div id="_FormParentRelatedItemsOuterCont" class="siebui-span-lg-7 siebui_parent_content" landscape="Default" portrait="Hide">
+    <div class="siebui-nav-container">
+      <swe:applet hintMapType="Applet" id="2" hintText="Mini-Applet" property="FormattedHtml">
+        <swe:this property="FormattedHtml"/>
+      </swe:applet>
+    </div>
+    <div id="_columnedAnalyticsContainer" class="siebui-homepage-analytics">
+      <div class="siebui-analytics-container siebui-span-lg-6">
+        <swe:applet hintMapType="Applet" id="3" hintText="Chart Applet" property="FormattedHtml" var="Parent"/>
+      </div>
+      <div class="siebui-analytics-container siebui-span-lg-6">
+        <div>
+        <div>
+          <swe:applet hintMapType="Applet" id="4" hintText="Chart Applet" property="FormattedHtml"  var="Parent"/>
+      </div>
+    </div>
+    <div id="_HomePageOpportunityListContainer" class="siebui-tile-container siebui-homepage-tile">
+      <swe:applet hintMapType="Applet" id="6" hintText="Parent List Applet" property="FormattedHtml" var="ParentWithPointer"/>
+    </div>
+  </div>
+</div>
+<!--  Template End: homepage.swt  -->

@@ -1,0 +1,90 @@
+<!-- Template Start: eCfgCxProdNavClasses.swt -->
+<div id="cxREDClass" class="cxAppletRoot">
+<table>
+   <tr>
+      <td>
+         <table>
+            <tr>
+               <td class="siebui-cfg-rules-header">
+                  <span id="CxObjName" class="cxLabel">
+                     <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                  </span>
+                  <swe:control id="HeaderClasses" CfgUIControl="HeaderClasses" property="FormattedHtml"/>
+               </td>
+            </tr>
+            <tr><td><swe:include id="swe:Thread" CfgHtmlType="eCfgCompThread.swt" CfgNodeType="Thread"/></td></tr>
+            <tr><td><swe:control id="swe:CancelButton" CfgUIControl="Cancel" CfgHtmlType="MiniButton" InvokeMethod="CloseViewPopup" property="FormattedHtml" /></td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td><swe:control id="HelpText" CfgUIControl="HelpText" property="FormattedHtml" /></td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+               <td>
+                  <table>
+                     <tr>
+                        <td><swe:control id="Relationship" CfgUIControl="lblRelationship" property="DisplayName" /></td>
+                        <td>&nbsp;</td>
+                        <td><swe:control id="Class" CfgUIControl="lblClass" property="DisplayName" /></td>
+                        <td>&nbsp;</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table>
+                     <tr>
+                        <td>
+                           <table>
+                              <tr>
+                                 <td class="siebui-cfg-td-border-right">
+                                    <span id="left" class="cxPanel">
+                                       <table class="siebui-cfg-rules-table siebui-cfg-td-border">
+                                          <swe:for-each id="130" CfgLoopType="Port" startValue="3200" count="Dynamic" iteratorName="PortId">
+                                             <div name="isCurrentPort" style="display:none;">
+                                                <swe:control id="swe:PortId+1000" CfgFieldName="Selected" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                             </div>
+                                             <tr>
+                                                <td class="tier3on">
+                                                   <swe:control id="swe:PortId+2000" CfgUIControl="ChangeCurrentNode" CfgHtmlType="CfgLink" 
+                                                                property="FormattedHtml" CfgFieldName="CxPortName"
+                                                                InvokeMethod="ChangeCurrentNode"/>
+                                                </td>
+                                                <td>&nbsp;</td>
+                                                <td><swe:include file="eCfgClassNode.swt"/></td>
+                                                <td>&nbsp;</td>
+                                             </tr>
+                                          </swe:for-each>
+                                       </table>
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span id="right" class="cxPanel">
+                                       <table class="siebui-cfg-rules-table siebui-cfg-td-border">
+                                          <swe:for-each id="140" CfgLoopType="CurrentPort" startValue="1" count="Dynamic" iteratorName="CurPort">
+                                             <swe:for-each id="150" CfgLoopType="Domain" startValue="4300" count="Dynamic" iteratorName="PortDomainId">
+                                                <swe:include file="eCfgTrSwitch.swt"/>
+                                                <td>&nbsp;</td>
+                                                   <td colspan="2">
+                                                      <swe:control id="swe:PortDomainId+1000" CfgFieldName="CxObjName" CfgUIControl="SetTopObj" property="FormattedHtml"/>
+                                                   </td>
+                                                   <td>&nbsp;</td>
+                                                   <td ><swe:include file="eCfgClassNode.swt"/></td>
+                                                </tr>
+                                             </swe:for-each>
+                                          </swe:for-each>
+                                       </table>
+                                    </span>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+</div>
+<!-- Template End: eCfgCxProdNavClasses.swt -->

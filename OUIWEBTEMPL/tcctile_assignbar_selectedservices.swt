@@ -1,0 +1,58 @@
+<!-- Template Start: tcctile_assignbar_selectedservices.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+<swe:include file="CCTitle_Named.swt"/>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+    <div class="swe:this.SelectStyle">
+</swe:if>
+<swe:include file="CCListButtonsTopNoMenuButton.swt"/>
+<swe:if condition="Web Engine State Properties, IsHighInteractive">
+    <swe:if condition="Web Engine State Properties, IsPrintOff">
+        <div class="AppletHIListBorder">
+    </swe:if>
+</swe:if>
+<div class='siebui-assignbars-tilecontainer'>
+    <div class='siebui-tile-container'>
+        <swe:this property="NoGrid"/>
+        <swe:this property="Horizontal"/>
+        <swe:list>
+            <swe:list-record>
+                <div class='siebui-assignbars-title-container'>
+                    <div class='siebui-assignbars-title'>
+                        <swe:control id="501">
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                    <div class='siebui-assignbars-floatright'>
+                        <swe:control id="502">
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                </div>
+                <div class='siebui-assignbars-duedate-container'>
+                    <div class="siebui-assignbars-duedate-label">
+                        <swe:control id="503" hintMapType="FormItem">
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                    <div class='siebui-assignbars-duedate-control'>
+                        <swe:control id="504" hintMapType="FormItem">
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                </div>
+                <div class='siebui-assignbars-rhscontainer'>
+                    <div class='siebui-assignbars-componentslist-container'>
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class='siebui-assignbars-buttoncontainer'>
+                        <swe:control id="505" hintMapType="FormItem">
+                            <swe:this property="FormattedHtml" hintText="Field"/>
+                        </swe:control>
+                    </div>
+                </div>
+            </swe:list-record>
+        </swe:list>
+    </div>
+</div>
+<!-- Template End: tcctile_assignbar_selectedservices.swt -->

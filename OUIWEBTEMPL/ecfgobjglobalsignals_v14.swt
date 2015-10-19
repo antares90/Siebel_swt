@@ -1,0 +1,11 @@
+<!-- Template Start: ecfgobjglobalsignals_v14.swt  -->
+<!-- SYPATEL: The template displays the various signal messages that were retrieved from the configurator session. -->
+<div class="siebui-applet-title-row siebui-ecfg-status-template">
+    <h4 class="header4"><swe:control id="Message" CfgUIControl="lblMessage" CfgHtmlType="CfgLabel" /></h4>
+</div>
+<div class="siebui-ecfg-warning">
+    <swe:for-each id="300" CfgLoopType="Signal" startValue="1500" count="Dynamic" iteratorName="103Id">
+    <swe:control id="swe:103Id+220" CfgHtmlType="CfgSignal" CfgJSShow="showSignal" CfgJSUpdateSignal="updateSignal"/>
+    </swe:for-each>
+</div>
+<!-- Template End: ecfgobjglobalsignals_v14.swt -->

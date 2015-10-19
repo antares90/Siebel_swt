@@ -1,0 +1,219 @@
+<!--  Template Start: LS_AppletFormButtonsTop_withGI.swt -->
+<!-- No applet title on form applets on Task Views -->
+<swe:if condition="Task UI Service (SWE),IsNotInTask">
+<!-- Title Area (Row 1) -->
+  <div class="siebui-applet-header siebui-collapsible">
+    <!-- Icon area -->
+    <div class="siebui-icon-map">
+      <swe:control id="100" hintMapType="FormItem">
+        <swe:this property="FormattedHtml" hintText="Field"/>
+      </swe:control>
+    </div>
+    <!-- Title Area -->
+    <swe:if-var name="Parent">
+      <swe:switch>
+        <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+          <div class="AppletTitle siebui-applet-title">
+            <swe:nav-control type="Category View" style="Select"/>
+          </div>
+        </swe:case>
+        <swe:default>
+          <div class="AppletTitle siebui-applet-title">
+            <swe:control id=90>
+              <swe:this property = "FormattedHtml"/>
+              <div style='display:none;'>
+            </swe:control>
+            <swe:this property="Title"/>
+            <swe:control id=90>
+              </div>
+            </swe:control>
+          </div>
+        </swe:default>
+      </swe:switch>
+    </swe:if-var>
+    <swe:if-var name="ParentWithPointer">
+      <swe:switch>
+        <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+          <div class="AppletTitle siebui-applet-title">
+            <swe:nav-control type="Category View" style="Select"/>
+          </div>
+        </swe:case>
+        <swe:default>
+          <div class="AppletTitle siebui-applet-title">
+            <swe:control id=90>
+              <swe:this property = "FormattedHtml"/>
+              <div style='display:none;'>
+            </swe:control>
+            <swe:this property="Title"/>
+            <swe:control id=90>
+              </div>
+            </swe:control>
+          </div>
+        </swe:default>
+      </swe:switch>
+    </swe:if-var>
+    <swe:if-var name="Child">
+      <swe:switch>
+        <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:1'">
+          <div class="swe:class AppletTitle siebui-applet-title">
+            <swe:control id=90>
+              <swe:this  property = "FormattedHtml"/>
+              <div style='display:none;'>
+            </swe:control>
+            <swe:this property="Title"/>
+            <swe:control id=90>
+              </div>
+            </swe:control>
+          </div>
+        </swe:case>
+        <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+          <div class="swe:class AppletTitle siebui-applet-title">
+            <swe:control id=90>
+              <swe:this  property = "FormattedHtml"/>
+              <div style='display:none;'>
+            </swe:control>
+            <swe:this property="Title"/>
+            <swe:control id=90>
+              </div>
+            </swe:control>
+          </div>
+        </swe:case>
+        <swe:default>
+          <div class="swe:class AppletTitle siebui-applet-title">
+          </div>
+        </swe:default>
+      </swe:switch>
+    </swe:if-var>
+    <swe:if-var name="ChildWithPointer">
+      <swe:switch>
+        <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:1'">
+          <div class="swe:class AppletTitle siebui-applet-title">
+            <swe:control id=90>
+              <swe:this  property = "FormattedHtml"/>
+              <div style='display:none;'>
+            </swe:control>
+            <swe:this property="Title"/>
+            <swe:control id=90>
+              </div>
+            </swe:control>
+          </div>
+        </swe:case>
+        <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+          <div class="swe:class AppletTitle siebui-applet-title">
+            <swe:control id=90>
+              <swe:this  property = "FormattedHtml"/>
+              <div style='display:none;'>
+            </swe:control>
+            <swe:this property="Title"/>
+            <swe:control id=90>
+              </div>
+            </swe:control>
+          </div>
+        </swe:case>
+        <swe:default>
+          <div class="swe:class AppletTitle siebui-applet-title">
+          </div>
+        </swe:default>
+      </swe:switch>
+    </swe:if-var>
+    <swe:if-var name="Grandchild">
+      <div class="swe:class AppletTitle siebui-applet-title">
+        <swe:control id=90>
+          <swe:this  property = "FormattedHtml"/>
+          <div style='display:none;'>
+        </swe:control>
+        <swe:this property="Title"/>
+        <swe:control id=90>
+          </div>
+        </swe:control>
+      </div>
+    </swe:if-var>
+    <swe:if-var name="AppletFilter-No">
+      <div class="swe:class AppletTitle siebui-applet-title">
+        <swe:control id=90>
+          <swe:this  property = "FormattedHtml"/>
+          <div style='display:none;'>
+        </swe:control>
+        <swe:this property="Title"/>
+        <swe:control id=90>
+          </div>
+        </swe:control>
+      </div>
+    </swe:if-var>
+    <!-- Legend Area -->
+    <div class="siebui-btn-grp-applet">
+      <swe:control id="1500" hintText="Required Legend" hintMapType="Control">
+        <div class="legend">
+          <img src="images/icon_req.gif">
+          <swe:this property="DisplayName"/>
+        </div>
+      </swe:control>
+      <!-- Indicator and Navigation Area -->
+      <!-- Graphical Indicator, 192 -->
+      <swe:control id="192">
+        <div>
+          <swe:this property="FormattedHtml" hintMapType="Control" hintText="Graphical Indicator"/>
+        </div>
+      </swe:control>
+      <!-- Graphical Indicator, 194 -->
+      <swe:control id="194">
+        <div>
+          <swe:this property="FormattedHtml" hintMapType="Control" hintText="Graphical Indicator"/>
+        </div>
+      </swe:control>
+	  <swe:control id="196">
+        <div>
+          <swe:this property="FormattedHtml" hintMapType="Control" hintText="Graphical Indicator"/>
+        </div>
+      </swe:control>
+      <!-- CRUD Buttons Area -->
+      <swe:include file="CCButtonsCRUD.swt"/>
+
+      <swe:if condition="Task UI Service (SWE),IsNotInTask">
+        <!-- Menu Button Area -->
+        <swe:if-var name="Parent">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="ParentWithPointer">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="AppletFilter-No">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="Child">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="ChildWithPointer">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="Grandchild">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+      </swe:if>
+
+      <!-- Query Message Area -->
+      <swe:message type="Query Message"/>
+      <!-- Record Navigation and Additional Buttons Section -->
+      <swe:include file="CCRecordNav.swt"/>
+      <swe:include file="CCFormButtonsTopRight.swt"/>
+      <div class="siebui-applet-container siebui-collapsible"></div>
+    </div>
+  </div>
+</swe:if>
+<!-- Applet Buttons Area (Row 2) -->
+<div class="swe:class AppletButtons siebui-applet-buttons">
+  <!-- Search Buttons Area -->
+  <div class="swe:class siebui-btn-grp-search">
+    <swe:include file="CCButtons_Search.swt"/>
+  </div>
+  <!-- Other Buttons Area -->
+  <swe:include file="CCButtonsExtras.swt"/>
+  <!-- Toggle Bar Area -->
+  <swe:include file="CCTogglebar_drop.swt"/>
+</div>
+<!--  Template End: LS_AppletFormButtonsTop_withGI.swtt -->

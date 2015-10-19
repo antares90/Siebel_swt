@@ -1,0 +1,19 @@
+<!-- Template Start CCAppletFormGridLayout_ss_withLicense.swt -->
+
+<swe:form>
+    <div class="siebui-applet-title">
+        <swe:control id="90">
+            <swe:this property="FormattedHtml" hintMapType="Control" hintText="Title" />
+        </swe:control>
+    </div>
+    <div>
+        <div class="siebui-span-md-9 siebui-span-lg-9">
+            <swe:include file="SSAppletFormGridLayout.swt"/>
+        </div>
+        <div class="siebui-span-md-3 siebui-span-lg-3">
+            <!-- Placeholder for license text -->
+        </div>
+    </div>
+</swe:form>
+
+<!-- Template End CCAppletFormGridLayout_ss_withLicense.swt -->

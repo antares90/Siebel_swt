@@ -1,0 +1,102 @@
+<!--  Template Start: CCFormButtonsTopNoRecNav.swt -->
+
+<!-- Title Area (Row 1) -->
+<div class="siebui-applet-header siebui-collapsible">
+  <!-- Title Area -->
+  <div class="AppletTitle siebui-applet-title">
+    <swe:control id=90>
+      <swe:this  property = "FormattedHtml"/>
+      <div style='display:none;'>
+    </swe:control>
+    <swe:this property="Title"/>
+    <swe:control id=90>
+      </div>
+    </swe:control>
+  </div>
+
+  <swe:if condition="Web Engine State Properties, IsPrintOff">
+    <!-- Legend Area -->
+    <div class="siebui-btn-grp-applet">
+      <swe:control id="1500" hintText="Required Legend" hintMapType="Control">
+        <img src="images/icon_req.gif">
+        <swe:this property="DisplayName"/>
+      </swe:control>
+    </div>
+
+    <!-- Indicator and Navigation Area -->
+
+    <!-- Graphical Indicator, 192 -->
+    <swe:control id="192">
+      <div>
+        <swe:this property="DisplayName" hintText="Label"/>:
+        <swe:this property="FormattedHtml" hintMapType="Control" hintText="Graphical Indicator"/>
+      </div>
+    </swe:control>
+
+    <!-- Graphical Indicator, 194 -->
+    <swe:control id="194">
+      <div>
+        <swe:this property="DisplayName" hintText="Label"/>:
+        <swe:this property="FormattedHtml" hintMapType="Control" hintText="Graphical Indicator"/>
+      </div>
+    </swe:control>
+
+    <!-- Record Navigation and Additional Buttons Section -->
+    <swe:include file="CCFormButtonsTopRight.swt"/>
+  </swe:if>
+
+  <!-- Corner -->
+  <div class="siebui-span-lg-pull-12 siebui-span-md-pull-12 siebui-span-xl-pull-12">
+    <swe:if-var name="Parent">
+    </swe:if-var>
+
+    <swe:if-var name="ParentWithPointer">
+    </swe:if-var>
+
+    <swe:if-var name="Child">
+    </swe:if-var>
+
+    <swe:if-var name="ChildWithPointer">
+    </swe:if-var>
+
+    <swe:if-var name="Grandchild">
+    </swe:if-var>
+  </div>
+</div>
+
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+  <!-- Applet Buttons Area (Row 2) -->
+  <div class="swe:class AppletButtons siebui-applet-buttons">
+      <!-- Menu Button Area -->
+        <swe:if-var name="Parent">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="ParentWithPointer">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="Child">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="ChildWithPointer">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+        <swe:if-var name="Grandchild">
+          <swe:menu type="Button" class="swe:class AppletMenu"/>
+        </swe:if-var>
+
+      <!-- Other Buttons Area -->
+      <swe:include file="CCButtons.swt"/>
+
+      <!-- Toggle Bar Area -->
+      <swe:include file="CCTogglebar_drop.swt"/>
+
+      <!-- Query Message Area -->
+      <swe:message type="Query Message" />
+  </div>
+</swe:if>
+
+<!--  Template End: CCFormButtonsTopNoRecNav.swt -->

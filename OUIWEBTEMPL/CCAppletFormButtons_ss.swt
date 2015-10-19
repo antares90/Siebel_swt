@@ -1,0 +1,16 @@
+<!-- Template Start CCAppletFormButtons_ss.swt -->
+<!--bug#18978473 -->
+<div class="clearfix siebui-btn-grp-standard">
+    <swe:control id="151">
+        <div>
+            <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </div>
+    </swe:control>
+    <swe:control id="152">
+        <div>
+            <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </div>
+    </swe:control>
+</div>
+
+<!-- Template End CCAppletFormButtons_ss.swt -->

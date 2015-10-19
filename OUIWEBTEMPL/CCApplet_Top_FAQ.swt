@@ -1,0 +1,29 @@
+<!-- Template Start: CCApplet_Top_FAQ.swt -->
+<swe:layout viewDisplayMode="Layout">
+  <swe:include file="CCApplet_Spacer.swt"/>
+</swe:layout>
+<swe:control id="1100">
+  <div class="CmdTxt">
+    <swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/>
+  </div>
+</swe:control>
+<swe:include file="CCTitle_Portal.swt"/>
+<swe:for-each-row count="10">
+  <swe:control id="1" property="FormattedHtml" hintText="Anchor"/>
+  <swe:control id="502">
+    <div class = "siebui-solution-detail"></div>
+    <swe:this property="FormattedHtml" hintText="Title" hintMapType="Hyperlinked Item"/><br>
+  </swe:control>
+  <span class ="siebui-solution-desc">
+    <swe:control id="503">
+      <swe:this property="FormattedHtml" hintText="Description" /><br>
+    </swe:control>
+  </span>
+  <swe:for-each startValue="504" count="10" iteratorName="currentId">
+    <swe:control id="swe:currentId">
+      <swe:this property="FormattedHtml" hintText="Other Text"/><br>
+    </swe:control>
+  </swe:for-each>
+</swe:for-each-row>
+<swe:include file="CCBottomApplet.swt"/>
+<!-- Template End: CCApplet_Top_FAQ.swt -->

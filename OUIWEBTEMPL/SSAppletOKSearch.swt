@@ -1,0 +1,21 @@
+<!-- Template Start SSAppletOKSearch.swt -->
+
+<div class="siebui-applet-title">
+    <swe:this property="Title"/>
+</div>
+<!-- Placeholder for Oracle Knowledge Search widget -->
+<div id="ok-search">
+</div>
+<!-- Container for Oracle Knowledge List widget -->
+<div id="ok-list-container">
+    <div id="ok-list">
+    </div>
+</div>
+<!-- Placeholder for Oracle Knowledge Facet widget -->
+<div id="ok-facet">
+</div>
+<!-- Placeholder for Oracle Knowledge Results widget -->
+<div id="ok-results">
+</div>
+
+<!-- Template End SSAppletOKSearch.swt -->

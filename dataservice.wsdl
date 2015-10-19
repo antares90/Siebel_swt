@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions
+ xmlns="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+ targetNamespace="http://siebel.com/BIPData"
+ xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:tns="http://siebel.com/BIPData"
+><types
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://siebel.com/BIPData"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:element
+ name="GetReportData_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="NamedSearchSpec"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LoginID"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="TimeZone"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Language"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OutputIntObjectName"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Locale"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PositionId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SearchSpec"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CurrencyCode"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ViewMode"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="GetReportData_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="_XmlData"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+></xsd:schema
+></types
+><message
+ name="GetReportData_Input"
+><part
+ name="GetReportData_Input"
+ element="tns:GetReportData_Input"
+></part
+></message
+><message
+ name="GetReportData_Output"
+><part
+ name="GetReportData_Output"
+ element="tns:GetReportData_Output"
+></part
+></message
+><portType
+ name="BIPDataPort"
+><operation
+ name="GetReportData"
+><input
+ message="tns:GetReportData_Input"
+></input
+><output
+ message="tns:GetReportData_Output"
+></output
+></operation
+></portType
+><binding
+ name="BIPDataPort"
+ type="tns:BIPDataPort"
+><soap:binding
+ transport="http://schemas.xmlsoap.org/soap/http"
+ style="document"
+></soap:binding
+><operation
+ name="GetReportData"
+><soap:operation
+ soapAction="document/http://siebel.com/BIPData:GetReportData"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+></binding
+><service
+ name="BIPDataService"
+><port
+ binding="tns:BIPDataPort"
+ name="BIPDataPort"
+><soap:address
+ location="http://sbl-leto-dev/eai_anon_rus/start.swe?SWEExtSource=SecureWebService&amp;SWEExtCmd=Execute"
+></soap:address
+></port
+></service
+></definitions
+>

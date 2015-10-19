@@ -1,0 +1,12 @@
+<!-- Template Start SSAppletSingleDiv.swt -->
+
+<swe:control id="90">
+    <div class="siebui-applet-title">
+        <swe:this property="FormattedHtml" hintMapType="Control" hintText="Title"/>
+    </div>
+</swe:control>
+<div>
+    <!-- This is where the Twitter script tag will have to be inserted -->
+</div>
+
+<!-- Template End SSAppletSingleDiv.swt -->

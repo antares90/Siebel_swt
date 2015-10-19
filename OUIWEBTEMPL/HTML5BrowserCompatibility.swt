@@ -1,0 +1,11 @@
+<!--  Template Start: HTML5 Compatiblity Section.swt -->
+<div id="browserCompatiblityHeader" class="siebui-browsercomp-header">
+</div>
+<div id="browserCompatiblity" class="siebui-browsercomp">
+</div>
+<script type='text/javascript'>
+    if( window.TestBrowserCapability ){
+        TestBrowserCapability();
+    }
+</script>
+<!--  Template End: HTML5 Compatiblity Section.swt -->

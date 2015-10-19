@@ -1,0 +1,40 @@
+<!-- Template Start: eCfgGroupGridLayoutJS_OUI.swt -->
+
+<div id="cxStd" class="cxGrpTheme">
+
+<div id="cxGridNumofCol" style="display:none"><swe:control id="swe:IncId+51" CfgHtmlType="CfgLabel" CfgFieldName=".NumofCol" /></div>
+
+<div class="div-table" valign="top" style="" cellpadding="0" cellspacing="0">
+    <div id="eCfgGroupGridLayoutJS_OUI_Canvas">
+    </div>
+</div>
+
+<div id="eCfgGroupGridLayoutJS_OUI_Buffer" style="display:none">
+
+    <swe:for-each id="180" CfgLoopType="Children"
+     startValue="410" count="Dynamic" iteratorName="IncId" >
+
+        <div id="cxGridChildParams" style="display:none">
+            <div id="cxGridBegin"><swe:control id="swe:IncId+52" CfgHtmlType="CfgLabel" CfgFieldName=".GridBegin" /></div>
+            <div id="cxGridEnd"><swe:control id="swe:IncId+53" CfgHtmlType="CfgLabel" CfgFieldName=".GridEnd" /></div>
+            <div id="cxCellClass"><swe:control id="swe:IncId+54" CfgHtmlType="CfgLabel" CfgFieldName=".CellClass" /></div>
+            <div id="cxRelatedCtrl"><swe:control id="swe:IncId+55" CfgHtmlType="CfgLabel" CfgFieldName=".RelatedCtrl" /></div>
+            <div id="cxChildId"><swe:control id="swe:IncId+520" CfgFieldName="XA Id" CfgHtmlType="CfgLabel" DisplayMode="EncodeData" /></div>
+        </div>
+
+        <div id="eCfgGroupGridLayoutJS_OUI_Child">
+            <swe:include id="swe:180Id" CfgHtmlType="Children"/>
+        </div>
+
+        <script>
+            var strChildId = '<swe:control id="swe:IncId+520" CfgFieldName="XA Id" CfgHtmlType="CfgLabel" DisplayMode="EncodeData" />';
+            var strId = "eCfgGroupGridLayoutJS_OUI_Child_" + strChildId;
+            $("#eCfgGroupGridLayoutJS_OUI_Child").eq(0).attr( "id", strId );
+        </script>
+    </swe:for-each>
+
+</div>
+
+</div>
+
+<!-- Template End: eCfgGroupGridLayoutJS_OUI.swt -->

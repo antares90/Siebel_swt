@@ -1,0 +1,31 @@
+<!-- Template Start: CCApplet_ChatTab.swt -->
+
+<div id="CommPanelHeaderChat" class="siebui-comm-panel-header-chat">
+   <div id="CommPanelCaptionChat" class="siebui-comm-panel-caption-chat"></div>
+   <div class="siebui-comm-panel-chat-toggle" id="commPanelChatToggle">
+      <div class="siebui-chat-title-wrap" title="">
+         <a href="javascript:;" id="commPanelChatToShowLess" class="siebui-comm-panel-chat-toggle-more" role="button" aria-hidden="false" aria-label="" tabindex="0">
+         </a>
+      </div>
+      <div class="siebui-chat-title-wrap" title="">
+         <a href="javascript:;" id="commPanelChatToShowMore" class="siebui-comm-panel-chat-toggle-less" role="button" aria-hidden="true" aria-label="" tabindex="0">
+         </a>
+     </div>
+   </div>
+</div>
+
+<div id="s_chatpane" class="siebui-chat">
+
+    <!-- chat pane header -->
+    <div id="s_chatpaneheader" class="siebui-chat-pane-header">
+        <span id="s_chatcaption" class="siebui-chat-caption"></span>
+        <a id="s_chatclose" class="siebui-chat-close"></a>
+    </div>
+    <!-- end of chatpaneHeader -->
+
+    <div id="s_chatwrap" class="siebui-chat-wrap">
+    </div>
+
+</div>
+
+<!--Template End: CCApplet_ChatTab.swt -->

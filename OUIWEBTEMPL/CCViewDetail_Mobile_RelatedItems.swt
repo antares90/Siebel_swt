@@ -1,0 +1,38 @@
+<!--  Template Start: CCViewDetail_Mobile_RelatedItems.swt -->
+<swe:include file="CCHTMLHeader.swt"/>
+<div>
+
+<!-- ---------- Main Content Area ---------------------------->
+<div class="siebui-mobile">
+<div id="_MobileViewTabContainer" class="siebui-nav-subview siebui-span-lg-3 siebui-span-md-12 siebui-span-sm-12">
+  <swe:include file="CCViewbar_Tabs_DropList_Mobile.swt"/>
+</div>
+
+<div id="_FormParentRelatedItemsOuterCont" class="siebui-span-lg-9 siebui-span-md-12 siebui-span-sm-12" landscape="Default" portrait="Hide">
+  <div id="_FormParentRelatedItems" class="siebui-parent siebui-no-scroll">
+    <swe:applet hintMapType="Applet" id="1" hintText="Parent Form Applet" property="FormattedHtml" var="ParentWithPointer"/>
+  </div>
+  <div id="SiebelMapContainer" name="SiebelMapContainer" class="siebui-map-container" style="display:none;">
+    <div id="jqmMapCtrl" name="jqmMapCtrl"></div>
+  </div>
+  <div id="_AppletFormRelatedItems1" class="siebui-grandchild-1">
+    <swe:applet hintMapType="Applet" id="3" hintText="Child Form Applet" property="FormattedHtml" var="Grandchild"/>
+  </div>
+  <div id="_AppletListRelatedItems" class="siebui-child ListAppletContainer siebui-no-scroll">
+    <swe:for-each count=2 iteratorName="currentId" startValue="4">
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child List Applet" property="FormattedHtml" var="ParentWithPointer" />
+    </swe:for-each>
+  </div>
+  <div id="_AppletFormRelatedItems" class="siebui-grandchild siebui-no-scroll">
+    <swe:applet hintMapType="Applet" id="10" hintText="Child Form Applet" property="FormattedHtml" var="Grandchild"/>
+  </div>
+</div>
+</div>
+<swe:include file="CCHTMLFooter.swt"/>
+
+<!-- ---------- End Main Content Area ------------------------>
+</div>
+<!--  Template End: CCViewDetail_Mobile_RelatedItems.swt -->
+
+
+

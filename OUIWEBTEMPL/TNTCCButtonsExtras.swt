@@ -1,0 +1,33 @@
+<!-- Template Start: CCButtonsExtras.swt -->
+<swe:control id="139"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+
+<swe:control id="140"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:pageitem id="2"> <!-- Back Button       --><swe:this property="FormattedHtml" hintText="Back" /></swe:pageitem>
+
+<swe:control id="125"><!-- Info-Button, 125 --><swe:this property="FormattedHtml" hintText="Info-Button" hintMapType="Control"/></swe:control>
+
+<swe:control id="141"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="142"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+
+<swe:control id="143"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+
+<swe:control id="144"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="145"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="146"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="147"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="148"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="149"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="150"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+
+<div class="siebui-btn-grp-search">
+  <swe:control id="9000"><!-- QueryComboBox,9000--><swe:this property="FormattedHtml" hintMapType="Control" hintText="QueryComboBox" /></swe:control>
+  <swe:control id="9001"><!-- QuerySrchSpec,9001--><swe:this property="FormattedHtml" hintMapType="Control" hintText="QuerySrchSpec" /></swe:control>
+  <swe:control id="9002"><!-- QueryExecute,9002--><swe:this property="FormattedHtml" hintMapType="Control" hintText="QueryExecute" /></swe:control>
+</div>
+<div id = "BarcodeButtons" name = "BarcodeButtons">
+  <swe:control id="10672" property="FormattedHtml" hintText="Barcode New Button"/>
+  <swe:control id="10673" property="FormattedHtml" hintText="Barcode Update Button"/>
+  <swe:control id="10674" property="FormattedHtml" hintText="Barcode Combo Box"/>
+  <swe:control id="10675" property="FormattedHtml" hintText="Barcode Text Area"/>
+</div>
+<!-- Template End: CCButtonsExtras.swt -->

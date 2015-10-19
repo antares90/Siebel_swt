@@ -1,0 +1,61 @@
+<!-- Template Start: CCView_CommunicationPanel.swt -->
+<swe:include file="CCHTMLHeader.swt"/>
+
+
+<div id="CommPanelHeader" class="siebui-comm-panel-header">
+   <div class="siebui-comm-panel-title-wrap" title="">
+      <div id="commPanelCaption" class="siebui-comm-panel-caption" role="label" aria-label="" tabindex="0">Communication Panel</div>
+   </div>
+   <div class="siebui-comm-panel-btns">
+      <div class="siebui-comm-panel-side-toggle" id="commPanelSideToggle">
+         <div class="siebui-comm-panel-title-wrap" title="">
+            <a id="commPanelSideToShowNarrow" class="siebui-comm-panel-side-toggle-wide" role="button" aria-hidden="false" aria-label="" tabindex="0"></a>
+         </div>
+         <div class="siebui-comm-panel-title-wrap" title="">
+            <a id="commPanelSideToShowWide" class="siebui-comm-panel-side-toggle-narrow" role="button" aria-hidden="true" aria-label="" tabindex="0"></a>
+         </div>
+      </div>
+      <div class="siebui-comm-panel-dock-toggle" id="commPanelDockToggle">
+         <div class="siebui-comm-panel-title-wrap" title="">
+            <a id="commPanelDockToShowUnpin" class="siebui-comm-panel-dock-toggle-pin" role="button" aria-hidden="false" aria-label="" tabindex="0"></a>
+         </div>
+         <div class="siebui-comm-panel-title-wrap" title="">
+            <a id="commPanelDockToShowPin" class="siebui-comm-panel-dock-toggle-unpin" role="button" aria-hidden="true" aria-label="" tabindex="0"></a>
+         </div>
+      </div>
+      <div class="siebui-comm-panel-close-toggle" id="commPanelCloseToggle">
+         <div class="siebui-comm-panel-title-wrap" title="">
+            <a id="commPanelClose" class="siebui-comm-panel-close" role="button" aria-label="" tabindex="0"></a>
+         </div>
+      </div>
+   </div>
+   <swe:switch>
+      <swe:case condition="Communications Client, IsCommEnabled">
+         <div id="CommPanelMessageCTI" class="siebui-comm-panel-message-cti"></div>
+      </swe:case>
+      <swe:case condition="Communications Client, IsCommError">
+         <div id="CommPanelMessageCTI" class="siebui-comm-panel-message-cti"></div>
+      </swe:case>
+   </swe:switch>
+   <div class="siebui-comm-panel-clear-fix"></div>
+</div>
+
+<a name="SWEApplet1"><a name="SWEApplet2"><a name="SWEApplet3"><a name="SWEApplet4">
+
+
+<!------------ Main Content Area ---------------------------->
+<!------------ Regular Applet(s) ---->
+<swe:for-each count=5 iteratorName="currentId" startValue="1">
+<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" property="FormattedHtml"/>
+</swe:for-each>
+
+<!------------ Special Applet(s) ---->
+<swe:for-each count=3 iteratorName="currentId" startValue="11">
+<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet"  property="FormattedHtml"/>
+</swe:for-each>
+<!------------ End Main Content Area ------------------------>
+
+
+<swe:include file="CCHTMLFooter.swt"/>
+
+<!-- Template End: CCView_CommunicationPanel.swt -->

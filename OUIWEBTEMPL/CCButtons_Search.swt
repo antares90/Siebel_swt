@@ -1,0 +1,5 @@
+<!-- Template Start: CCButtons_Search.swt -->
+<swe:control id="109"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="110"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<swe:control id="111"><!-- optional control  --><swe:this property="FormattedHtml" hintMapType="Control"/></swe:control>
+<!-- Template End: CCButtons_Search.swt -->

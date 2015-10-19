@@ -1,0 +1,18 @@
+<!-- Template Start: ViewSingleApplet.swt -->
+<div class="siebui-chevron siebui-span-xs-12 siebui-span-sm-12 siebui-span-md-12 siebui-span-lg-12 siebui-span-xl-12" aria-hidden="true">
+    <div class="siebui-nav-step-prev siebui-span-xs-2 siebui-span-sm-2 siebui-span-md-1 siebui-span-lg-1 siebui-span-xl-1">
+        <div class="siebui-nav-step-edge-prev"></div>
+        <div class="siebui-nav-step-badge-prev"></div>
+    </div>
+    <nav class="siebui-ctrl-nav-step siebui-span-xs-8 siebui-span-sm-8 siebui-span-md-10 siebui-span-lg-10 siebui-span-xl-10">
+        <ol> </ol>
+    </nav>
+    <div class="siebui-nav-step-next siebui-span-xs-2 siebui-span-sm-2 siebui-span-md-1 siebui-span-lg-1 siebui-span-xl-1">
+        <div class="siebui-nav-step-edge-next"></div>
+        <div class="siebui-nav-step-badge-next"></div>
+    </div>
+</div>
+<div id="Dyna_View_Template_Id" class="siebui-clear-both">
+    <swe:applet id="1" hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+</div>
+<!-- Template End: ViewSingleApplet.swt -->

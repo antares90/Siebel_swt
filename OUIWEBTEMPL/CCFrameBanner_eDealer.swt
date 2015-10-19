@@ -1,0 +1,87 @@
+<!--  Template Start: CCFrameBanner_eDealer.swt -->
+<html dir="swe:dir">
+  <head>
+    <title><swe:this property="Title"/></title>
+    <swe:include file="CCStylesChoice.swt"/>
+    <meta charset="utf-8">
+    </style>
+  </head>
+  <body class="poweredBy" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+    <swe:switch>
+      <swe:case condition="Web Engine State Properties, IsMobileApplicationMode">
+        <div class="siebui-logo"></div>
+        <div id="siebui-toolbar-mobilesettings" class="siebui-banner-btn siebui-toolbar-settings">
+          <swe:toolbar name="MobileSettings">
+             <swe:toolbaritem property="FormattedHtml"/>
+          </swe:toolbar>
+        </div>
+        <div id="tb_OfflineLog" class="siebui-banner-btn"></div>
+        <div id="tb_OfflineOptions" class="siebui-banner-btn siebui-nav-hb siebui-offline-nav">
+          <ul>
+            <li>
+              <a id="offlineUploadGoOnline" class="siebui-offline-navoptions" href="#" tabindex="-1"></a>
+            </li>
+            <li>
+              <a id="offlineSyncStayOffline" class="siebui-offline-navoptions" href="#" tabindex="-1"></a>
+            </li>
+            <li>
+              <a id="offlineUploadStayOffline" class="siebui-offline-navoptions" href="#" tabindex="-1"></a>
+            </li>
+          </ul>
+        </div>
+        <div id="HTMLMessageBar" class="siebui-banner-btn siebui-notify-btn header-top tr"></div>
+        <div id="tb_13" class="siebui-banner-btn siebui-srch-banner-btn">
+          <swe:searchbar></swe:searchbar>
+        </div>
+        <div id="tb_12" class="siebui-banner-btn">
+          <swe:toolbar name="HIQuery">
+            <swe:toolbaritem property="FormattedHtml"/>
+          </swe:toolbar>
+        </div>
+        <div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
+          <swe:form>
+            <swe:pdqbar>
+              <div id="PDQToolbar" class="siebui-pdq PDQWidth"><swe:this property="FormattedHtml" /></div>
+            </swe:pdqbar>
+          </swe:form>
+        </div>
+      </swe:case>
+      <swe:default>
+        <div class="siebui-logo"></div>
+        <div class="applicationMenu" nowrap><swe:menu type="Default"/></div>
+        <div id="siebui-toolbar-settings" class="siebui-banner-btn siebui-toolbar-settings">
+          <swe:toolbar name="Settings">
+             <swe:toolbaritem property="FormattedHtml"/>
+          </swe:toolbar>
+        </div>
+        <div id="HTMLMessageBar" class="siebui-banner-btn siebui-btn-notify header-top tr"></div>
+        <div id="tb_13" class="siebui-banner-btn siebui-srch-banner-btn">
+          <swe:searchbar></swe:searchbar>
+        </div>
+        <div id="tb_12" class="siebui-banner-btn ToolbarButton">
+          <swe:toolbar name="HIQuery">
+            <swe:toolbaritem property="FormattedHtml"/>
+          </swe:toolbar>
+        </div>
+        <div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
+          <swe:form>
+            <swe:pdqbar>
+              <div id="PDQToolbar" class="siebui-pdq PDQWidth">
+              <!--Favorites Label-->
+                <swe:pageitem id="35">
+                  <div class="PageItemLabel"><swe:this property="FormattedHtml" />:</div>
+                </swe:pageitem>
+                <div class="PageItem"><swe:this property="FormattedHtml" /></div>
+              </div>
+            </swe:pdqbar>
+          </swe:form>
+        </div>
+        <swe:if condition="Communication Panel UI Service, IsNotCommPanelEnabled">
+          <div id="MsgLayer" class="siebui-tb-cti-status-msg-container"/>
+        </swe:if>
+      </swe:default>
+    </swe:switch>
+    <swe:scripts/>
+  </body>
+</html>
+<!--  Template End: CCFrameBanner_eDealer.swt -->

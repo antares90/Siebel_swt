@@ -1,0 +1,7 @@
+<!-- Template Start SSAppletFormGridLayout_Base.swt -->
+
+<div class="siebui-applet-read-only">
+    <swe:include file="SSAppletFormGridLayout.swt"/>
+</div>
+
+<!-- Template Start SSAppletFormGridLayout_Base.swt -->

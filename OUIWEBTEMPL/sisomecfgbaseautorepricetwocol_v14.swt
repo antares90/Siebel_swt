@@ -1,0 +1,81 @@
+<!-- Template Start: sisomecfgbaseautorepricetwocol_v14.swt -->
+<!-- SYPATEL: The template determines the base layout for the configurator runtime and displays two sections. The right section displays the details related to the product, messages and action buttons. The left section displays the product theme selected for the product. -->
+<swe:control id="swe:CFGPARAMETER" AutoReprice="Y" property="FormattedHtml" />
+<div id="siebui-ecfg-toggle-prod-info" class="siebui-ecfg-toggle-prod-info-icon"></div>
+<div id="cxAutoReprice" class="siebui-ecfg-base-theme">
+    <div class="siebui-ecfg-div-table-row">
+        <div id="cfgLeftContent" class="siebui-ecfg-product-options">
+            <div id="ConflictPage" class="siebui-ecfg-conflict" >
+            <!-- Conflict Messages -->
+                <swe:include file="eCfgObj_Status_ConflictJS.swt" />
+            </div>
+        <div id="ExplanationPage" class="siebui-ecfg-explanation" >
+            <!-- Explanation Messages -->
+            <swe:include file="eCfgObj_ExplanationJS.swt" />
+        </div>
+        <div id="MainPage" class="siebui-ecfg-main">
+            <!-- Product Threadbar -->
+            <swe:include file="eCfgCompThreadJS.swt" />
+            <!-- Product Main Page -->
+            <swe:include id="product" CfgHtmlType="Product Theme"/>
+        </div>
+    </div>
+        <div id="cfgRightContent" class="siebui-ecfg-product-info">
+            <div class="siebui-span-lg-12 siebui-span-md-12">
+                <div>
+                    <div class="siebui-ecfg-applet-action" id="TopLevelButtons1">
+                    <!-- Action Buttons -->
+                        <swe:include file="ecfgtoplevelbuttons_v14.swt"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="siebui-ecfg-prod-title">
+                        <div id="CxObjName" class="siebui-ecfg-applet-title-row">
+                            <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgHtmlType="CfgLabel" />
+                            <swe:control id="RequireMoreChild" CfgHtmlType="CfgGenerics" />
+                        </div>
+                        <!-- Temp place holder for short description -->
+                        <div class="siebui-ecfg-elephant-font">Additional detail description line</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="imageHolder" class="siebui-ecfg-prod-img">
+                        <div name="cxRuntimeParam">
+                            &lt;img id="img_product_header" src="<swe:control id="swe:10" CfgFieldName=".ProductHeaderImage" CfgHtmlType="CfgLabel"/>"&gt;
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="siebui-ecfg-prod-price">
+                        <div>
+                            <h4 class="siebui-ecfg-header"><swe:control id="YourPriceLbl" CfgUIControl="lblYourPrice" CfgHtmlType="CfgLabel"/></h4>
+                        </div>
+                        <div class="siebui-ecfg-price">
+                            <swe:control id="YourPrice" CfgHtmlType="CfgText" CfgFieldName="Rollup Item Price" DataType="DTYPE_CURRENCY"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="siebui-ecfg-prod-messages">
+                        <div>
+                            <h4 class="siebui-ecfg-header"><swe:control id="ProdDetails" CfgUIControl="lblProdDetails" CfgHtmlType="CfgLabel"/></h4>
+                        </div>
+                        <div>
+                            <!-- Product Details -->
+                            <swe:include file="ecfgobjmessages_v14.swt" />
+                        </div>
+                     </div>
+                </div>
+                <div>
+                    <div>
+                        <div id="siebui-ecfg-messages">
+                            <!-- Generic Messages -->
+                            <swe:include file="ecfgobjglobalsignals_v14.swt" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Template End: sisomecfgbaseautorepricetwocol_v14.swt -->

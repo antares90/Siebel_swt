@@ -1,0 +1,130 @@
+<!-- Template Start: eCfgCxProdNavAttributes.swt -->
+<div id="cxREDAttr" class="cxAppletRoot">
+
+<swe:control id="swe:CFGPARAMETER" TemplateType="CxProdNavigator" RuntimeUIStyle="disable" property="FormattedHtml"/>
+<table>
+   <tr>
+      <td>
+         <table>
+            <tr>
+               <td class="siebui-cfg-rules-header">
+                  <span id="CxObjName" class="cxLabel">
+                     <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                  </span>
+                  <swe:control id="HeaderProdsAndAtts" CfgUIControl="HeaderProdsAndAtts" property="FormattedHtml"/>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <swe:include id="swe:Thread" CfgHtmlType="eCfgCompThread.swt" CfgNodeType="Thread"/>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <swe:control id="swe:CancelButton" CfgUIControl="Cancel" CfgHtmlType="MiniButton" InvokeMethod="CloseViewPopup" property="FormattedHtml"/>
+               </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td><swe:control id="HelpText" CfgUIControl="HelpText" property="FormattedHtml"/></td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+               <td>
+                  <table>
+                     <swe:for-each id="110" CfgLoopType="Attribute" startValue="1000" count="Dynamic" iteratorName="AttId">
+                        <swe:include file="eCfgTrSwitch.swt"/>
+                           <td>
+                              <swe:control id="swe:AttId" CfgUIControl="Active Row" property="FormattedHtml" HideDisabled="Y"/>&nbsp;&nbsp;
+                           </td>
+                           <td colspan="3">
+                              <swe:control id="swe:AttId+1000" CfgFieldName="AttName" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                           </td>
+                           <td>
+                              &nbsp;
+                           </td>
+                        </tr>
+                     </swe:for-each>
+                  </table>
+               </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td><strong><swe:control id="RelationshipsHeader" CfgUIControl="RelationshipsHeader" property="FormattedHtml"/></strong></td></tr>
+            <tr>
+               <td>
+                  <table>
+                     <tr>
+                        <td>
+                           <table>
+                              <tr>
+                                 <td>
+                                    <span id="left" class="cxPanel">
+                                       <table>
+                                          <swe:for-each id="130" CfgLoopType="Port" startValue="3200" count="Dynamic" iteratorName="PortId">
+                                             <div name="isCurrentPort" style="display:none;">
+                                                <swe:control id="swe:PortId+1000" CfgFieldName="Selected" CfgUIControl="CfgLabel" CfgHtmlType="CfgLabel" property="FormattedHtml"/>
+                                             </div>
+                                             <tr>
+                                                <td class="tier3on">
+                                                   &nbsp;
+                                                   <swe:control id="swe:PortId+2000" CfgUIControl="ChangeCurrentNode" CfgHtmlType="CfgLink"
+                                                                property="FormattedHtml" CfgFieldName="CxPortName"
+                                                                InvokeMethod="ChangeCurrentNode"/>
+                                                   &nbsp;
+                                                </td>
+                                                <td>
+                                                   &nbsp;
+                                                </td>
+                                                <td>
+                                                   <swe:include file="eCfgClassNodeNoPick.swt"/>
+                                                </td>
+                                                <td>
+                                                   &nbsp;
+                                                </td>
+                                             </tr>
+                                          </swe:for-each>
+                                       </table>
+                                    </span>
+                                 </td>
+                                 <td valign="top">
+                                    <span id="right" class="cxPanel">
+                                       <table>
+                                          <swe:for-each id="140" CfgLoopType="CurrentPort" startValue="1" count="Dynamic" iteratorName="CurPort">
+                                             <swe:for-each id="150" CfgLoopType="Domain" startValue="4300" count="Dynamic" iteratorName="PortDomainId">
+                                                <swe:include file="eCfgTrSwitch.swt"/>
+                                                   <td>
+                                                      &nbsp;
+                                                   </td>
+                                                   <td>
+                                                      &nbsp;
+                                                   </td>
+                                                   <td>
+                                                      &nbsp;
+                                                   </td>
+                                                   <td colspan="2">
+                                                      <swe:control id="swe:PortDomainId+1000" CfgFieldName="CxObjName" CfgUIControl="SetTopObj" property="FormattedHtml"/>
+                                                   </td>
+                                                   <td>
+                                                      &nbsp;
+                                                   </td>
+                                                   <td >
+                                                      <swe:include file="eCfgClassNodeNoPick.swt" />
+                                                   </td>
+                                                </tr>
+                                             </swe:for-each>
+                                          </swe:for-each>
+                                          <tr><td>&nbsp;</td></tr>
+                                       </table>
+                                    </span>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+</div>
+<!-- Template End: eCfgCxProdNavAttributes.swt -->

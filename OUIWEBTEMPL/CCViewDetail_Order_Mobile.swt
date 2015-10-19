@@ -1,0 +1,23 @@
+<!--  Template Start: CCViewDetail_Order_Mobile.swt -->
+<swe:include file="CCHTMLHeader.swt"/>
+<div>
+
+<!-- ---------- Main Content Area ---------------------------->
+<div id="_Parentapplet_List" class="siebui-parent-child-grandchild ListAppletContainer siebui-span-lg-12" landscape="Default" portrait="Show">
+  <div enabletoggle="true"></div>
+  <div class="siebui-parent">
+    <swe:applet hintMapType="Applet" id="1" hintText="Parent List Applet" property="FormattedHtml" var="ParentWithPointer" />
+  </div>
+  <div name="jqmToggleCtrl" id="jqmToggleCtrl" ctrltype="button" ctrllabel="IDS_SWE_MOBIIE_BACK" style="display:none;"></div> 
+  <div id="_ParentFormContainer" class="siebui-child siebui-no-scroll">
+    <swe:applet hintMapType="Applet" id="2" hintText="Parent Form Applet" property="FormattedHtml" var="ParentWithPointer"/>
+  </div>
+  <div id="_ChildrenContainer" class="siebui-grandchild ListAppletContainer siebui-no-scroll">         
+    <swe:applet hintMapType="Applet" id="3" hintText="Child List Applet"  property="FormattedHtml" var="Grandchild"/>                     
+  </div>
+</div>
+<swe:include file="CCHTMLFooter.swt"/>
+
+<!-- ---------- End Main Content Area ------------------------>
+</div>
+<!--  Template End: CCViewDetail_Order_Mobile.swt -->

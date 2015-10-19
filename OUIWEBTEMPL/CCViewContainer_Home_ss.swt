@@ -1,0 +1,18 @@
+<!--  Template Start CCViewContainer_Home_ss.swt -->
+
+<swe:for-each count=10 iteratorName="currentId" startValue="10">
+    <swe:applet id="swe:currentId">
+        <div class="siebui-applet-region-1">
+            <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+        </div>
+    </swe:applet>
+</swe:for-each>
+<swe:for-each count=2 iteratorName="currentId" startValue="20">
+    <swe:applet id="swe:currentId">
+        <div class="siebui-applet-region-2 siebui-span-md-4 siebui-span-lg-4 siebui-span-lg-push-4 siebui-span-md-push-4">
+            <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+        </div>
+    </swe:applet>
+</swe:for-each>
+
+<!--  Template End  CCViewContainer_Home_ss.swt -->

@@ -1,0 +1,38 @@
+<!--  Template Start SSViewContainer_Home.swt -->
+
+<!-- left area -->
+<div class="siebui-span-md-9 siebui-span-lg-9">
+    <!-- Top area -->
+    <div class="siebui-applet-region-tile">
+        <swe:for-each count=2 iteratorName="currentId" startValue="1">
+            <swe:applet id="swe:currentId">
+                <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+            </swe:applet>
+        </swe:for-each>
+    </div>
+    <!-- Bottom area -->
+    <!-- Bottom left side -->
+    <div>
+        <div class="siebui-applet-region-3 siebui-span-md-4 siebui-span-lg-4">
+            <swe:applet id="5">
+                <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+            </swe:applet>
+        </div>
+        <!-- Bottom right side -->
+        <div class="siebui-span-md-8 siebui-span-lg-8">
+            <swe:applet id="6">
+                <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+            </swe:applet>
+        </div>
+    </div>
+</div>
+<!-- Right area -->
+<div class="siebui-applet-region-2 siebui-span-md-3 siebui-span-lg-3">
+    <swe:for-each count=6 iteratorName="currentId" startValue="10">
+        <swe:applet id="swe:currentId">
+            <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+        </swe:applet>
+    </swe:for-each>
+</div>
+
+<!--  Template End SSViewContainer_Home.swt -->

@@ -1,0 +1,12 @@
+<!-- Template Start: eCfgCompThreadJS.swt -->
+<!-- Oliver: [code redesign] -->
+
+<!-- qa automation -->
+<div  id="cxThread" class="cxThread">
+	<swe:for-each id="250" CfgLoopType="Thread" startValue="2500" count="Dynamic" iteratorName="250Id" >
+        <div name="cxThreadObject" style="display:none;"></div>
+	    <swe:control id="swe:250Id" CfgFieldName="CxObjName" CfgHtmlType="CfgLink" InvokeMethod="SetTopObj" />
+	</swe:for-each>
+</div>
+
+<!-- Template Start: eCfgCompThreadJS.swt -->

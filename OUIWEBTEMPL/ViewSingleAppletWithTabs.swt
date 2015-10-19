@@ -1,0 +1,8 @@
+<!-- Template Start:ViewSingleAppletWithTabs.swt -->
+<div id="_MobileViewTabContainer" class="siebui-nav-subview siebui-span-lg-3 siebui-span-md-12 siebui-span-sm-12">
+    <swe:include file="CCViewbar_Tabs_DropList_Mobile.swt"/>
+</div>
+<div class="siebui-opa-view">
+	<swe:include file="ViewSingleApplet.swt"/>
+</div>
+<!-- Template End: ViewSingleAppletWithTabs.swt -->

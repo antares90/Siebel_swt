@@ -1,0 +1,5 @@
+<!-- Template Start: CCButtons.swt -->
+<swe:include file="CCButtonsCRUD.swt"/>
+<swe:include file="CCButtons_Search.swt"/>
+<swe:include file="CCButtonsExtras.swt"/>
+<!-- Template End: CCButtons.swt -->

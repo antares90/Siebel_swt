@@ -1,0 +1,21 @@
+<!-- Template Start: CCAppletListCalToDo.swt -->
+<swe:form>
+<div class="AppletHIFormBorder">
+  <swe:include file="CCTitle_Named.swt"/>
+  <swe:include file="CCFormButtonsTop.swt"/>
+
+  <swe:error type="Popup">
+    <div class="error"><swe:this property="FormattedHtml"/></div>
+  </swe:error>
+
+  <swe:list>
+    <div class="hdr_body" summary="swe:this.ListSummary">
+      <swe:include file="CCListHeader.swt"/>
+      <swe:include file="CCListBody.swt"/>
+    </div>
+  </swe:list>
+
+  </span> <!-- Closing CCTitle_Named.swt <span> -->
+</div>
+</swe:form>
+<!-- Template End: CCAppletListCalToDo.swt -->

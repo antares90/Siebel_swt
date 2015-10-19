@@ -1,0 +1,83 @@
+<!-- Template Start: CCAppletDashboard.swt -->
+
+<div id="CommPanelHeaderDashboard" class="siebui-comm-panel-header-dashboard">
+   <div id="CommPanelCaptionDashboard" class="siebui-comm-panel-caption-dashboard"></div>
+   <div class="siebui-comm-panel-dashboard-toggle" id="commPanelDashboardToggle">
+      <div class="siebui-dashboard-title-wrap" title="">
+         <a id="commPanelDashboardToShowLess" class="siebui-comm-panel-dashboard-toggle-more" role="button" aria-hidden="false" aria-label="" tabindex="0"></a>
+      </div>
+      <div class="siebui-dashboard-title-wrap" title="">
+         <a id="commPanelDashboardToShowMore" class="siebui-comm-panel-dashboard-toggle-less" role="button" aria-hidden="true" aria-label="" tabindex="0"></a>
+      </div>
+   </div>
+</div>
+
+<div class="siebui-dashboard-container">
+    <div class="siebui-dashboard-field-area">
+        <div class="siebui-dashboard-fieldset">
+            <div class="siebui-dashboard-cell-1 siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_1" name="Label 1" for="s_dshbd_Field_1"></label>
+                <div class="siebui-dashboard-value siebui-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field 1" id="s_dshbd_Field_1"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-4 siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_4" name="Label 4" for="s_dshbd_Field_4"></label>
+                <div class="siebui-dashboard-value siebui-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field 4" id="s_dshbd_Field_4"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-5 siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_5" name="Label 5" for="s_dshbd_Field_5"></label>
+                <div class="siebui-dashboard-value siebui-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field 5" id="s_dshbd_Field_5"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-time siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <div class="siebui-dashboard-time-label">
+                    <input class="siebui-dashboard-element" type="text" id="s_dshbd_Label_Time" name="Label Time"></input>
+                </div>
+                <div class="siebui-value siebui-dashboard-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field Time" id="s_dshbd_Field_Time"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-3 siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_3" name="Label 3" for="s_dshbd_Field_3"></label>
+                <div class="siebui-dashboard-value siebui-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field 3" id="s_dshbd_Field_3"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-2 siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_2" name="Label 2" for="s_dshbd_Field_2"></label>
+                <div class="siebui-dashboard-value siebui-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field 2" id="s_dshbd_Field_2"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-12 siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_6" name="Label 6" for="s_dshbd_Field_12"></label>
+                <div class="siebui-dashboard-value siebui-value">
+                    <input class="siebui-dashboard-element" type="text" name="Field 12" id="s_dshbd_Field_12"></input>
+                </div>
+            </div>
+            <div class="siebui-dashboard-cell-qnav siebui-dashboard-cell siebui-span-xl-3 siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-span-xs-12">
+                <label class="siebui-dashboard-element" id="s_dshbd_Label_QuickNavigation" name="Label QuickNavigation" for="s_dshbd_Quick_Navigation"></label>
+                <div class="siebui-dashboard-value">
+                    <select class="siebui-dashboard-element" id="s_dshbd_Quick_Navigation" name="Quick Navigation"></select>
+                    <button class="siebui-dashboard-element" id="s_dshbd_Link_Goto" name="Link Goto">Go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="siebui-dashboard-control-area">
+        <span class="siebui-dashboard-ctrl">
+            <a class="siebui-dashboard-element siebui-dashboard-prev" id="s_dshbd_GoToPreviousRecord" name="GoToPreviousRecord" role="button"></a>
+            <a class="siebui-dashboard-element siebui-dashboard-next" id="s_dshbd_GoToNextRecord" name="GoToNextRecord" role="button"></a>
+            <a class="siebui-dashboard-close" id="s_dashboardclose"></a>
+        </span>
+        <span class="siebui-dashboard-ctrl siebui-dashboard-ctrl-update">
+            <button class="siebui-dashboard-element" id="s_dshbd_PushToDashboard" name="PushToDashboard">Update</button>
+        </span>
+    </div>
+</div>
+
+<!-- Template End: CCAppletDashboard.swt -->

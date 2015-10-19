@@ -1,0 +1,106 @@
+<!-- Template Start: eCfg_MenuBaseAutoRepriceJS.swt -->
+
+<!-- This is a hidden button that we use to submit any forms on this page -->
+<!-- Do not remove/change this section -->
+<div style="visibility:hidden">
+<table datatable="0" summary="">
+   <tr>
+      <swe:form>
+         <td>
+            <swe:control name ="Done" id="HiddenControl" property="FormattedHtml"/>
+         </td>
+      </swe:form>
+   </tr>
+</table>
+</div>
+
+<!-- div for qa automation -->
+<div id="cxMenu" class="cxBaseTheme">
+
+<div name="cxCurrentProduct" style="display:none;"><swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgHtmlType="CfgLabel"/></div>
+
+<swe:control id="swe:CFGPARAMETER" AutoReprice="Y" property="FormattedHtml" />
+
+<div class="AppletStyle5">
+<table datatable="0" summary="" width="100%" cellpadding="2" cellspacing="5" border="0" height="90%">
+<!-- Header row -->
+<tr valign="top">
+   <td width="66%" valign="top">
+      <table datatable="0" summary="" cellpadding="0" cellspacing="4" border="0" width="100%">
+            <tr>
+                <td valign="top" colspan="2">
+                    <!--Product Title-->
+                    <div class="eCfgProductTitle">
+                    <div id="CxObjName" class="cxLabel">
+                        <swe:control id="swe:CurrentRoot" CfgFieldName="CxObjName" CfgHtmlType="CfgLabel" property="FormattedHtml" />
+		                <swe:control id="RequireMoreChild" CfgHtmlType="CfgGenerics" />
+                    </div>
+                    </div>
+                    <br>
+                    <!--Product Threadbar-->
+                    <div class="threadbar"><swe:include id="swe:Thread" CfgHtmlType="eCfgCompThreadJS.swt" CfgNodeType="Thread" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle">
+                    <strong>
+                        <swe:control id="TotalPrice" CfgUIControl="lblTotalPrice" property="DisplayName" CfgHtmlType="CfgLabel" />
+                        <swe:control id="StringColon" CfgUIControl="lblColon" property="DisplayName" CfgHtmlType="CfgLabel" />
+                    </strong>
+                    &nbsp;&nbsp;
+                <div id="Rollup Amount" class="cxLabel">
+                    <swe:control id="CurrentPrice" CfgHtmlType="CfgText" CfgFieldName="Rollup Item Price" DataType="DTYPE_CURRENCY" />
+                </div>
+                </td>
+                <td align="right">
+                    <table datatable="0" summary="">
+                        <tr>
+                            <td>
+                                <div id="eCfg_MenuBaseAutoRepriceJS_PUI_1"></div>
+                                <div name="cxRuntimeParam" style="display:none;">
+                                &lt;button type="button" class="siebui-ctrl-btn appletButton" name="menuButtonShowMenu" style="height:20;"&gt;<swe:control id="swe:ShowMenu" CfgUIControl="sShowMenu" CfgHtmlType="CfgLabel"/>&lt;/button&gt;
+                                </div>
+                            </td>
+                            <td>
+                                <div id="eCfg_MenuBaseAutoRepriceJS_PUI_2"></div>
+                                <div name="cxRuntimeParam" style="display:none;">
+                                &lt;button type="button" class="siebui-ctrl-btn appletButton" name="menuButtonShowSummary" style="height:20;"&gt;<swe:control id="swe:ShowSummary" CfgUIControl="sShowSummary" CfgHtmlType="CfgLabel" />&lt;/button&gt;
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+    <td width="33%" valign="bottom" align="center">
+        <!-- Control Buttons -->
+        <swe:include file="eCfg_MenuTopLevelButtonsJS.swt"/>
+    </td>
+</tr>
+<tr>
+    <!-- Main Content -->
+    <td valign="top" height="95%">
+        <div id="ConflictPage" style="display:none">
+            <swe:include file="eCfgObj_Status_ConflictJS.swt" />
+        </div>
+
+        <div id="ExplanationPage" style="display:none">
+            <swe:include file="eCfgObj_ExplanationJS.swt" />
+        </div>
+
+        <div id="MainPage">
+            <swe:include id="product" CfgHtmlType="Product Theme"/>
+        </div>
+    </td>
+    <!-- Message box -->
+    <td>
+        <swe:include file="eCfg_MenuObj_GlobalSignalJS.swt" />
+    </td>
+</tr>
+</table>
+</div>
+
+</div><!-- end of div id="cxMenu" -->
+
+<!-- Template End: eCfg_MenuBaseAutoRepriceJS.swt -->

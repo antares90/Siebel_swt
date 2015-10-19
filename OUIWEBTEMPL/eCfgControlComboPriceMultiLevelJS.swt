@@ -1,0 +1,134 @@
+<!-- Template Start: eCfgControlComboPriceMultiLevelJS.swt -->
+
+<swe:include file="eCfgPort_HeaderJS.swt"/>
+
+<tr>
+   <td width=100% colspan=4>
+      <div class="div-table" cellpadding=0 cellspacing=0 border=0 width=100%>
+         <div class="div-table-row">
+            <div class="div-table-col">
+                <div name="cxTemplateVariable" style="display:none;" varName="sAddItemLabel"><swe:control id="AddItem" CfgUIControl="AddItem" CfgHtmlType="CfgLabel"/></div>
+                <div name="cxTemplateVariable" style="display:none;" varName="sComboAddNameLabel"><swe:control id="Name" CfgUIControl="lblName" CfgHtmlType="CfgLabel"/></div>
+
+                <swe:for-each id="1100" CfgLoopType="Domain" Automation="N" startValue="1000" count="Dynamic" iteratorName="1100Id" >
+                    <swe:control id="ComboAdd" CfgHtmlType="CfgComboAdd" ForceRefresh="Y"
+                    CfgJSShow="showSelectAndOptionsWithoutQtyCtrl" CfgJSUpdateExclusion="updateExcludedItemForPort" CfgJSUpdateSelection="updatePortItemsForComboAddWithoutQtyCtrl"/>
+                </swe:for-each>
+            </div>
+         </div>
+         <div class="div-table-row">
+            <div class="div-table-col" colspan="3">
+               <div class="div-table" border="0" cellpadding="0" cellspacing="3" width="100%">
+                  <swe:for-each id="500" CfgLoopType="Children" startValue="1500" count="Dynamic" iteratorName="101Id"
+                  CfgFieldList="CfgFieldName:Name, CfgUIControl:lblName, HtmlAttrib_width:250, HtmlAttrib_align:left, Default:Y*
+                                CfgFieldName:RequireMoreChild, Default:Y*
+                                CfgFieldName:Original List Price, CfgUIControl:lblListPrice, DataType:DTYPE_CURRENCY, NeedRefresh:N, HtmlAttrib_align:center, HtmlAttrib_width:80*
+                                CfgFieldName:Current Price, CfgUIControl:lblYourPrice, DataType:DTYPE_CURRENCY, HtmlAttrib_align:center, HtmlAttrib_width:80*
+                                CfgFieldName:Explanation, CfgUIControl:lblExplanation, HtmlAttrib_width:70, HtmlAttrib_align:center*
+                                CfgFieldName:Remove, CfgUIControl:lblRemove, HtmlAttrib_width:70, HtmlAttrib_align:center*
+                                CfgFieldName:Customize, CfgUIControl:lblCustomize, HtmlAttrib_width:70, HtmlAttrib_align:center"
+                  >
+                     <div class="div-table-row">
+                        <div class="div-table-col" align="center">
+                           <swe:control id="Port Item" CfgHtmlType="CfgPortItem"
+                           CfgJSShow="showPortItemsWithoutQtyCtrl" CfgJSUpdateSelection="updatePortItemsForComboAddWithoutQtyCtrl"/>
+                        </div>
+                     </div>
+                  </swe:for-each>
+               </div>
+            </div>
+         </div>
+      </div>
+   </td>
+</tr>
+
+<!-- for each selected product of the current relationship, include full UI starting from group level -->
+<tr>
+   <td width="100%" colspan="4">
+      <div class="div-table" width="100%" cellpadding="0" cellspacing="0" border="0">
+         <swe:for-each id="500" CfgLoopType="Children" startValue="1500" count="Dynamic" iteratorName="101Id">
+
+            <div class="div-table-row">
+               <div class="div-table-col" width="5%">
+                  &nbsp;
+               </div>
+               <div class="div-table-col dCCItemSectionTitle" colspan="2" width="80%" style="border-left: 1 solid #808080; border-right: 1 solid #808080; border-top: 1 solid #808080 ; border-bottom: 1 solid #808080">
+                  <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<swe:control id="swe:100Id+50" CfgHtmlType="CfgLabel" CfgFieldName="Display Name"/></b>
+               </div>
+               <div class="div-table-col" width="10%">
+                  &nbsp;
+               </div>
+            </div>
+
+               <swe:switch>
+                  <swe:case condition="Default, TestFieldValue, Operator:==, FieldName:HasGroup, FieldValue:Y">
+
+                     <swe:for-each id="110" CfgLoopType="CurrentGroup" startValue="8100" count="Dynamic" iteratorName="100Id">
+                        <div class="div-table-row">
+                           <div class="div-table-col" width="5%">
+                              &nbsp;
+                           </div>
+                           <div class="div-table-col" width="5%">
+                              &nbsp;
+                           </div>
+                           <div class="div-table-col" width="80%">
+                              <swe:include id="swe:151Id" CfgHtmlType="CurrentGroup"/>
+                           </div>
+                           <div class="div-table-col" width="10%">
+                              &nbsp;
+                           </div>
+                        </div>
+                     </swe:for-each>
+
+                  </swe:case>
+                  <swe:default>
+
+                     <div class="div-table-row">
+                        <div class="div-table-col" width="5%">
+                           &nbsp;
+                        </div>
+                        <div class="div-table-col" width="5%">
+                           &nbsp;
+                        </div>
+                        <div class="div-table-col" width="80%">
+                           <div class="div-table">
+                           <swe:for-each id="110" CfgLoopType="Attribute" startValue="1100" count="Dynamic" iteratorName="IncId" >
+                              <div class="div-table-row listRowOff">
+                                 <div class="div-table-col row AppletBlank" width="100%">
+                                    <swe:include id="swe:151Id" CfgHtmlType="Children"/>
+                                 </div>
+                              </div>
+                           </swe:for-each>
+
+                              <div class="div-table-row"><div class="div-table-row AppletBlank" width="100%">&nbsp;</div></div>
+                              <div class="div-table-row"><div class="div-table-row AppletBlank" width="100%">&nbsp;</div></div>
+
+                           <swe:for-each id="100" CfgLoopType="Port" startValue="2100" count="Dynamic" iteratorName="IncId" >
+                              <div class="div-table-row listRowOff">
+                                 <div class="div-table-col row AppletBlank" width="100%">
+                                    <swe:include id="swe:151Id" CfgHtmlType="Children"/>
+                                 </div>
+                              </div>
+                           </swe:for-each>
+
+                              <div class="div-table-row"><div class="div-table-row AppletBlank" width="100%">&nbsp;</div></div>
+                              <div class="div-table-row"><div class="div-table-row AppletBlank" width="100%">&nbsp;</div></div>
+
+                           </div>
+                        </div>
+                        <div class="div-table-col" width="10%">
+                           &nbsp;
+                        </div>
+                     </div>
+
+                  </swe:default>
+               </swe:switch>
+          
+         </swe:for-each>
+      </div>
+   </td>
+</tr>
+
+<swe:include file="eCfgPort_FooterJS.swt"/>
+
+<!-- Template End: eCfgControlComboPriceMultiLevelJS.swt -->

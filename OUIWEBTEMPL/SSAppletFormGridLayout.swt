@@ -1,0 +1,86 @@
+<!-- Template Start SSAppletFormGridLayout.swt -->
+
+<div class="siebui-form-region-2">
+    <div class="siebui-form-section-1">
+        <swe:for-each startValue="1501" count="5" iteratorName="currentId">
+           <!-- Place holder to place both Label and Field -->
+            <swe:control id="swe:currentId" hintMapType="FormItem">
+                <div class="siebui-span-md-6 siebui-span-lg-6">
+                    <span class="siebui-label">
+                        <swe:this property="DisplayName" hintText="Label"/>
+                    </span>
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <div class="siebui-value" align="swe:this.TextAlignment">
+                        <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                    </div>
+                </div>
+            </swe:control>
+        </swe:for-each>
+    </div>
+    <div class="siebui-form-section-2">
+        <swe:for-each startValue="1506" count="5" iteratorName="currentId">
+           <!-- Place holder to place both Label and Field -->
+            <swe:control id="swe:currentId" hintMapType="FormItem">
+                <div class="siebui-span-md-6 siebui-span-lg-6">
+                    <span class="siebui-label">
+                        <swe:this property="DisplayName" hintText="Label"/>
+                    </span>
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <div class="siebui-value" align="swe:this.TextAlignment">
+                        <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                    </div>
+                </div>
+            </swe:control>
+        </swe:for-each>
+    </div>
+    <div class="siebui-form-section-3">
+        <swe:for-each startValue="1511" count="4" iteratorName="currentId">
+           <!-- Place holder to place both Label and Field -->
+            <swe:control id="swe:currentId" hintMapType="FormItem">
+                <div class="siebui-span-md-6 siebui-span-lg-6">
+                    <span class="siebui-label">
+                        <swe:this property="DisplayName" hintText="Label"/>
+                    </span>
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <div class="siebui-value" align="swe:this.TextAlignment">
+                        <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                    </div>
+                </div>
+            </swe:control>
+        </swe:for-each>
+        <swe:for-each startValue="1515" count="2" iteratorName="currentId">
+           <!-- Place holder to place both Label and Field -->
+            <swe:control id="swe:currentId" hintMapType="FormItem">
+                <div class="siebui-span-md-3 siebui-span-lg-3">
+                    <span class="siebui-label">
+                        <swe:this property="DisplayName" hintText="Label"/>
+                    </span>
+                    <swe:this property="RequiredIndicator" hintText="Required"/>
+                    <div class="siebui-value" align="swe:this.TextAlignment">
+                        <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                    </div>
+                </div>
+            </swe:control>
+        </swe:for-each>
+        <swe:control id="1517" hintMapType="FormItem">
+            <div class="siebui-span-md-6 siebui-span-lg-6">
+                <span class="siebui-label">
+                    <swe:this property="DisplayName" hintText="Label"/>
+                </span>
+                <swe:this property="RequiredIndicator" hintText="Required"/>
+                <div class="siebui-value" align="swe:this.TextAlignment">
+                    <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                </div>
+            </div>
+        </swe:control>
+    </div>
+    <swe:control id="1600" hintMapType="FormItem">
+        <div class="siebui-span-md-9 siebui-span-lg-9 siebui-licenseterms">
+            <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+            <swe:this property="DisplayName" hintText="Label"/>
+        </div>
+    </swe:control>
+    <swe:include file="CCAppletFormButtons_ss.swt"/>
+</div>
+
+<!-- Template Start SSAppletFormGridLayout.swt -->

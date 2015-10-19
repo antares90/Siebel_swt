@@ -1,0 +1,28 @@
+<!-- Template Start: CCAppletDashboard.swt -->
+<div style="padding: 10px;">
+	<div id="bmInfoDate">
+	</div>
+	<div class="bmInfoButton">
+	   <swe:form>
+			<div id="bmInfoAllButton" class="bmInfoButton">
+				<swe:control id="555">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml" hintText="Button"/>
+					<table>
+					<tr>
+					<td width="42" align="center" class="leto-button-info-upper-right">
+						<div class='bmGaugeDescriptionPopup1' id='bmGaugeDescriptionPopupuniq'>
+						<div class='bmGaugeDescriptionPopupDatauniq' style = "padding:10px;">
+						123
+						</div>
+						</div>
+					</td>
+					</tr>
+					</table>
+				</swe:control>
+			</div>
+	   </swe:form>
+	</div>
+</div>
+
+<!-- Template End: CCAppletDashboard.swt -->

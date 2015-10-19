@@ -1,0 +1,43 @@
+<!-- Template Start: ecfgproducttabs_v14.swt  -->
+<!-- SYPATEL: The template dictates the display of the UI for the given product. -->
+<div id="cxProdTab" class="siebui-ecfg-product-theme">
+    <div class="siebui-ecfg-products">
+        <nav class="siebui-ctrl-nav-step">
+           <ol>
+                <swe:for-each id="110" CfgLoopType="Group" startValue="8100" count="Dynamic" iteratorName="100Id" >
+                    <swe:switch>
+                        <swe:case condition="Default, TestFieldValue, Operator:==, FieldName:Selected, FieldValue:Y">
+                           <li class="siebui-ctrl-nav-step-current">
+                               <swe:control id="swe:100Id+50" CfgHtmlType="CfgLink" CfgFieldName="CxGroupName" InvokeMethod="ChangeCurrentObj" CfgRequest="Group"/>
+                               <swe:control id="RequireMoreChild" CfgHtmlType="CfgGenerics" />
+                           </li>
+                        </swe:case>
+                        <swe:default>
+                            <li>
+                               <swe:control id="swe:100Id+50" CfgHtmlType="CfgLink" CfgFieldName="CxGroupName" InvokeMethod="ChangeCurrentObj" CfgRequest="Group"/>
+                               <swe:control id="RequireMoreChild" CfgHtmlType="CfgGenerics" />
+                            </li>
+                        </swe:default>
+                    </swe:switch>
+                </swe:for-each>
+            </ol>
+       </nav>
+    </div>
+    <div class="siebui-ecfg-products">
+        <swe:for-each id="120" CfgLoopType="CurrentGroup" startValue="210" count="Dynamic" iteratorName="150Id" >
+            <swe:include id="swe:151Id" CfgHtmlType="CurrentGroup"/>
+            <!-- Start of Previous and Next buttons -->
+            <div class="siebui-ecfg-footer">
+                <div class="siebui-ecfg-footer-finish">
+                    <swe:control id="swe:FinishIt" CfgUIControl="FinishIt" CfgHtmlType="MiniButton" InvokeMethod="FinishIt"/>
+                </div>
+                <div class="siebui-ecfg-prev-next">
+                    <swe:control id="swe:100Id+250"  CfgUIControl="PreviousNode" CfgHtmlType="MiniButton" CfgRequest="Group" InvokeMethod="PreviousNode"/>
+                    <swe:control id="swe:100Id+350"  CfgUIControl="NextNode" CfgHtmlType="MiniButton" CfgRequest="Group" InvokeMethod="NextNode"/>
+                </div>
+            </div>
+            <!-- End of Previous and Next buttons -->
+        </swe:for-each>
+    </div>
+</div>
+<!-- Template End: ecfgproducttabs_v14.swt -->

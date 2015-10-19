@@ -1,0 +1,45 @@
+<!-- Template Start: CCRuleEditInsertionList.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+<swe:control id="1100">
+    <div class="CmdTxt">
+        <swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/>
+    </div>
+</swe:control>
+<swe:form>
+    <swe:include file="CCTitle_Named.swt"/>
+    <div class="swe:this.SelectStyle">
+        <swe:error type="Popup">
+            <div class="swe:class AppletBack">
+                <div class="error">
+                    <swe:this property="FormattedHtml"/>
+                </div>
+            </div>
+        </swe:error>
+        <div class="AppletHIListBorder siebui-tile-container siebui-catalog-tile-container siebui-cfg-rules-insertion-container">
+            <swe:this property="NoGrid"/>
+            <swe:this property="Vertical"/>
+            <swe:this property="ScrollVisibleTiles"/>
+            <swe:list>
+                <swe:list-record>
+                    <div class="siebui-catalog-tile-middle-col">
+                        <swe:control id="901" hintMapType="FormItem">
+                            <div class="siebui-catalog-link-buttons" align="swe:this.TextAlignment">
+                                <swe:this property="FormattedHtml" hintText="Field"/>
+                            </div>
+                        </swe:control>
+                        <div class="siebui-tile-name">
+                            <swe:control id="502" hintMapType="FormItem">
+                               <span class="mceGridField mceField siebui-cfg-rules-insertion-description">
+                                  <swe:this property="FormattedHtml" align="swe:this.TextAlignment" hintText="Field"/>
+                               </span>
+                            </swe:control>
+                        </div>
+                    </div>
+                </swe:list-record>
+            </swe:list>
+        </div>
+    </div>
+</span>
+</swe:form>
+<!-- Template End: CCRuleEditInsertionList.swt-->
+

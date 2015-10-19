@@ -1,0 +1,42 @@
+<!--  Template Start: CCFrameViewbar_prm.swt -->
+<html dir="swe:dir">
+<head>
+    <title><swe:this property="Title"/></title>
+    <swe:include file="CCStylesChoice.swt"/>
+</head>
+<body class="toolbar" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+  <swe:pageitem id="21">
+    <div class="PageItem"><swe:this property="FormattedHtml" /></div>
+  </swe:pageitem>
+  <swe:pageitem id="22">
+    <div class="PageItem"><swe:this property="FormattedHtml" /></div>
+  </swe:pageitem>
+  <swe:pageitem id="23">
+    <!--History Label-->
+    <div class="PageItem"><swe:this property="FormattedHtml" /></div>
+  </swe:pageitem>
+  <!--  Start Tier2 Nav & Toolbars-->
+  <div id="s_toolbar" class="Tier2ToolbarContainer">
+    <swe:toolbar name="HIMain">
+      <swe:toolbaritem property="FormattedHtml"/>
+    </swe:toolbar>
+  </div>
+  <swe:pageitem id="33">
+    <div class="PageItem"><swe:this property="FormattedHtml" hintText="Control" /></div>
+  </swe:pageitem>
+  <swe:pageitem id="34">
+    <div class="PageItem"><swe:this property="FormattedHtml" hintText="Control"/></div>
+  </swe:pageitem>
+  <swe:pageitem id="36">
+    <div class="PageItem"><swe:this property="FormattedHtml" hintText="Control"/></div>
+  </swe:pageitem>
+  <swe:pageitem id="37">
+    <div class="PageItem"><swe:this property="FormattedHtml" hintText="Control"/></div>
+  </swe:pageitem>
+  <swe:pageitem id="38">
+    <div class="PageItem"><swe:this property="FormattedHtml" hintText="Control"/></div>
+  </swe:pageitem>
+<swe:scripts/>
+</body>
+</html>
+<!--  Template End: CCFrameViewbar_prm.swt -->

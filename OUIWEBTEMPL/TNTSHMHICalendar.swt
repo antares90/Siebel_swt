@@ -1,0 +1,71 @@
+<!-- Template Start TNTHICalendar.swt -->
+<swe:form>
+  <swe:include file="CCTitle_Named.swt"/>
+  <div class="swe:this.SelectStyle">
+    <div class="siebui-applet-header siebui-collapsible">
+      <!-- Applet Filter Area -->
+      <swe:if-var name="Parent">
+        <div class="AppletTitle">
+          <swe:switch>
+            <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+              <swe:nav-control type="Category View" style="Select"/>
+            </swe:case>
+            <swe:default>
+              <swe:this property="Title"/>
+            </swe:default>
+          </swe:switch>
+        </div>
+      </swe:if-var>
+      <swe:if-var name="ParentWithPointer">
+        <div class="AppletTitle">
+          <swe:switch>
+            <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+              <swe:nav-control type="Category View" style="Select"/>
+            </swe:case>
+            <swe:default>
+              <swe:this property="Title"/>
+            </swe:default>
+          </swe:switch>
+        </div>
+      </swe:if-var>
+      <swe:if-var name="AppletFilter-No">
+        <div class="AppletTitle">
+          <swe:this property="Title"/>
+        </div>
+      </swe:if-var>
+      <swe:if-var name="Grandchild">
+        <div class="AppletTitle">
+          <swe:this property="Title"/>
+        </div>
+      </swe:if-var>
+      <div class="siebui-btn-grp-applet">
+        <!-- CRUD Buttons Area -->
+        <swe:include file="CCButtonsCRUD.swt"/>
+        <!-- Query Message Area -->
+        <swe:message type="Query Message"/>
+        <swe:include file="CCListButtonsTopRight.swt"/>
+        <div class="siebui-applet-container siebui-collapsible"></div>
+      </div>
+    </div>
+    <div class="swe:class AppletButtons siebui-applet-buttons">
+      <!-- Search Buttons Area -->
+      <swe:include file="CCButtons_Search.swt"/>
+      <!-- Other Buttons Area -->
+      <swe:include file="CCButtonsExtras.swt"/>
+      <!-- Toggle Bar Area -->
+      <swe:include file="CCTogglebar_drop.swt"/>
+      <!-- Query Message Area -->
+    </div>
+    <swe:error type="Popup">
+      <div class="swe:class AppletBack error siebui-error">
+        <swe:this property="FormattedHtml"/>
+      </div>
+    </swe:error>
+    <div class="siebui-applet-content siebui-collapsible">
+      <swe:calendar>
+      </swe:calendar>
+    </div>
+  </div>
+  </span>
+</swe:form>
+<!-- Template End    TNTHICalendar.swt -->

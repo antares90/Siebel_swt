@@ -1,0 +1,52 @@
+<!-- Template Start: AppletFluidFormNoMenuNoNavCustomTitle.swt -->
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+
+<swe:form>
+  <div class="swe:this.SelectStyle">
+      <div name="AppletFluidFormNoMenuNoNavCustomTitle" class="siebui-epui-integrated-applet">
+        <div class="siebui-span-lg-12">
+          <!-- Title based on field value-->
+            <div class="siebui-applet-title">
+              <swe:for-each startValue="501" count="1" iteratorName="currentId">
+                  <swe:control id="swe:currentId" hintMapType="FormItem">
+                    <swe:this property="FormattedHtml" hintText="TitleField" hintMapLabelId="swe:currentId"/>
+                  </swe:control>
+              </swe:for-each>
+            </div>
+        </div>
+        <div class="siebui-applet-content siebui-collapsible">
+          <div  class="siebui-span-lg-12">
+           <!-- space for 6 fields-->
+            <swe:for-each startValue="506" count="6" iteratorName="currentId">
+              <div class="siebui-span-lg-2">
+                <swe:control id="swe:currentId" hintMapType="FormItem">
+                  <div class="siebui-epui-inline siebui-label">
+                      <swe:this property="DisplayName" hintText="Label"/>:
+                  </div>
+                  <div class="siebui-epui-inline siebui-value">
+                      <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                  </div>
+                </swe:control>
+              </div>
+            </swe:for-each>
+          </div>
+          <div  class="siebui-span-lg-12">
+           <!-- space for 6 fields-->
+            <swe:for-each startValue="512" count="6" iteratorName="currentId">
+              <div class="siebui-span-lg-2">
+                <swe:control id="swe:currentId" hintMapType="FormItem">
+                  <div class="siebui-epui-inline siebui-label">
+                      <swe:this property="DisplayName" hintText="Label"/>:
+                  </div>
+                  <div class="siebui-epui-inline siebui-value">
+                      <swe:this property="FormattedHtml" hintText="Field" hintMapLabelId="swe:currentId"/>
+                  </div>
+                </swe:control>
+              </div>
+            </swe:for-each>
+            
+          </div>   
+        </div>        
+      </div>
+  </div>
+</swe:form>

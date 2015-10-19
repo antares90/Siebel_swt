@@ -1,0 +1,36 @@
+<!--  Template Start: CCViewContainer_SS_2Col.swt -->
+<swe:include file="dCCHTMLHeader.swt"/>
+
+<!-- ---------- Main Content Area ---------------------------->
+
+<!-- div for applet container -->
+<div>
+	<!-- div for left side applet container -->
+    <div>
+        <!-- Applets displayed left side goes here -->	
+        <swe:for-each count=3 iteratorName="currentId" startValue="1">
+            <swe:applet id="swe:currentId">
+                <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+            </swe:applet>
+        </swe:for-each> 
+    </div>
+	<!-- div for left side applet container -->
+    <!-- div for left side applet container -->
+    <div>
+		<!-- Applets displayed right side goes here -->
+		<swe:for-each count=6 iteratorName="currentId" startValue="5">
+			<swe:applet id="swe:currentId">
+				<swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+			</swe:applet>
+		</swe:for-each>
+    </div>
+	<!-- End div for left side applet container -->
+	<div></div> <!-- clear all div -->
+</div>
+<!-- End div for applet container -->
+        
+
+<!-- ---------- End Main Content Area ------------------------>
+
+<swe:include file="dCCHTMLFooter.swt"/>
+<!--  Template End:  CCViewContainer_SS_2Col.swt -->

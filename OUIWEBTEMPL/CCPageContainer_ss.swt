@@ -1,0 +1,45 @@
+<!-- Template Start CCPageContainer_ss.swt -->
+
+<html dir="swe:dir">
+    <head>
+        <title><swe:this property="Title"/></title>
+        <swe:include file="CCStylesChoice.swt"/>
+    </head>
+    <body>
+        <!-- Page container -->
+        <div class="siebui-self-service">
+            <!-- shortcuts to work -->
+            <div class="siebui-no-display"><swe:menu type="Default"/></div>
+            <!-- user settings -->
+            <swe:if condition="Web Engine State Properties, IsLoggedIn">
+                <div id="siebui-toolbar-custom-settings" class="siebui-toolbar-settings">
+                    <swe:toolbar name="Custom-Settings">
+                        <swe:toolbaritem property="FormattedHtml"/>
+                    </swe:toolbar>
+                </div>
+            </swe:if>
+            <!-- Screen Tab Placeholder -->
+            <swe:include  file="CCScreenbar_Tabs.swt"/>
+            <!-- End Screen Tab Placeholder -->
+            <!-- View Container Placeholder -->
+            <div class="siebui-page-region">
+                <div class="siebui-span-xl-2">
+                </div>
+                <div class="siebui-view-region siebui-span-xl-8 siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12 siebui-span-xs-12">
+                    <swe:frameset htmlAttr="cols='0%,100%' border='0' frameborder='No'">
+                        <swe:frame type="View" htmlAttr="marginheight='0' marginwidth='0' scrolling='NO' frameborder='0'">
+                            <swe:current-view/>
+                        </swe:frame>
+                    </swe:frameset>
+                </div>
+                <div class="siebui-span-xl-2">
+                </div>
+            </div>
+            <!-- End View Container Placeholder -->
+        </div>
+        <swe:scripts/>
+        <!-- End Page container -->
+    </body>
+</html>
+
+<!-- Template End CCPageContainer_ss.swt -->

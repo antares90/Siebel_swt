@@ -1,0 +1,41 @@
+<!-- Template Start: CCAppletDashboard.swt -->
+<div style="padding: 10px;">
+	<div id="bmPeriodDate">
+	</div>
+	<div class="bmPeriodButtons">
+	   <swe:form>
+			<div id="bmPreviousPeriod3Button" class="bmPeriodButton">
+				<swe:control id="1111">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml" hintText="Button"/>
+				</swe:control>
+			</div>
+			<div id="bmPreviousPeriod2Button" class="bmPeriodButton">
+				<swe:control id="1000">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml" hintText="Button"/>
+				</swe:control>
+			</div>
+			<div id="bmPreviousPeriodButton" class="bmPeriodButton">
+				<swe:control id="888">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml" hintText="Button"/>
+				</swe:control>
+			</div>
+			<div id="bmCurrentPeriodButton" class="bmPeriodButton">
+				<swe:control id="666">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml" hintText="Button"/>
+				</swe:control>
+			</div>
+			<div id="bmControlPeriod" style="display: none;">
+				<swe:control id="999">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml" hintText="Field"/>
+				</swe:control>
+			</div>
+	   </swe:form>
+	</div>
+</div>
+
+<!-- Template End: CCAppletDashboard.swt -->

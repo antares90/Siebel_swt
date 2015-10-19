@@ -1,0 +1,30 @@
+<!--  Template Start: view_360.swt -->
+<div class="siebui-mobile">
+ <div class="siebui-360-view">
+  <div id="_MobileViewTabContainer" class="siebui-nav-subview siebui-span-lg-3 siebui-span-md-12 siebui-span-sm-12">
+    <swe:include file="CCViewbar_Tabs_DropList_Mobile.swt"/>
+  </div>
+  <div id="_FormParentRelatedItemsOuterCont" class="siebui-span-lg-9 siebui-span-md-12 siebui-span-sm-12 siebui_parent_content" landscape="Default" portrait="Hide">
+    <div id="_detailedContentContainer" class="siebui-360-content">
+      <div class="siebui-span-lg-7">
+        <div id="_infoContainer" class="siebui-parent-info-container">
+          <swe:applet hintMapType="Applet" id="1" hintText="Applet" property="FormattedHtml" var="Parent">
+          </swe:applet>
+        </div>
+        <div id="_analysisContainer" class="siebui-analysis-container">
+          <swe:applet hintMapType="Applet" id="2" hintText="Applet" property="FormattedHtml"  var="Parent">
+          </swe:applet> 
+        </div>
+      </div>
+      <div id="_timelineContainer" class="siebui-timeline-container siebui-span-lg-5">
+        <swe:applet hintMapType="Applet" id="3" hintText="Applet" property="FormattedHtml"  var="Parent">
+        </swe:applet> 
+      </div>
+    </div>
+    <div id="_360OpportunityListContainer" class="siebui-tile-container siebui-360-tile">
+      <swe:applet hintMapType="Applet" id="4" hintText="Parent List Applet" property="FormattedHtml" var="ParentWithPointer"/>
+    </div>
+  </div>
+ </div>
+</div>
+<!--  Template End: view_360.swt  -->

@@ -1,0 +1,70 @@
+<!-- Template Start: eCfg_MenuControlCheckPriceJS.swt -->
+
+<div name="cxMenuContent" style="display:none;">
+
+<!-- Formatting tables -->
+<table datatable="0" summary="" width="100%" height="100%" cellspacing="3" cellpadding="2" border="0" class="AppletBorder">
+<tr>
+<td class="AppletBack" valign="top">
+    <table datatable="0" summary="" cellpadding="2" cellspacing="0" border="0" width="100%" height="100%">
+    <tr>
+	    <td valign="top">
+		    <!-- Header -->
+		    <table datatable="0" summary="" border="0" width="100%" cellpadding="2" cellspacing="0">
+		        <div name="cxMenuControlCaption">
+		            <div name="cxMenuControlCaptionParam" style="display:none;">
+		                <div name="sImage"><swe:control id="swe:IncId + 50" CfgFieldName=".Image" CfgHtmlType="CfgLabel"/></div>
+		                <div name="sDiscription"><swe:control id="swe:IncId + 150" CfgFieldName=".Description" CfgHtmlType="CfgLabel" /></div>
+		                <div name="sLearnMoreURL"><swe:control id="swe:IncId + 250" CfgFieldName=".LearnMore" CfgHtmlType="CfgLabel" /></div>
+		                <div name="sPortName"><swe:control id="swe:IncId + 350" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+		                <div name="sLearnMore"><swe:control id="LearnMore" CfgUIControl="lblLearnMore" CfgHtmlType="CfgLabel"/></div>
+		                <div name="sRequireMoreChild"><swe:control id="swe:IncId+4000" CfgHtmlType="CfgGenerics" /></div>
+		            </div>
+		        </div>
+		    </table>
+		    <!-- END Header -->
+	    </td>
+    </tr>
+    <tr>
+	    <td valign="top" height="99%">
+		    <!-- Content table -->
+		    <table class="siebui-ecfg-module-content" datatable="0" summary="" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="4">
+		                <swe:for-each id="500" CfgLoopType="DomainAndChildren" startValue="1500" count="Dynamic"
+                         iteratorName="111Id" Usage="CheckBox"
+                         CfgFieldList="CfgFieldName:Name, CfgUIControl:lblName, HtmlAttrib_width:310, Default:Y*
+                                       CfgFieldName:RequireMoreChild, Default:Y*
+                                       CfgFieldName:Original List Price, CfgUIControl:lblListPrice, DataType:DTYPE_CURRENCY, NeedRefresh:N, HtmlAttrib_align:center, HtmlAttrib_width:80*
+                                       CfgFieldName:Explanation, CfgUIControl:lblExplanation, HtmlAttrib_align:center"
+                        >
+                            <swe:control id="swe:111Id + 4000" CfgHtmlType="CfgCheckBox"
+                             CfgJSShow="showCheckBox" CfgJSUpdateExclusion="updateExcludedItemForPort" CfgJSUpdateSelection="updatePortItemsForCheckBox" />
+		                </swe:for-each>
+                    </td>
+                </tr>
+		        <tr>
+                    <td colspan="4">
+                        &nbsp;
+                    </td>
+                </tr>
+		        <tr>
+		            <td colspan="4">
+		                <!-- Menu button -->
+                        <div name="cxRuntimeParam" style="display:none;">
+                        &lt;button type="button" class="siebui-ctrl-btn appletButton" name="menuButtonShowMenu" style="height:20;"&gt;<swe:control id="swe:ShowMenu" CfgUIControl="sShowMenu" CfgHtmlType="CfgLabel"/>&lt;/button&gt;
+                        </div>
+                    </td>
+		        </tr>
+		    </table>
+		    <!-- END Content table -->
+	    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+<!-- END Formatting tables -->
+
+</div> <!-- END cxMenuContent -->
+<!-- Template End: eCfg_MenuControlCheckPriceJS.swt -->

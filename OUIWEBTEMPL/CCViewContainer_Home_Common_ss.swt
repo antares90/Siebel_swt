@@ -1,0 +1,53 @@
+<!--  Template Start: CCViewContainer_SS_Home_Common.swt -->
+<swe:include file="dCCHTMLHeader.swt"/>
+
+<!-- ---------- Main Content Area ---------------------------->
+
+<div > <!-- div for applet container -->
+    <!-- left area -->
+	<div>
+	    <!-- Top area -->
+		<div>
+			<swe:for-each count=2 iteratorName="currentId" startValue="1">
+				<swe:applet id="swe:currentId">
+					<swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+				</swe:applet>
+			</swe:for-each>
+		</div>
+		
+		<!-- Bottom area -->
+		<div>
+			<!-- left side -->
+			<div>
+				<swe:applet id="5">
+					<swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+				</swe:applet>
+			</div>
+			<!-- right side -->
+			<div>
+				<swe:applet id="6">
+					<swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+				</swe:applet>
+			</div>
+			<!-- clear all div -->
+			<div></div>
+		</div>
+		<!-- clear all div -->
+		<div></div>
+	</div> 
+	<!-- right area -->
+	<div>
+		<swe:for-each count=4 iteratorName="currentId" startValue="10">
+            <swe:applet id="swe:currentId">
+                <swe:this hintMapType="Applet" hintText="Applet" property="FormattedHtml" var="Parent"/>
+            </swe:applet>
+        </swe:for-each> 
+	</div>
+	<!-- Clear all div -->
+	<div></div>
+</div>
+    
+
+<!-- ---------- End Main Content Area ------------------------>
+<swe:include file="dCCHTMLFooter.swt"/>
+<!--  Template End:  CCViewContainer_SS_Home_Common.swt -->

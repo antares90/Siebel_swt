@@ -1,0 +1,124 @@
+<!-- Template Start: eCfg_MenuGroupSummaryJS.swt -->
+<div  id="cxMenuSum" class="cxGrpTheme">
+
+<div id="SUMMARY" class="eCfgSumStyle">
+<swe:control id="swe:CFGPARAMETER" CfgType="Node" SummaryGroup="Y" property="FormattedHtml" />
+
+<table datatable="0" summary="" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+    <swe:for-each id="110" CfgLoopType="Attribute" startValue="1100" count="Dynamic" iteratorName="AttrId" >
+    <tr class="listRowOff">
+        <td width="30%">
+            <strong>
+            <div name="cxMenuGroupSummaryPort">
+                <div name="cxMenuGroupSummaryPortParam" style="display:none;">
+                    <div name="hasGroup"><swe:control id="swe:hasGrp" CfgFieldName="HasGroup" CfgHtmlType="CfgLabel" /></div>
+                    <div name="sAttName"><swe:control id="swe:AttrId + 450" CfgFieldName="AttName" CfgHtmlType="CfgLabel" /></div>
+                    <div name="sPortName"><swe:control id="swe:TopPortId + 450" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+                    <div name="sGroupId"><swe:control id="swe:180Id + 350" CfgFieldName="CxGroupId" CfgHtmlType="CfgLabel" /></div>
+                    <div name="sPortId"><swe:control id="swe:181Id + 350" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel" /></div>
+                </div>
+            </div>
+            <swe:control id="swe:AttrId + 2550" CfgFieldName="RequireMoreChild" CfgUIControl="RequireMoreChild" CfgHtmlType="CfgLabel" />
+            </strong>
+        </td>
+        <td >
+            <swe:control id="swe:AttrId+100" CfgFieldName="AttValue" CfgHtmlType="CfgLabel" />&nbsp;
+        </td>
+        <td width="5%" >&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    </swe:for-each>
+    <swe:for-each id="120" CfgLoopType="LinkedItem" startValue="3100" count="Dynamic" iteratorName="LinkedId" >
+    <tr class="listRowOff">
+        <td width="30%">
+            <strong><swe:control id="swe:LinkedId" CfgFieldName="CxLnkItmName" CfgHtmlType="CfgLabel" /></strong>
+        </td>
+        <td>
+            <swe:control id="swe:LinkedId+200" CfgFieldName="CxLnkItmDisplayValue" CfgHtmlType="CfgLabel" />&nbsp;
+        </td>
+        <td width="5%" >&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    </swe:for-each>
+    <swe:for-each id="140" CfgLoopType="Resource" startValue="4100" count="Dynamic" iteratorName="RscId" >
+    <tr class="listRowOff">
+        <td width="30%">
+            <strong><swe:control id="swe:RscId" CfgFieldName="CxResourceName" CfgHtmlType="CfgLabel" /></strong>
+        </td>
+        <td>
+            <swe:control id="swe:RscId+300" CfgFieldName="CxResourceValue" CfgHtmlType="CfgLabel" />&nbsp;
+        </td>
+        <td width="5%" >&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    </swe:for-each>
+    <tr class="listRowOff">
+        <td width="100%" colspan="4">&nbsp;</td>
+    </tr>
+</table>
+
+<table datatable="0" summary="" width="100%" cellspacing="3" cellpadding="2" border="0" align="center">
+    <swe:for-each id="200" CfgLoopType="Port" startValue="2100" count="Dynamic" iteratorName="TopPortId" >
+        <swe:if condition="Default, TestFieldValue, Operator:==, FieldName:LoopCount, FieldValue:0">
+    <tr>
+        <td  width="30%" class="dCCItemSectionTitle" style="border-bottom: 2 solid #d6d6ee">
+            &nbsp;
+        </td>
+    </tr>
+        </swe:if>
+    <tr class="listRowOff">
+        <td width="100%" class="AppletBlank" >
+            <b>
+            <div id="eCfg_MenuGroupSummaryJS_PUI_2"></div>
+            <div name="cxMenuGroupSummaryPort">
+                    <div name="cxMenuGroupSummaryPortParam" style="display:none;">
+                            <div name="hasGroup"><swe:control id="swe:hasGrp" CfgFieldName="HasGroup" CfgHtmlType="CfgLabel" /></div>
+                            <div name="sAttName"><swe:control id="swe:AttrId + 450" CfgFieldName="AttName" CfgHtmlType="CfgLabel" /></div>
+                            <div name="sPortName"><swe:control id="swe:TopPortId + 450" CfgFieldName="CxPortName" CfgHtmlType="CfgLabel" /></div>
+                            <div name="sGroupId"><swe:control id="swe:180Id + 350" CfgFieldName="CxGroupId" CfgHtmlType="CfgLabel" /></div>
+                            <div name="sPortId"><swe:control id="swe:181Id + 350" CfgFieldName="Port Item Id" CfgHtmlType="CfgLabel" /></div>
+                    </div>
+            </div>
+            </b>
+            <swe:control id="swe:TopPortId + 2550" CfgFieldName="RequireMoreChild" CfgUIControl="RequireMoreChild" CfgHtmlType="CfgLabel" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <swe:for-each id="1100" CfgLoopType="Domain" Automation="N" startValue="1000" count="Dynamic" iteratorName="1100Id">
+                <swe:control id="ComboAdd" CfgHtmlType="CfgComboAdd" 
+                CfgJSShow="showSelectAndOptionsSpanOnly" CfgJSUpdateExclusion="updateExcludedItemForPort" CfgJSUpdateSelection="updatePortItemsForComboAdd"/>
+            </swe:for-each>
+
+            <swe:for-each id="500" CfgLoopType="Children" startValue="1500" count="Dynamic" iteratorName="101Id"
+             CfgFieldList="CfgFieldName:Quantity, CfgUIControl:lblQuantity, HtmlAttrib_width:80, HtmlAttrib_align:left, Default:Y*
+                        CfgFieldName:Name, CfgUIControl:lblName, HtmlAttrib_width:350, HtmlAttrib_align:left, Default:Y*
+                        CfgFieldName:RequireMoreChild, Default:Y*
+                        CfgFieldName:Explanation, CfgUIControl:lblExplanation, HtmlAttrib_width:70, HtmlAttrib_align:center*
+                        CfgFieldName:Original List Price, CfgUIControl:lblListPrice, DataType:DTYPE_CURRENCY, NeedRefresh:N, HtmlAttrib_align:center, HtmlAttrib_width:80*
+                        CfgFieldName:Current Price, CfgUIControl:lblYourPrice, DataType:DTYPE_CURRENCY, HtmlAttrib_align:center, HtmlAttrib_width:80"
+            >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table datatable="0" summary="">
+            <tr>
+                <td align="center">
+                    <swe:control id="Port Item" CfgHtmlType="CfgPortItem" 
+                     CfgJSShow="showPortItems" CfgJSUpdateSelection="updatePortItemsForComboAdd"/>
+                </td>
+            </tr>
+            </table>
+        </td>
+    </tr>
+            </swe:for-each>
+
+    </swe:for-each>
+</table>
+
+</div> <!-- END for SUMMARY -->
+
+</div>
+
+<!-- Template End: eCfg_MenuGroupSummaryJS.swt -->

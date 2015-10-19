@@ -1,0 +1,7 @@
+<!-- Template Start SSAppletExplicitLogin.swt -->
+
+<div class="siebui-applet-region-2 siebui-span-md-4 siebui-span-lg-4 siebui-span-lg-push-4 siebui-span-md-push-4">
+    <swe:include file="SSAppletLogin.swt"/>
+</div>
+
+<!-- Template End SSAppletExplicitLogin.swt -->

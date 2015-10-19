@@ -1,0 +1,38 @@
+<!-- Template Start: CCPageContainer_SS_Common.swt -->
+<HTML dir="swe:dir">
+    <head>
+        <title><swe:this property="Title"/></title>
+        <swe:include file="CCStylesChoice.swt"/>
+    </head>
+
+    <BODY>
+		<!-- Page container -->
+        <div>
+			<!-- Screen Tab Container -->
+			<div>
+				<div><swe:menu/></div>  <!-- added for short cuts, should be hide this div -->
+				<!-- Screen Tab Place holder -->
+				<div>
+					<swe:include  file="CCScreenbar_Tabs.swt"/>
+				</div>
+				<div>
+					<swe:pageitem id="16"><swe:this property="FormattedHtml"/></swe:pageitem>
+				</div>
+			</div>
+			<!-- End Screen Tab Container -->
+            <!-- View Container Place holder -->
+			<div>
+				<swe:frameset htmlAttr="cols='0%,100%' border='0' frameborder='No'">
+					<swe:frame type="View" htmlAttr="marginheight='0' marginwidth='0' scrolling='NO' frameborder='0'">
+						<swe:current-view/>
+					</swe:frame>
+				</swe:frameset>
+			</div>
+            <!-- End View Container Place holder -->
+        </div>
+		<!-- End Page container -->
+        <swe:scripts/>
+    </BODY>
+</HTML>
+
+<!-- Template End:  CCPageContainer_SS_Common.swt -->

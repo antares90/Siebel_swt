@@ -1,0 +1,31 @@
+<!-- Template Start: CCAppletTaskMap.swt -->
+
+<swe:form>
+<div class="sitemapSection sitemapIndexSection">
+	<div class="sitemapSectionTitle" tabindex="0">
+		<swe:control id="1"><swe:this property="FormattedHtml" hintMapType="Control" hintText="" /></swe:control>
+	</div>
+	<div class="sitemapSectionInfo" tabindex="0">
+	<swe:control id="2"><swe:this property="FormattedHtml" hintMapType="Control" hintText="" /></swe:control>
+	</div>
+</div>
+
+<ul class="sitemapMain">
+	<swe:for-each-screen>
+		<div>
+			<li>
+				<span class="siebui-task-assist-screen-name" tabindex="0"><swe:screenname/></span>
+				<ul class="sitemapCat">
+				<swe:for-each-view>
+					<li>
+					<span class="viewName"><swe:viewname/></span>
+					</li>
+				</swe:for-each-view>
+				</ul>
+			</li>
+		</div>
+	</swe:for-each-screen>
+</ul>
+</swe:form>
+
+<!-- Template End: CCAppletTaskMap.swt -->

@@ -1,0 +1,13 @@
+<!-- Template Start: tcustdirview.swt -->
+<swe:include file="CCHTMLHeader.swt"/>
+<swe:include file="CCTaskViewTitle.swt"/>
+<div class="siebui-telco-custdir">
+    <div class="siebui-telco-custdir-leftapplet siebui-custdir-recent-activity-applet siebui-span-lg-3 siebui-span-md-3">
+        <swe:applet hintMapType="Applet" id="3" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+    </div>
+    <div class="siebui-telco-custdir-rightapplet siebui-custdir-account-list-applet siebui-span-lg-9 siebui-span-md-9">
+        <swe:applet hintMapType="Applet" id="2" hintText="Grandchild Applet" property="FormattedHtml" var="Parent"/>
+    </div>
+</div>
+<swe:include file="CCHTMLFooter.swt"/>
+<!-- Template End: tcustdirview.swt -->

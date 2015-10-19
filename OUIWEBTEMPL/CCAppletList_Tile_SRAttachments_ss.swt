@@ -1,0 +1,41 @@
+<!-- Template Start CCAppletList_Tile_SRAttachments_ss.swt -->
+
+<div class="siebui-applet-read-only">
+    <swe:form>
+        <swe:control id="90">
+            <div class="siebui-applet-title">
+                <swe:this property="FormattedHtml" hintMapType="Field" hintText="Title"/>
+            </div>
+        </swe:control>
+        <swe:include file="CCListButtonsTop.swt"/>
+        <div class="swe:this.SelectStyle">
+            <div class="AppletHIListBorder siebui-tile-container siebui-tile-attachments">
+                <swe:this property="NoGrid"/>
+                <swe:this property="Horizontal"/>
+                <swe:this property="ScrollVisibleTiles"/>
+                <swe:list>
+                    <swe:list-record>
+                        <div class="siebui-tile-details-row1">
+                            <swe:control id="501" hintMapType="FormItem">
+                                <swe:this property="FormattedHtml" hintText="Field"/>
+                            </swe:control>
+                        </div>
+                        <!-- Tile Detail Section -->
+                        <swe:for-each count="4" startValue="503" iteratorName="currentId">
+                            <swe:control id="swe:currentId" hintMapType="FormItem">
+                                <div class="siebui-label" align="swe:this.TextAlignment">
+                                    <swe:this property="DisplayName" hintText="Label"/>:
+                                </div>
+                                <div class="siebui-value" align="swe:this.TextAlignment">
+                                    <swe:this property="FormattedHtml" hintText="Field"/>
+                                </div>
+                            </swe:control>
+                        </swe:for-each>
+                    </swe:list-record>
+                </swe:list>
+            </div>
+        </div>
+    </swe:form>
+</div>
+
+<!-- Template End CCAppletList_Tile_SRAttachments_ss.swt -->
