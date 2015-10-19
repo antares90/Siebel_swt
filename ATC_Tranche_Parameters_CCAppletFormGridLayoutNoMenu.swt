@@ -11,7 +11,7 @@
 		<swe:include file="CCFormButtonsTopNoMenu.swt"/>
 
 		<swe:error type="Popup">
-			<table datatable="0" summary="" class="swe:class AppletBackATCTrancheParameters" width="100%" cellpadding="0" cellspacing="5" border="0"><tr><td class="error">777<swe:this property="FormattedHtml"/></td></tr></table>
+			<table datatable="0" summary="" class="swe:class AppletBackATCTrancheParameters" width="100%" cellpadding="0" cellspacing="5" border="0"><tr><td class="error"><swe:this property="FormattedHtml"/></td></tr></table>
 		</swe:error>
 
 		<swe:form-applet-layout>
