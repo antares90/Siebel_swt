@@ -28,12 +28,14 @@
       			                     <swe:include file="CCFrameBanner.swt"/>
       			                  </swe:frame>
                      		
+                           <div class="siebui-button-toolbar">
       			                  <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ATCExpressFrameViewBar.swt"/>
       			                  </swe:frame>
 								<swe:frame type="Toolbar" name="Toolbar1aaa" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
 									<swe:include file="ExpressFrameToolbar.swt"/>
 								</swe:frame>                     		
+                           </div>
       			                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="CCFrameThreadbar.swt"/>
       			                  </swe:frame>
@@ -62,6 +64,7 @@
       			                     <swe:include file="CCFrameBanner.swt"/>
       			                  </swe:frame>
                      		
+                           <div class="siebui-button-toolbar">
       			                  <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ATCExpressFrameViewBar.swt"/>
       			                  </swe:frame>	 
@@ -69,7 +72,8 @@
       				               <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ExpressFrameToolbar.swt"/>
       			                  </swe:frame>
-                     		
+                           </div>
+
       			                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="CCFrameThreadbar.swt"/>
       			                  </swe:frame>
@@ -102,6 +106,7 @@
       			                     <swe:include file="CCFrameBanner.swt"/>
       			                  </swe:frame>
                      		
+                           <div class="siebui-button-toolbar">
       			                  <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ATCExpressFrameViewBar.swt"/>
       			                  </swe:frame>	 
@@ -109,7 +114,8 @@
       				               <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ExpressFrameToolbar.swt"/>
       			                  </swe:frame>
-                     		
+                           </div>
+
       			                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="CCFrameThreadbar.swt"/>
       			                  </swe:frame>
@@ -139,6 +145,7 @@
       			                     <swe:include file="CCFrameBanner.swt"/>
       			                  </swe:frame>
                      		
+                           <div class="siebui-button-toolbar">
       			                  <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ATCExpressFrameViewBar.swt"/>
       			                  </swe:frame>	 
@@ -146,7 +153,7 @@
       				               <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="ExpressFrameToolbar.swt"/>
       			                  </swe:frame>
-                     		
+                           </div>
       			                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                     <swe:include file="CCFrameThreadbar.swt"/>
       			                  </swe:frame>
@@ -180,6 +187,7 @@
      			                              <swe:include file="CCFrameBanner.swt"/>
                                        </swe:frame>
 
+                        <div class="siebui-button-toolbar">
       		                           <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                              <swe:include file="ATCExpressFrameViewBar.swt"/>
       		                           </swe:frame>	 
@@ -187,7 +195,8 @@
                                        <swe:frame type="Toolbar" name="Toolbar1cccc" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                           <swe:include file="ExpressFrameToolbar.swt"/>
       			                        </swe:frame>
-                     		      
+                        </div>
+
       					                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       						                     <swe:include file="CCFrameThreadbar.swt"/>
       					                  </swe:frame>
@@ -217,6 +226,7 @@
      			                              <swe:include file="CCFrameBanner.swt"/>
      		                              </swe:frame>
 
+                                 <div class="siebui-button-toolbar">
       		                           <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                              <swe:include file="ATCExpressFrameViewBar.swt"/>
       		                           </swe:frame>	 
@@ -224,7 +234,7 @@
                                        <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			                           <swe:include file="ExpressFrameToolbar.swt"/>
       			                        </swe:frame>
-
+                                 </div>
       					                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       						                  <swe:include file="CCFrameThreadbar.swt"/>
       					                  </swe:frame>
@@ -254,10 +264,11 @@
      	       	                  		   <swe:include file="CCFrameBanner.swt"/> 								     	       	                  			
 	                               	   </swe:frame> 
 
+                                 <div class="siebui-button-toolbar">
                                   	   <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                  			   <swe:include file="ATCExpressFrameViewBar.swt"/> <!--this is the toolbar-->
 	      		                	      </swe:frame>	
-
+                                 </div>
      				                	      <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
      					      		            <swe:include file="CCFrameThreadbar.swt"/> <!--this is the thread bar-->
      						    	            </swe:frame> 
@@ -288,10 +299,12 @@
      			                              <swe:include file="CCFrameBanner.swt"/>
      		                              </swe:frame>
 
+                                 <div class="siebui-button-toolbar">
       		                           <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                              <swe:include file="ATCExpressFrameViewBar.swt"/>
       		                           </swe:frame>	 
-                     		         
+                                 </div>
+
       					                  <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       						                  <swe:include file="CCFrameThreadbar.swt"/>
       					                  </swe:frame>
@@ -333,6 +346,7 @@
       			         <swe:include file="CCFrameBanner.swt"/>
       			      </swe:frame>
          		
+                  <div class="siebui-button-toolbar">
       			      <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ATCExpressFrameViewBar.swt"/>
       			      </swe:frame>	 
@@ -340,7 +354,8 @@
       				   <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ExpressFrameToolbar.swt"/>
       			      </swe:frame>
-         		
+                  </div>
+
       			      <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="CCFrameThreadbar.swt"/>
       			      </swe:frame>
@@ -370,14 +385,16 @@
       			         <swe:include file="CCFrameBanner.swt"/>
       			      </swe:frame>
          		
+                  <div class="siebui-button-toolbar">
       			      <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="ATCExpressFrameViewBar.swt"/>
+      			         <swe:include file="ЗфViewBar.swt"/>
       			      </swe:frame>	 
          		
       				   <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ExpressFrameToolbar.swt"/>
       			      </swe:frame>
-         		
+                  </div>
+
       			      <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="CCFrameThreadbar.swt"/>
       			      </swe:frame>
@@ -406,6 +423,7 @@
       			         <swe:include file="CCFrameBanner.swt"/>
       			      </swe:frame>
          		
+                  <div class="siebui-button-toolbar">
       			      <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ATCExpressFrameViewBar.swt"/>
       			      </swe:frame>	 
@@ -413,7 +431,8 @@
       				   <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ExpressFrameToolbar.swt"/>
       			      </swe:frame>
-         		
+                  </div>
+
       			      <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="CCFrameThreadbar.swt"/>
       			      </swe:frame>
@@ -443,6 +462,7 @@
       			         <swe:include file="CCFrameBanner.swt"/>
       			      </swe:frame>
          		
+               <div class="siebui-button-toolbar">
       			      <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ATCExpressFrameViewBar.swt"/>
       			      </swe:frame>	 
@@ -450,7 +470,8 @@
       				   <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ExpressFrameToolbar.swt"/>
       			      </swe:frame>
-         		
+               </div>
+
       			      <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="CCFrameThreadbar.swt"/>
       			      </swe:frame>
@@ -484,6 +505,7 @@
                               <swe:include file="CCFrameBanner.swt"/>
      		                  </swe:frame>
 
+                        <div class="siebui-button-toolbar">
       		               <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                  <swe:include file="ATCExpressFrameViewBar.swt"/>
       		               </swe:frame>	 
@@ -491,6 +513,7 @@
                            <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			               <swe:include file="ExpressFrameToolbar.swt"/>
       			            </swe:frame>
+                        </div>
 
       				         <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       					         <swe:include file="CCFrameThreadbar.swt"/>
@@ -521,6 +544,7 @@
                               <swe:include file="CCFrameBanner.swt"/>
                            </swe:frame>
 
+                        <div class="siebui-button-toolbar">
       		               <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                  <swe:include file="ATCExpressFrameViewBar.swt"/>
       		               </swe:frame>	 
@@ -528,6 +552,7 @@
                            <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			               <swe:include file="ExpressFrameToolbar.swt"/>
       			            </swe:frame>
+                        </div>
 
       			            <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			               <swe:include file="CCFrameThreadbar.swt"/>
@@ -559,10 +584,12 @@
                               <swe:include file="CCFrameBanner.swt"/>
      		                  </swe:frame>
 
+                        <div class="siebui-button-toolbar">
       		               <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                  <swe:include file="ATCExpressFrameViewBar.swt"/>
       		               </swe:frame>	 
-            		      
+                        </div>
+
       			            <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			               <swe:include file="CCFrameThreadbar.swt"/>
       			            </swe:frame>
@@ -592,10 +619,12 @@
                                  <swe:include file="CCFrameBanner.swt"/>
                            </swe:frame>
 
+                        <div class="siebui-button-toolbar">
       		               <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       		                     <swe:include file="ATCExpressFrameViewBar.swt"/>
       		               </swe:frame>	 
-            		      
+                        </div>
+
       			            <swe:frame type="Threadbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			               <swe:include file="CCFrameThreadbar.swt"/>
       			            </swe:frame>
@@ -650,6 +679,7 @@
       			         <swe:include file="CCFrameScreenbar.swt"/>
       			     </swe:frame>
       			
+                 <div class="siebui-button-toolbar">
       			     <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ATCExpressFrameViewBar.swt"/>
       			     </swe:frame>	 
@@ -657,7 +687,7 @@
       			     <swe:frame type="Content" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='Auto'">
       			         <swe:include file="CCFrameContent_Logic.swt"/>
       			     </swe:frame>
-      				 
+               </div>
       				 <swe:frame type="Toolbar" name="Toolbar2" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="CCFrameMsgbar.swt"/>
       			     </swe:frame>		
@@ -678,10 +708,11 @@
       			         <swe:include file="CCFrameScreenbar.swt"/>
       			     </swe:frame>
       			
+                 <div class="siebui-button-toolbar">
       			     <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ATCExpressFrameViewBar.swt"/>
       			     </swe:frame>	 
-      			
+            </div>
       			     <swe:frame type="Content" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='Auto'">
       			         <swe:include file="CCFrameContent_Logic.swt"/>
       			     </swe:frame>
@@ -708,10 +739,11 @@
       			         <swe:include file="CCFrameScreenbar.swt"/>
       			     </swe:frame>
       			
+                 <div class="siebui-button-toolbar">
       			     <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
       			         <swe:include file="ATCExpressFrameViewBar.swt"/>
       			     </swe:frame>	 
-      			
+            </div>
       			     <swe:frame type="Content" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='Auto'">
       			         <swe:include file="CCFrameContent_Logic.swt"/>
       			     </swe:frame>
