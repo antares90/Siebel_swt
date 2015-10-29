@@ -387,7 +387,7 @@
          		
                   <div class="siebui-button-toolbar">
       			      <swe:frame type="Viewbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="ЗфViewBar.swt"/>
+						  <swe:include file="ATCExpressFrameViewBar.swt"/>
       			      </swe:frame>	 
          		
       				   <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
