@@ -2,7 +2,7 @@
     <div class="AppletBack AppletHIFormBorder AppletBackATCQuickSelect">
         <swe:include file="CCTitle_Named.swt"/>
         <swe:error type="Popup">
-            <div class="error siebui-error">
+            <div class="error siebui-error AppletBackATCQuickSelect">
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:error>
