@@ -1,6 +1,5 @@
 <swe:form>
     <div class="AppletBack AppletHIFormBorder AppletBackATCQuickSelect">
-        <div>OUIWEBTEMPL/CUSTOM/ATC_Quick_Select_CCAppletFormGridLayoutNoMenu.swt</div>
         <swe:include file="CCTitle_Named.swt"/>
         <swe:error type="Popup">
             <div class="error siebui-error">
