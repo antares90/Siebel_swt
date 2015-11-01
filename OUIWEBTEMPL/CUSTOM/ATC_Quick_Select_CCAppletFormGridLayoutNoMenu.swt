@@ -1,0 +1,21 @@
+<swe:form>
+    <div class="AppletBack AppletHIFormBorder AppletBackATCQuickSelect">
+        <swe:include file="CCTitle_Named.swt"/>
+        <swe:error type="Popup">
+            <div class="error siebui-error">
+                <swe:this property="FormattedHtml"/>
+            </div>
+        </swe:error>
+        <swe:include file="ATCFormButtonsTopNoMenu.swt"/>
+        <div class="siebui-applet-content siebui-collapsible">
+            <swe:form-applet-layout>
+            </swe:form-applet-layout>
+        </div>
+        </span>
+    </div>
+</swe:form>
+<!-- Template End: CCAppletFormGridLayout.swt -->
+
+
+
+	
