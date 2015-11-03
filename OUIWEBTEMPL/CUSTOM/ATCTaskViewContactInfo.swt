@@ -1,5 +1,4 @@
 <!--  Template Start: CCViewDetail.swt -->
-<div class="path"> OUIWEBTEMPL/CUSTOM/ATCTaskViewContactInfo.swt</div>
 <swe:include file="CCHTMLHeader.swt"/>
 
 <swe:include file="CCTaskViewTitle.swt"/>
@@ -24,6 +23,9 @@
 </swe:if>
 
 <!-- ---------- Main Content Area ---------------------------->
+<swe:if condition="Task UI Service (SWE),IsInTask">
+    <div class="siebui-view-main">
+</swe:if>
 
 <swe:applet hintMapType="Applet" id="1" hintText="Parent Applet" property="FormattedHtml" var="Parent"/>
 
@@ -33,6 +35,37 @@
 	<!-- ---------- End Tier 3 & Tier 4 navigation ------------->
 	<swe:include file="CCSubordinateAppletsBorderStart.swt"/>
 </swe:if>
+
+<!-- ---------------- Кнопки Сохранить - нАзад- Вперед - Далее - Отмена - ФИО ------->
+<!--
+----ATC Opportunity Cancel Task Form Applet
+----ATC Opportunity Contact FIO Form Applet
+----Task Playbar Applet - Top
+-->
+<div class="siebui-view-multi-column">
+	<div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12">
+		<!--  Column 1 -->
+		<swe:for-each count=5 iteratorName="currentId" startValue="202">
+			<swe:applet hintMapType="Applet" id="swe:currentId">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+		</swe:for-each>
+		<!--  End Column 1 -->
+	</div>
+	<div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12">
+		<!--  Column 2 -->
+		<swe:for-each count=5 iteratorName="currentId" startValue="302">
+			<swe:applet hintMapType="Applet" id="swe:currentId">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+		</swe:for-each>
+		<!--  End Column 2 -->
+	</div>
+</div>
 
 <swe:for-each count=1 iteratorName="currentId" startValue="2">
 	<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet" property="FormattedHtml" var="Child"/>
@@ -54,27 +87,6 @@
 	</swe:for-each>
 </swe:if>
 
-<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-	<tr valign="top">
-		<td width="60%">
-			<swe:for-each count=2 iteratorName="currentId" startValue="777">
-				<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-			</swe:for-each>
-		</td>
-
-		<td width="40%">
-			<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-				<tr valign="top">
-					<td width="100%">
-						<swe:for-each count=1 iteratorName="currentId" startValue="779">
-							<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-						</swe:for-each>
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
 <swe:switch>
 	<swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
 		<swe:for-each count=2 iteratorName="currentId" startValue="6">
@@ -87,26 +99,55 @@
 	</swe:case>
 
 	<swe:default>
-		<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-			<tr valign="top">
-				<td width="50%">
+        <div class="siebui-view-multi-column">
+            <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
 					<swe:for-each count=2 iteratorName="currentId" startValue="6">
 						<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
 					</swe:for-each>
-				</td>
-
-				<td width="50%">
+            </div>
+            <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
 					<swe:for-each count=2 iteratorName="currentId" startValue="8">
 						<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
 					</swe:for-each>
-				</td>
-			</tr>
-		</table>
+            </div>
+        </div>
 	</swe:default>
 </swe:switch>
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
 	<swe:include file="CCSubordinateAppletsBorderEnd.swt"/>
+</swe:if>
+
+
+<!-- ---------- Bottom Two Applet Region ------------------------>
+<div class="siebui-view-multi-column">
+	<div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12">
+		<!--  Column 1 -->
+		<swe:for-each count=5 iteratorName="currentId" startValue="502">
+			<swe:applet hintMapType="Applet" id="swe:currentId">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+		</swe:for-each>
+		<!--  End Column 1 -->
+	</div>
+	<div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12">
+		<!--  Column 2 -->
+		<swe:for-each count=5 iteratorName="currentId" startValue="602">
+			<swe:applet hintMapType="Applet" id="swe:currentId">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+		</swe:for-each>
+		<!--  End Column 2 -->
+	</div>
+</div>
+<!-- ---------- End Bottom Two Applet Region ------------------------>
+
+<swe:if condition="Task UI Service (SWE),IsInTask">
+    </div>
 </swe:if>
 
 <swe:include file="CCHTMLFooter.swt"/>
