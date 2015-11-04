@@ -5,24 +5,27 @@
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
    <!-- ---------- Threadbar and Mini-Applet ----------------->
-   <table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%">
-   <tr>
-      <swe:if condition="Web Engine State Properties, IsLowInteractive">
-      <td valign="absmiddle">
-         <swe:include file="CCThreadbar.swt"/>
-      </td>
-      </swe:if>
-      <swe:applet id="201" hintText="Mini-Applet">
-         <td align="right"><swe:this property="FormattedHTML"/></td>
-         <td>&nbsp;&nbsp;&nbsp;</td>
-      </swe:applet>  
-         
-   </tr>
-   </table> 
+   <table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%" class="siebui-view-miniapp">
+      <tr>
+         <swe:if condition="Web Engine State Properties, IsLowInteractive">
+            <td valign="absmiddle">
+               <swe:include file="CCThreadbar.swt"/>
+            </td>
+         </swe:if>
+         <swe:applet id="201" hintText="Mini-Applet">
+            <td align="right"><swe:this property="FormattedHTML"/></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+         </swe:applet>
+
+      </tr>
+   </table>
    <!-- ---------- End Threadbar and Mini-Applet ------------->
 </swe:if>
 
 <!-- ---------- Main Content Area ---------------------------->
+<swe:if condition="Task UI Service (SWE),IsInTask">
+   <div class="siebui-view-main">
+</swe:if>
 
 <swe:applet hintMapType="Applet" id="1" hintText="Parent Applet" property="FormattedHtml" var="Parent"/>
 
@@ -34,12 +37,12 @@
 </swe:if>
 
 <swe:for-each count=1 iteratorName="currentId" startValue="2">
-<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet" property="FormattedHtml" var="Child"/>
+   <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet" property="FormattedHtml" var="Child"/>
 </swe:for-each>
 
 <swe:if condition="Web Engine State Properties, IsHighInteractive">
    <swe:for-each count=1 iteratorName="currentId" startValue="702">
-   <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet (HI Display Only)" property="FormattedHtml" var="Child"/>
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet (HI Display Only)" property="FormattedHtml" var="Child"/>
    </swe:for-each>
 </swe:if>
 
@@ -53,59 +56,39 @@
    </swe:for-each>
 </swe:if>
 
-<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-	 <tr valign="top">
-		<td width="60%">
-		   <swe:for-each count=2 iteratorName="currentId" startValue="777">
-			  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-		   </swe:for-each>
-		</td>
-
-		<td width="40%">
-		   <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-				 <tr valign="top">
-					<td width="100%">
-					   <swe:for-each count=1 iteratorName="currentId" startValue="779">
-						  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-					   </swe:for-each>
-					</td>
-				 </tr>
-			</table>
-		</td>
-	 </tr>
- </table>
 <swe:switch>
    <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
       <swe:for-each count=2 iteratorName="currentId" startValue="6">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
       </swe:for-each>
-      
+
       <swe:for-each count=2 iteratorName="currentId" startValue="8">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
       </swe:for-each>
    </swe:case>
 
    <swe:default>
-      <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-         <tr valign="top">
-            <td width="50%">
-               <swe:for-each count=2 iteratorName="currentId" startValue="6">
-                  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-               </swe:for-each>
-            </td>
-
-            <td width="50%">
-               <swe:for-each count=2 iteratorName="currentId" startValue="8">
-                  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-               </swe:for-each>
-            </td>
-         </tr>
-      </table>
+      <div class="siebui-view-multi-column">
+         <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+            <swe:for-each count=2 iteratorName="currentId" startValue="6">
+               <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+            </swe:for-each>
+         </div>
+         <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+            <swe:for-each count=2 iteratorName="currentId" startValue="8">
+               <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+            </swe:for-each>
+         </div>
+      </div>
    </swe:default>
 </swe:switch>
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
    <swe:include file="CCSubordinateAppletsBorderEnd.swt"/>
+</swe:if>
+
+<swe:if condition="Task UI Service (SWE),IsInTask">
+   </div>
 </swe:if>
 
 <swe:include file="CCHTMLFooter.swt"/>
