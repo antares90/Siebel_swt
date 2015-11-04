@@ -132,24 +132,6 @@
     <swe:applet  id="swe:currentId" property="FormattedHtml" var="Child"/>
 </swe:for-each>
 
-<swe:if condition="Web Engine State Properties, IsHighInteractive">
-    <swe:for-each count=1 iteratorName="currentId" startValue="702">
-        <swe:applet  id="swe:currentId"
-                    property="FormattedHtml" var="Child"/>
-    </swe:for-each>
-</swe:if>
-
-<swe:for-each count=3 iteratorName="currentId" startValue="3">
-    <swe:applet  id="swe:currentId" property="FormattedHtml"
-                var="Grandchild"/>
-</swe:for-each>
-
-<swe:if condition="Web Engine State Properties, IsHighInteractive">
-    <swe:for-each count=3 iteratorName="currentId" startValue="703">
-        <swe:applet  id="swe:currentId" 
-                    property="FormattedHtml" var="Grandchild"/>
-    </swe:for-each>
-</swe:if>
 
 <swe:switch>
     <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
