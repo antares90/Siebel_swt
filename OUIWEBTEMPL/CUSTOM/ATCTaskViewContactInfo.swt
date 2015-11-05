@@ -53,7 +53,7 @@
 ----Task Playbar Applet - Top
 -->
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12 siebui-align-right">
+    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12 siebui-align-right">
         <!--  Column 1 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="202">
             <swe:applet  id="swe:currentId">
@@ -64,7 +64,7 @@
         </swe:for-each>
         <!--  End Column 1 -->
     </div>
-    <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12" style="min-width: 350px;">
         <!--  Column 2 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="302">
             <swe:applet  id="swe:currentId">
@@ -78,12 +78,12 @@
 </div>
 
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12 siebui-align-center">
+    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12 siebui-align-center">
         <swe:applet id="355">
             <swe:this property="FormattedHtml"/>
         </swe:applet>
     </div>
-    <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-align-center">
+    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12 siebui-align-center">
         <swe:for-each count=2 iteratorName="currentId" startValue="356">
             <swe:applet  id="swe:currentId">
                 <!-- start applet-->
@@ -95,10 +95,10 @@
 </div>
 
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12">
             <swe:applet id="376" property="FormattedHtml" var="Grandchild"/>
     </div>
-    <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12">
             <swe:applet  id="377" property="FormattedHtml" var="Grandchild"/>
     </div>
 </div>
@@ -170,7 +170,7 @@
 
 <!-- ---------- Bottom Two Applet Region ------------------------>
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12">
         <!--  Column 1 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="502">
             <swe:applet  id="swe:currentId">
@@ -181,7 +181,7 @@
         </swe:for-each>
         <!--  End Column 1 -->
     </div>
-    <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12" style="min-width: 350px;">
         <!--  Column 2 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="602">
             <swe:applet  id="swe:currentId">
