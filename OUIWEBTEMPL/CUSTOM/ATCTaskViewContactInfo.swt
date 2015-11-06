@@ -5,7 +5,7 @@
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
     <!-- ---------- Threadbar and Mini-Applet ----------------->
-    <table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%">
+    <table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%" style="margin-top: 50px;">
         <tr>
             <swe:if condition="Web Engine State Properties, IsLowInteractive">
                 <td valign="absmiddle">
