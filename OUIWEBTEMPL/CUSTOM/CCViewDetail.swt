@@ -57,12 +57,12 @@
 </swe:if>
 
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
         <swe:for-each count=2 iteratorName="currentId" startValue="777">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
         </swe:for-each>
     </div>
-    <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-5 siebui-span-md-6 siebui-span-sm-12">
         <swe:applet id="779" property="FormattedHtml" var="Grandchild"/>
     </div>
 </div>
