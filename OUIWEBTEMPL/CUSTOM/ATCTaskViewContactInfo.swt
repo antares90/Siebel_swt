@@ -64,7 +64,7 @@
         </swe:for-each>
         <!--  End Column 1 -->
     </div>
-    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12" style="min-width: 340px;">
+    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12 siebui-align-left" style="min-width: 340px;">
         <!--  Column 2 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="302">
             <swe:applet  id="swe:currentId">
@@ -181,7 +181,7 @@
         </swe:for-each>
         <!--  End Column 1 -->
     </div>
-    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12" style="min-width: 350px;">
+    <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12 siebui-align-left" style="min-width: 340px;">
         <!--  Column 2 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="602">
             <swe:applet  id="swe:currentId">
