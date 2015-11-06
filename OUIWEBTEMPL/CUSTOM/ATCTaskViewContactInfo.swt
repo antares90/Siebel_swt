@@ -170,7 +170,7 @@
 
 <!-- ---------- Bottom Two Applet Region ------------------------>
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
         <!--  Column 1 -->
         <swe:for-each count=5 iteratorName="currentId" startValue="502">
             <swe:applet  id="swe:currentId">
