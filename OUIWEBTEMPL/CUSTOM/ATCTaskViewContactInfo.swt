@@ -78,7 +78,7 @@
 </div>
 
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12 siebui-align-center">
+    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12 siebui-align-center">
         <swe:applet id="355">
             <swe:this property="FormattedHtml"/>
         </swe:applet>
@@ -95,7 +95,7 @@
 </div>
 
 <div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-9 siebui-span-md-6 siebui-span-sm-12">
+    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
             <swe:applet id="376" property="FormattedHtml" var="Grandchild"/>
     </div>
     <div class="siebui-span-lg-3 siebui-span-md-6 siebui-span-sm-12">
