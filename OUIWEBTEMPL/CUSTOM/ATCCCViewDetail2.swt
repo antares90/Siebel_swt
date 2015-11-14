@@ -65,21 +65,18 @@
    </swe:case>
 
    <swe:default>
-      <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-         <tr valign="top">
-            <td width="50%">
-               <swe:for-each count=2 iteratorName="currentId" startValue="26">
-                  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-               </swe:for-each>
-            </td>
-
-            <td width="50%">
-               <swe:for-each count=2 iteratorName="currentId" startValue="28">
-                  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-               </swe:for-each>
-            </td>
-         </tr>
-      </table>
+      <div class="siebui-view-multi-column">
+         <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+            <swe:for-each count=2 iteratorName="currentId" startValue="26">
+               <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+            </swe:for-each>
+         </div>
+         <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+            <swe:for-each count=2 iteratorName="currentId" startValue="28">
+               <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+            </swe:for-each>
+         </div>
+      </div>
    </swe:default>
 </swe:switch>
 
