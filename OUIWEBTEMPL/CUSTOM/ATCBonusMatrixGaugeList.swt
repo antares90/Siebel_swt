@@ -27,6 +27,16 @@
 	
 	<div class="leto-button-info-upper-right-div">				
 		<div class='leto-button-info-upper-right'></div>
+		<script>
+			$(function(){
+				$('.leto-button-info-upper-right').click(function () {
+					$('#bmGaugeDescriptionPopupuniq').fadeIn();
+				});
+				$('.butesc').click(function () {
+					$('#bmGaugeDescriptionPopupuniq').fadeOut();
+				});
+			});
+		</script>
 		<div class='bmGaugeDescriptionPopup1' id='bmGaugeDescriptionPopupuniq'>
 			<div class='bmGaugeDescriptionPopupDatauniq' style = "padding:10px;">
 				<div class='butesc'></div>
