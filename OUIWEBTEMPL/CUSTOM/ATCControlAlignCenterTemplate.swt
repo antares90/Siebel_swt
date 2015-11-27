@@ -1,0 +1,43 @@
+<!-- Template Start: CCAppletForm4Col_B.swt -->
+
+<!--<swe:include file="CCApplet_NamedSpacer.swt"/>-->
+
+<swe:form>
+<div style="height: 100px; width: 100%;">
+	<table datatable="0" summary="" width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="AppletBack">
+		<tr>
+			<td align="center">
+				<swe:control id ="1"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<swe:control id ="2"><swe:this property="FormattedHtml" hintText="Button" hintMapType="Button"/></swe:control>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<swe:control id ="3"><swe:this property="FormattedHtml" hintText="CustomControl"/></swe:control>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<swe:control id ="4"><swe:this property="FormattedHtml" hintText="CustomControl" hintMapType="CustomControl"/></swe:control>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<swe:control id ="5"><swe:this property="FormattedHtml" hintText="CustomControl"/></swe:control>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<swe:control id ="6"><swe:this property="FormattedHtml" hintText="CustomControl" hintMapType="CustomControl"/></swe:control>
+			</td>
+		</tr>
+	</table>
+</div>
+</swe:form>
+
+
+<!-- Template End: CCAppletFormBase4Col_B.swt -->
