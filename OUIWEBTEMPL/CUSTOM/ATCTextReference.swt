@@ -1,0 +1,36 @@
+<!-- Template Start: ATCTextReference LETO-4381>>RRALMUKHAMETOV -->
+<meta charset="utf-8" /> 
+<swe:include file="CCApplet_NamedSpacer.swt"/>	
+<swe:form>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+	<div class="swe:this.SelectStyle">	
+</swe:if>
+<table datatable="0" summary="" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="swe:class AppletBack"><tr><td class="AppletHIFormBorder">
+		<br><section><font size="3"<p>Принадлежность к ИПДЛ/РПДЛ/FATCO</p></font></section> 
+	<font size="3"<p><b>К ИПДЛ/РПДЛ относятся лица,занимающие должности:</b>
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; в публичных международных организациях (например, ООН, Международная федерация обществ Красного Креста и Красного Полумесяца, ЮНЕСКО, Парламентская ассамблея Совета Европы и т.п.);
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; государственную должность РФ (например, Президент РФ, Председатель Правительства РФ, председатели палат Федерального Собрания, руководители органов законодательной и исполнительной 
+	<br>власти субъектов РФ, депутаты, судьи, младшие государственные должности — референты 1,2,3-го классов и т.п.);
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; члена Совета директоров Центрального Банка РФ;
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; федеральной государственной  службы, назначение на которую и освобождение от которой осуществляется Президентом РФ или Правительством РФ
+	<br>(например, Руководитель Администрации Президента Российской Федерации, Полномоченные представители Президента Российский Федерации, Помощник Президента Российской Федерации и т.п.);
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; в Центральном Банке РФ, включенные в перечень должностей, определяемых Президентом РФ;
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; в государственной корпорации (например, РОСНАНО, Внешэкономбанке, Олимпстрое, Ростехнологии, РосАтоме), включенные в перечень должностей, определяемых Президентом РФ;
+	<br>-&nbsp;&nbsp;&nbsp;&nbsp; иной организации, созданной РФ на основании федеральных законов, включенные в перечень должностей, определяемых Президентом РФ.</p></font>
+		<swe:error type="Popup">
+			<table datatable="0" summary="" class="swe:class AppletBack" width="100%" cellpadding="0" cellspacing="5" border="0"><tr><td class="error"><swe:this property="FormattedHtml"/></td></tr></table>
+		</swe:error>
+		<swe:form-applet-layout>
+		</swe:form-applet-layout>
+	</span>
+</td></tr></table>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+	</div>	
+</swe:if>
+</swe:form>
+
+<!-- Template End: CATCTextReference LETO-4381>>RRALMUKHAMETOV -->
+
+
+
+	
