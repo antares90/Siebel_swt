@@ -9,7 +9,6 @@
       <swe:switch>
       <swe:case condition="Web Engine State Properties, IsPrintOn">
          <td nowrap class="swe:class AppletTitle">
-            &nbsp;
             <swe:control id=90>
                <swe:this  property = "FormattedHtml"/>
                <div style='display:none;'>
@@ -18,7 +17,6 @@
             <swe:control id=90>
                </div>
             </swe:control>
-            &nbsp;
          </td>
       </swe:case>
       <swe:default>
@@ -35,7 +33,7 @@
 			<swe:default>
                                 
 				<td nowrap width="100%" class="AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -52,7 +50,7 @@
 			<swe:if condition="Web Engine State Properties, IsLowInteractive">
                                         
 					<td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -78,7 +76,7 @@
 			<swe:default>
                                 
 				<td nowrap width="100%" class="AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -95,7 +93,7 @@
 			<swe:if condition="Web Engine State Properties, IsLowInteractive">	
                                  	
 				<td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -113,7 +111,7 @@
 			<swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:1'">
                                 
 				<td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 				<swe:control id=90>
 					<swe:this  property = "FormattedHtml"/>
 					<div style='display:none;'>
@@ -127,7 +125,7 @@
 			<swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
                                   
 				<td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -140,7 +138,7 @@
 			</swe:case>
 			<swe:default>
                                 <td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 					<swe:this  property = "FormattedHtml"/>
 					<div style='display:none;'>
@@ -158,7 +156,7 @@
 			<swe:switch>
 			<swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:1'">
                                 <td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -171,7 +169,7 @@
 			</swe:case>
 			<swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
 				<td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 					<swe:control id=90>
 						<swe:this  property = "FormattedHtml"/>
 						<div style='display:none;'>
@@ -184,7 +182,7 @@
 			</swe:case>
 			<swe:default>
 				<td nowrap width="100%" class="swe:class AppletTitle">
-					&nbsp;
+
 			<swe:control id=90>
 					<swe:this  property = "FormattedHtml"/>
 					<div style='display:none;'>
@@ -201,7 +199,7 @@
 		<swe:if-var name="Grandchild">
                         
 			<td nowrap width="100%" class="swe:class AppletTitle">
-				&nbsp;
+
 				<swe:control id=90>
 					<swe:this  property = "FormattedHtml"/>
 					<div style='display:none;'>
@@ -215,7 +213,7 @@
 
 		<swe:if-var name="AppletFilter-No">
                           	<td nowrap width="100%" class="swe:class AppletTitle">
-				&nbsp;
+
 				<swe:control id=90>
 					<swe:this  property = "FormattedHtml"/>
 					<div style='display:none;'>
@@ -261,9 +259,9 @@
 
 		<!-- Record Navigation and Additional Buttons Section -->		
 		<td width="100%">
-			&nbsp;
+
 			<img src="images/btn_div_gray.gif" height="13" align="middle" alt="">
-			&nbsp;
+
 		</td>
 		<swe:include file="CCRecordNav.swt"/>	
 		<swe:include file="CCFormButtonsTopRight.swt"/>
@@ -364,7 +362,7 @@
 
 			<!-- Query Message Area -->			
 			<td class="swe:class mceGridLabel" align="left" width="100%" nowrap>
-				&nbsp;<b><swe:message type="Query Message" /></b>
+				<b><swe:message type="Query Message" /></b>
 			</td>
 
 		</swe:if>
