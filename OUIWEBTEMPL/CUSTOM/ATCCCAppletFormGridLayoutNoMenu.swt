@@ -6,7 +6,7 @@
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:error>
-        <swe:include file="ATCFormButtonsTopNoMenu.swt"/>
+        <swe:include file="CCFormButtonsTopNoMenu.swt"/>
         <div class="siebui-applet-content siebui-collapsible">
             <swe:form-applet-layout>
             </swe:form-applet-layout>
