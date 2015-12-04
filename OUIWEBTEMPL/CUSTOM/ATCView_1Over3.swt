@@ -85,17 +85,16 @@
                 <!-- end applet-->
             </swe:applet>
         </swe:for-each>
-        <swe:for-each count=1 iteratorName="currentId" startValue="902">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-                <!-- start applet-->
-                <swe:this property="FormattedHtml"/>
-                <!-- end applet-->
-            </swe:applet>
-        </swe:for-each>
     </div>
 </div>
 <!-- ---------- End Bottom Two Applet Region ------------------------>
-
+<swe:for-each count=1 iteratorName="currentId" startValue="902">
+    <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+        <!-- start applet-->
+        <swe:this property="FormattedHtml"/>
+        <!-- end applet-->
+    </swe:applet>
+</swe:for-each>
 <!-- ---------- End Main Content Area ------------------------>
 
 <swe:include file="CCHTMLFooter.swt"/>
