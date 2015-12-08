@@ -30,6 +30,7 @@
 </swe:if>
 
 <swe:applet hintMapType="Applet" id="1" hintText="Parent Applet" property="FormattedHtml" var="Parent"/>
+<swe:applet hintMapType="Applet" id="1001" hintText="SubParent Applet" property="FormattedHtml" var="Parent"/>
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
     <!-- ---------- Tier 3 & Tier 4 navigation ----------------->

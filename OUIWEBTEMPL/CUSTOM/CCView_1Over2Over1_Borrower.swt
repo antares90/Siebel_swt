@@ -43,6 +43,7 @@
 </swe:for-each>
 
 <swe:applet hintMapType="Applet" id="50" hintText="Parent 2 Applet" property="FormattedHtml" var="Parent"/>
+<swe:applet hintMapType="Applet" id="1001" hintText="SubParent Applet" property="FormattedHtml" var="Parent"/>
 
 <!-- ---------- End Top One Applet Region ------------------------>
 
