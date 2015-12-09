@@ -1,0 +1,46 @@
+<!-- Template Start: CCAppletFormGridLayout.swt -->
+
+<!--<swe:include file="CCApplet_NamedSpacer.swt"/>	-->
+
+<swe:form>
+<table datatable="0" summary="" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="AppletBack" style="margin-top: 50px;">
+	<tr>
+		<td align="center" id="ReturnInQueue" >
+			<swe:control id ="10"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>
+		<td align="center" id="NVO Button">
+			<swe:control id ="20"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>
+	</tr>
+	<tr>	
+		<td align="center" id="New1">
+			<swe:control id ="11"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>	
+		<td align="center" id="New2">
+			<swe:control id ="21"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>
+	</tr>
+	<tr>
+		<td align="center" id="CheckedNext" >
+			<swe:control id ="12"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>
+		<td align="center" id="CheckedPause">
+			<swe:control id ="22"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>
+	</tr>
+	<tr>	
+		<td align="center" id="NVO Field">
+			<swe:control id ="13"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>	
+		<td align="center" id="New">
+			<swe:control id ="23"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>				
+		</td>
+	</tr>
+</table>
+</swe:form>
+
+<!-- Template End: CCAppletFormGridLayout.swt -->
+
+
+
+	
