@@ -114,6 +114,9 @@
                 <swe:toolbaritem property="FormattedHtml"/>
             </swe:toolbar>
         </div>
+		
+        <div id="MsgLayer"/>
+        
         <div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
             <swe:form>
                 <swe:pdqbar>
@@ -142,9 +145,9 @@
             </div>
         </swe:if>
         <!-- COMMUNICATION PANEL TOOLBAR END -->
-        <swe:if condition="Communication Panel UI Service, IsNotCommPanelEnabled">
+        <!-- перенесли перед PDQ + class убрали LETO-5531 <swe:if condition="Communication Panel UI Service, IsNotCommPanelEnabled">
             <div id="MsgLayer" class="siebui-tb-cti-status-msg-container"/>
-        </swe:if>
+        </swe:if>  -->
     </swe:default>
 </swe:switch>
 <swe:scripts/>
