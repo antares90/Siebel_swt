@@ -1,0 +1,74 @@
+
+<!-- Template Start: ATCAppletList_WithScan.swt -->
+
+<swe:include file="CCApplet_NamedSpacer.swt"/>	
+
+<swe:control id="1100"><div class=CmdTxt><swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/></div><p></swe:control>
+
+<swe:form>
+
+		<swe:include file="CCTitle_Named.swt"/>		
+
+		<swe:if condition="Web Engine State Properties, IsPrintOff">
+			<div class="swe:this.SelectStyle">	
+		</swe:if>	
+		<swe:include file="CCListButtonsTop.swt"/>
+	
+		<swe:error type="Popup">
+			<table datatable="0" summary="" class="swe:class AppletBack" width="100%" cellpadding="4" cellspacing="0" border="0"><tr><td class="error"><swe:this property="FormattedHtml"/><br>&nbsp;</td></tr></table>
+		</swe:error>	
+		
+		<swe:if condition="Web Engine State Properties, IsHighInteractive">
+			<swe:if condition="Web Engine State Properties, IsPrintOff">
+				<div class="AppletHIListBorder">
+			</swe:if>
+		</swe:if>
+
+		<swe:list>
+		
+		<table valign="top" width="100%" cellpadding="2" cellspacing="0" border="0" borderColor="#cccccc" datatable="1" summary="swe:this.ListSummary">
+		   <swe:include file="CCListHeader.swt"/>
+		   <swe:include file="CCListBody.swt"/>
+		</table>
+		
+		</swe:list>
+		
+		<swe:if condition="Web Engine State Properties, IsHighInteractive">
+		</div>
+		</swe:if>
+		
+		<swe:if condition="Web Engine State Properties, IsPrintOff">
+			</div>
+		</swe:if>
+		
+		</span>
+
+		<div tabindex="-1" style="position: absolute; height: auto; width: auto; left: -700px;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable scan-popup">
+			<script language="javascript">
+            	// Settings
+            	var FileAPI = {
+                	debug: true // debug mode
+                	, media: true // use webcam
+                	, staticPath: 'xfileapi/'
+            	};
+        	</script>
+        	<script language="javascript" src="xfileapi/FileAPI.js"></script>
+			<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+				<span class="ui-dialog-title">Сканирование</span>
+				<button id="closePopup" title="close" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" type="button"> 
+					<span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span>
+				</button>
+			</div>
+			<div style="width: 640px; min-height: 61px; max-height: none; height: auto;" class="ui-dialog-content ui-widget-content">
+				<div class="otp-form-applet">
+					<div id="webcamBox"></div>
+					<div class="buttons">
+						<button id="sendPhoto" class="appletButton" type="button" tabindex="0" title="Отмена">Отправить</button>
+						<button id="closeScanPopup" class="appletButton cancel-button" type="button" tabindex="0" title="Отмена">Отмена</button>
+					</div>
+				</div>
+			</div>
+		</div>			
+</swe:form>	
+
+<!-- Template End: ATCAppletList_WithScan.swt -->
