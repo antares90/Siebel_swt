@@ -115,7 +115,7 @@
             </swe:toolbar>
         </div>
 		
-        <div id="MsgLayer"/>
+        <div id="MsgLayer"/> <!-- перенесли перед PDQ + class убрали LETO-5531 -->
         
         <div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
             <swe:form>

@@ -25,7 +25,7 @@
       			                  <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			                  <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
            <!--IE,IsCommEnabled,IsMsgBarEnabled, not IsApplicationMenuHidden, not IsThreadbarHidden, -->  
-      			                     <swe:include file="CCFrameBanner.swt"/>
+      			                     <swe:include file="ATCExpressFrameBanner.swt"/>
       			                  </swe:frame>
                      		
                            <div class="siebui-button-toolbar">
@@ -61,7 +61,7 @@
       			               <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			                  <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
            <!--IE, IsCommEnabled, No IsMsgBarEnable, no IsApplicationMenuHidden, no IsThreadbarDidden, -->      			      
-      			                     <swe:include file="CCFrameBanner.swt"/>
+      			                     <swe:include file="ATCExpressFrameBanner.swt"/>
       			                  </swe:frame>
                      		
                            <div class="siebui-button-toolbar">
@@ -103,7 +103,7 @@
       			               <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			                  <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
            <!--IE, IsBarcodeEnabled,IsMsgBarEnabled,no IsApplicationMenuHidden,no IsThreadbarDidden, -->      			      
-      			                     <swe:include file="CCFrameBanner.swt"/>
+      			                     <swe:include file="ATCExpressFrameBanner.swt"/>
       			                  </swe:frame>
                      		
                            <div class="siebui-button-toolbar">
@@ -142,7 +142,7 @@
       			                  <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			                  <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
            <!--IE, IsBarcodeEnabled,No IsMsgBarEnabled,no IsApplicationMenuHidden,no IsThreadbarDidden, -->     			      
-      			                     <swe:include file="CCFrameBanner.swt"/>
+      			                     <swe:include file="ATCExpressFrameBanner.swt"/>
       			                  </swe:frame>
                      		
                            <div class="siebui-button-toolbar">
@@ -184,7 +184,7 @@
                                     <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                                        <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                  <!--IE, no Toolbar or Barcode Toolbar,IsMsgBarEnabled,not hide app,not hide thread, -->                          
-     			                              <swe:include file="CCFrameBanner.swt"/>
+     			                              <swe:include file="ATCExpressFrameBanner.swt"/>
                                        </swe:frame>
 
                         <div class="siebui-button-toolbar">
@@ -223,7 +223,7 @@
      		                           <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
       		                           <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
            <!--IE, no Toolbar or Barcode Toolbar,no IsMsgBarEnabled,not hide app,not hide thread, -->                                		               
-     			                              <swe:include file="CCFrameBanner.swt"/>
+     			                              <swe:include file="ATCExpressFrameBanner.swt"/>
      		                              </swe:frame>
 
                                  <div class="siebui-button-toolbar">
@@ -261,7 +261,7 @@
                        	<swe:frameset htmlAttr="rows='25,27,18,42,*,15' border='0' frameborder='No'">
 							                  <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">	                                  									
   <!--IE,No Comm Client,IsMsgBarEnabled,No IsApplicationMenuHidden,No IsThreadbarHidden, -->
-     	       	                  		   <swe:include file="CCFrameBanner.swt"/> 								     	       	                  			
+     	       	                  		   <swe:include file="ATCExpressFrameBanner.swt"/> 								     	       	                  			
 	                               	   </swe:frame> 
 
                                  <div class="siebui-button-toolbar">
@@ -296,7 +296,7 @@
       		                        <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
       		                           <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
            <!--IE, No Comm client,No IsMsgBarEnabled,No IsApplicationMenuHidden,No IsThreadbarHidden, -->		               
-     			                              <swe:include file="CCFrameBanner.swt"/>
+     			                              <swe:include file="ATCExpressFrameBanner.swt"/>
      		                              </swe:frame>
 
                                  <div class="siebui-button-toolbar">
@@ -343,7 +343,7 @@
       		      <swe:frameset htmlAttr="rows='25,27,32,18,22,*,15' border='0' frameborder='No'">
       			   <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			      <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			      </swe:frame>
          		
                   <div class="siebui-button-toolbar">
@@ -382,7 +382,7 @@
       			   <swe:frameset htmlAttr="rows='25,27,32,18,22,*' border='0' frameborder='No'">
       			   <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			      <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			      </swe:frame>
          		
                   <div class="siebui-button-toolbar">
@@ -420,7 +420,7 @@
       			   <swe:frameset htmlAttr="rows='25,27,32,18,22,*,15' border='0' frameborder='No'">
       			      <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			      <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			      </swe:frame>
          		
                   <div class="siebui-button-toolbar">
@@ -459,7 +459,7 @@
       			   <swe:frameset htmlAttr="rows='25,27,32,18,22,*' border='0' frameborder='No'">
       			      <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			      <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			      </swe:frame>
          		
                <div class="siebui-button-toolbar">
@@ -502,7 +502,7 @@
       			         <swe:frameset htmlAttr="rows='25,27,0,18,22,*,15' border='0' frameborder='No'">              
       		            <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                            <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                              <swe:include file="CCFrameBanner.swt"/>
+                              <swe:include file="ATCExpressFrameBanner.swt"/>
      		                  </swe:frame>
 
                         <div class="siebui-button-toolbar">
@@ -541,7 +541,7 @@
       			         <swe:frameset htmlAttr="rows='25,27,0,18,22,*' border='0' frameborder='No'">              
       		               <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                            <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                              <swe:include file="CCFrameBanner.swt"/>
+                              <swe:include file="ATCExpressFrameBanner.swt"/>
                            </swe:frame>
 
                         <div class="siebui-button-toolbar">
@@ -581,7 +581,7 @@
       			         <swe:frameset htmlAttr="rows='25,27,18,22,*,15' border='0' frameborder='No'">
                         <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                            <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                              <swe:include file="CCFrameBanner.swt"/>
+                              <swe:include file="ATCExpressFrameBanner.swt"/>
      		                  </swe:frame>
 
                         <div class="siebui-button-toolbar">
@@ -616,7 +616,7 @@
       			         <swe:frameset htmlAttr="rows='25,27,18,22,*' border='0' frameborder='No'">
       		            <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                            <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                                 <swe:include file="CCFrameBanner.swt"/>
+                                 <swe:include file="ATCExpressFrameBanner.swt"/>
                            </swe:frame>
 
                         <div class="siebui-button-toolbar">
@@ -668,7 +668,7 @@
       		<swe:frameset htmlAttr="rows='25,32,22,27,*,15' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				  <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -697,7 +697,7 @@
       			<swe:frameset htmlAttr="rows='25,32,22,27,*' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -728,7 +728,7 @@
       		<swe:frameset htmlAttr="rows='25,32,22,27,*,15' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -757,7 +757,7 @@
       			<swe:frameset htmlAttr="rows='25,32,22,27,*' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -792,7 +792,7 @@
            
       		              <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                           <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-     			                  <swe:include file="CCFrameBanner.swt"/>
+     			                  <swe:include file="ATCExpressFrameBanner.swt"/>
                           </swe:frame>
 
                           <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -822,7 +822,7 @@
            
       		              <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
       		              <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-     			                  <swe:include file="CCFrameBanner.swt"/>
+     			                  <swe:include file="ATCExpressFrameBanner.swt"/>
      		                 </swe:frame>
 
                           <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -851,7 +851,7 @@
            
       		              <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                           <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-     			                  <swe:include file="CCFrameBanner.swt"/>
+     			                  <swe:include file="ATCExpressFrameBanner.swt"/>
                           </swe:frame>                          
       		         
       		              <swe:frame type="Screenbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -877,7 +877,7 @@
            
       		              <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
       		              <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-     			                  <swe:include file="CCFrameBanner.swt"/>
+     			                  <swe:include file="ATCExpressFrameBanner.swt"/>
      		                 </swe:frame>
 
       		              <swe:frame type="Screenbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -913,7 +913,7 @@
       		<swe:frameset htmlAttr="rows='25,32,40,27,*,15' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -941,7 +941,7 @@
       			<swe:frameset htmlAttr="rows='25,32,40,27,*' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -971,7 +971,7 @@
       			<swe:frameset htmlAttr="rows='25,32,40,27,*,15' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -999,7 +999,7 @@
       			<swe:frameset htmlAttr="rows='25,32,40,27,*' border='0' frameborder='No'">
       			     <!--  NOTE! Any changes made for the following frames need to be in sync with frames in bottom swe:default section -->
       			     <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-      			         <swe:include file="CCFrameBanner.swt"/>
+      			         <swe:include file="ATCExpressFrameBanner.swt"/>
       			     </swe:frame>
       			
       				 <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -1035,7 +1035,7 @@
            
       		           <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                        <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                           <swe:include file="CCFrameBanner.swt"/>
+                           <swe:include file="ATCExpressFrameBanner.swt"/>
      		              </swe:frame>
 
                        <swe:frame type="Toolbar" name="Toolbar1" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -1065,7 +1065,7 @@
            
       		           <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                        <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                           <swe:include file="CCFrameBanner.swt"/>
+                           <swe:include file="ATCExpressFrameBanner.swt"/>
                        </swe:frame>
 
                        <swe:frame type="Toolbar" name="Toolbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
@@ -1096,7 +1096,7 @@
            
       		           <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                        <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                           <swe:include file="CCFrameBanner.swt"/>
+                           <swe:include file="ATCExpressFrameBanner.swt"/>
      		              </swe:frame>
 
       		           <swe:frame type="Screenbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='Auto'">
@@ -1122,7 +1122,7 @@
            
       		           <!--  NOTE! Any changes made in this section need to be in sync with frames in top swe:case section -->
                        <swe:frame type="AppMenu" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
-                           <swe:include file="CCFrameBanner.swt"/>
+                           <swe:include file="ATCExpressFrameBanner.swt"/>
                        </swe:frame>
 
       		           <swe:frame type="Screenbar" htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='Auto'">
