@@ -212,7 +212,7 @@
 <!-- ---------- End Bottom Two Applet Region ------------------------>
 
 
-
+<!--
 <!-- ---------- Test ------------------------>
 <table datatable="0" summary="" width="100%" cellpadding="3" border="0" cellspacing="0">
 	<tr>
@@ -266,6 +266,28 @@
 		</td>
 	</tr>
 </table>
+-->
+
+<div class="siebui-view-multi-column">
+    <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12 siebui-align-right">
+        <swe:applet hintMapType="Applet" id="802" hintText="Applet" var="Grandchild">
+            <swe:this property="FormattedHtml"/>
+        </swe:applet>
+
+        <swe:applet hintMapType="Applet" id="1002" hintText="Applet" var="Grandchild">
+            <swe:this property="FormattedHtml"/>
+        </swe:applet>
+    </div>
+    <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12 siebui-align-right">
+        <swe:applet hintMapType="Applet" id="902" hintText="Applet" var="Grandchild">
+            <swe:this property="FormattedHtml"/>
+        </swe:applet>
+    </div>
+</div>
+
+
+
+
 <!-- ---------- End Test ------------------------>
 
 <!-- ---------- Bottom Two Applet Region ------------------------>
