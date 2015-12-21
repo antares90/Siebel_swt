@@ -94,6 +94,10 @@
              <swe:toolbaritem property="FormattedHtml"/>
           </swe:toolbar>
         </div>
+        
+		
+        <div id="MsgLayer"/> <!-- перенесли перед PDQ + class убрали LETO-5531 -->
+        
         <div id="HTMLMessageBar" class="siebui-banner-btn siebui-btn-notify header-top tr"></div> 
         <div id="tb_13" class="siebui-banner-btn siebui-srch-banner-btn">
           <swe:searchbar></swe:searchbar>
@@ -102,11 +106,7 @@
           <swe:toolbar name="HIQuery">
             <swe:toolbaritem property="FormattedHtml"/>
           </swe:toolbar>
-        </div>
-		
-        <div id="MsgLayer"/> <!-- перенесли перед PDQ + class убрали LETO-5531 -->
-        
-        <div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
+        </div><div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
           <swe:form>
             <swe:pdqbar>
               <div id="PDQToolbar" class="siebui-pdq PDQWidth">
