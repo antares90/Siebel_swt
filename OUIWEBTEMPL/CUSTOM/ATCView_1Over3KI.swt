@@ -50,8 +50,6 @@
 </swe:for-each>
 <!-- ---------- End Top One Applet Region ------------------------>
 
-<swe:applet hintMapType="Applet" id="50" hintText="Parent 2 Applet" property="FormattedHtml" var="Parent"/>
-
 <!-- ---------- Tier 3 navigation Start new code------
 <!-- <swe:include file="CCViewbar_Tabs_DropList.swt"/>  ------------->
 <!------ End Tier 3 navigation end new code------------->
@@ -63,47 +61,59 @@
 </swe:if>
 
 <!-- ---------- Bottom Two Applet Region ------------------------>
-<div class="siebui-view-multi-column">
-	<div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12 siebui-align-right">
-		<swe:for-each count=1 iteratorName="currentId" startValue="502">
+<table datatable="0" summary="" width="100%" cellpadding="0" border="0" cellspacing="0">
+	<tr>
+		<td valign="top" width="70%" rowspan="3">
+		<!--  Column 1 -->
+			<swe:for-each count=1 iteratorName="currentId" startValue="502">
 			<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
 				<!-- start applet-->
 				<swe:this property="FormattedHtml"/>
 				<!-- end applet-->
 			</swe:applet>
-		</swe:for-each>
-	</div>
-	<div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12 siebui-align-left" style="min-width: 340px;">
-			<swe:for-each count=1 iteratorName="currentId" startValue="602">
-				<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-					<!-- start applet-->
-					<swe:this property="FormattedHtml"/>
-					<!-- end applet-->
-				</swe:applet>
 			</swe:for-each>
-				<swe:for-each count=1 iteratorName="currentId" startValue="702">
-					<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-						<!-- start applet-->
-						<swe:this property="FormattedHtml"/>
-						<!-- end applet-->
-					</swe:applet>
-				</swe:for-each>
-				<swe:for-each count=1 iteratorName="currentId" startValue="802">
-					<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-						<!-- start applet-->
-						<swe:this property="FormattedHtml"/>
-						<!-- end applet-->
-					</swe:applet>
-				</swe:for-each>
-				<swe:for-each count=1 iteratorName="currentId" startValue="902">
-					<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-						<!-- start applet-->
-						<swe:this property="FormattedHtml"/>
-						<!-- end applet-->
-					</swe:applet>
-				</swe:for-each>
-	</div>
-</div>
+		
+		<!--  End Column 1 -->
+		</td>
+		<td valign="top">
+		<!--  Column 2 -->
+			<swe:for-each count=1 iteratorName="currentId" startValue="602">
+			<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+			</swe:for-each>
+		<!--  End Column 2 -->
+		</td>
+	</tr>	
+	<tr>
+		<td valign="top">
+		<!--  Column 2 -->
+			<swe:for-each count=1 iteratorName="currentId" startValue="702">
+			<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+			</swe:for-each>
+		<!--  End Column 2 -->
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">
+		<!--  Column 3 -->
+		<swe:for-each count=1 iteratorName="currentId" startValue="802">
+		<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+			<!-- start applet-->
+			<swe:this property="FormattedHtml"/>
+			<!-- end applet-->
+		</swe:applet>
+		</swe:for-each>
+		<!--  End Column 3 -->
+	</td>
+	</tr>
+</table>
 <!-- ---------- End Bottom Two Applet Region ------------------------>
 
 <!-- ---------- End Main Content Area ------------------------>

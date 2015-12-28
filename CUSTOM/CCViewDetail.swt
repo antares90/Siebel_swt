@@ -25,7 +25,6 @@
 <!-- ---------- Main Content Area ---------------------------->
 
 <swe:applet hintMapType="Applet" id="1" hintText="Parent Applet" property="FormattedHtml" var="Parent"/>
-<swe:applet hintMapType="Applet" id="50" hintText="Parent 2 Applet" property="FormattedHtml" var="Parent"/>
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
    <!-- ---------- Tier 3 & Tier 4 navigation ----------------->
@@ -44,7 +43,7 @@
    </swe:for-each>
 </swe:if>
 
-<swe:for-each count=10 iteratorName="currentId" startValue="3">
+<swe:for-each count=3 iteratorName="currentId" startValue="3">
    <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
 </swe:for-each>
 
@@ -54,13 +53,34 @@
    </swe:for-each>
 </swe:if>
 
+<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+	 <tr valign="top">
+		<td width="60%">
+		   <swe:for-each count=2 iteratorName="currentId" startValue="777">
+			  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+		   </swe:for-each>
+		</td>
+
+		<td width="40%">
+		   <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+				 <tr valign="top">
+					<td width="100%">
+					   <swe:for-each count=1 iteratorName="currentId" startValue="779">
+						  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+					   </swe:for-each>
+					</td>
+				 </tr>
+			</table>
+		</td>
+	 </tr>
+ </table>
 <swe:switch>
    <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
-      <swe:for-each count=2 iteratorName="currentId" startValue="26">
+      <swe:for-each count=2 iteratorName="currentId" startValue="6">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
       </swe:for-each>
       
-      <swe:for-each count=2 iteratorName="currentId" startValue="28">
+      <swe:for-each count=2 iteratorName="currentId" startValue="8">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
       </swe:for-each>
    </swe:case>
@@ -69,13 +89,13 @@
       <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
          <tr valign="top">
             <td width="50%">
-               <swe:for-each count=2 iteratorName="currentId" startValue="26">
+               <swe:for-each count=2 iteratorName="currentId" startValue="6">
                   <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
                </swe:for-each>
             </td>
 
             <td width="50%">
-               <swe:for-each count=2 iteratorName="currentId" startValue="28">
+               <swe:for-each count=2 iteratorName="currentId" startValue="8">
                   <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
                </swe:for-each>
             </td>
@@ -83,10 +103,6 @@
       </table>
    </swe:default>
 </swe:switch>
-
-<swe:for-each count=3 iteratorName="currentId" startValue="40">
-   <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-</swe:for-each>
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
    <swe:include file="CCSubordinateAppletsBorderEnd.swt"/>
