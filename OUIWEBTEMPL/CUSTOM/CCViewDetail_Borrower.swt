@@ -25,7 +25,7 @@
 <!-- ---------- Main Content Area ---------------------------->
 
 <swe:applet hintMapType="Applet" id="1" hintText="Parent Applet" property="FormattedHtml" var="Parent"/>
-<swe:applet hintMapType="Applet" id="1001" hintText="SubParent Applet" property="FormattedHtml" var="Parent"/>
+
 <swe:applet hintMapType="Applet" id="10" hintText="Parent 2 Applet" property="FormattedHtml" var="Parent"/>
 
 </swe:for-each>
@@ -57,16 +57,27 @@
    </swe:for-each>
 </swe:if>
 
-<div class="siebui-view-multi-column aaaa">
-   <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
-      <swe:for-each count=2 iteratorName="currentId" startValue="777">
-         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-      </swe:for-each>
-   </div>
-   <div class="siebui-span-lg-5 siebui-span-md-6 siebui-span-sm-12">
-      <swe:applet id="779" property="FormattedHtml" var="Grandchild"/>
-   </div>
-</div>
+<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+	 <tr valign="top">
+		<td width="60%">
+		   <swe:for-each count=2 iteratorName="currentId" startValue="777">
+			  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+		   </swe:for-each>
+		</td>
+
+		<td width="40%">
+		   <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+				 <tr valign="top">
+					<td width="100%">
+					   <swe:for-each count=1 iteratorName="currentId" startValue="779">
+						  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+					   </swe:for-each>
+					</td>
+				 </tr>
+			</table>
+		</td>
+	 </tr>
+ </table>
 <swe:switch>
    <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
       <swe:for-each count=2 iteratorName="currentId" startValue="6">
@@ -79,18 +90,21 @@
    </swe:case>
 
    <swe:default>
-      <div class="siebui-view-multi-column">
-         <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
-            <swe:for-each count=2 iteratorName="currentId" startValue="6">
-               <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-            </swe:for-each>
-         </div>
-         <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
-            <swe:for-each count=2 iteratorName="currentId" startValue="8">
-               <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-            </swe:for-each>
-         </div>
-      </div>
+      <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+         <tr valign="top">
+            <td width="50%">
+               <swe:for-each count=2 iteratorName="currentId" startValue="6">
+                  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+               </swe:for-each>
+            </td>
+
+            <td width="50%">
+               <swe:for-each count=2 iteratorName="currentId" startValue="8">
+                  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+               </swe:for-each>
+            </td>
+         </tr>
+      </table>
    </swe:default>
 </swe:switch>
 
