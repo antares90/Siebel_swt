@@ -18,7 +18,7 @@
 	</swe:control>
 
 	<!-- RowCounter -->
-	<td class="swe:class AppletTitle" valign="middle" nowrap>&nbsp;<swe:this property="RowCounter"/>&nbsp;</td>
+	<!-- <td class="swe:class AppletTitle" valign="middle" nowrap>&nbsp;<swe:this property="RowCounter"/>&nbsp;</td> -->
 
 	<swe:control id="123">
 		<!-- GotoNext, 123 -->

@@ -34,6 +34,18 @@
       <swe:this property="Title"/>
     </div>
   </swe:if-var>
+  <swe:include file="ATCButtonsCustomTitle.swt"/>
+  
+<div class="swe:class AppletButtons siebui-applet-buttons">
+  <!-- Search Buttons Area -->
+  <div class="swe:class siebui-btn-grp-search">
+    <swe:include file="CCButtons_Search.swt"/>
+  </div>
+  <!-- Other Buttons Area -->
+  <swe:include file="CCButtonsExtras.swt"/>
+  <!-- Toggle Bar Area -->
+  <swe:include file="CCTogglebar_drop.swt"/>
+</div>
   <!-- No applet menu on Task Views -->
   <div class="siebui-btn-grp-applet">
     <!-- CRUD Buttons Area -->
@@ -46,15 +58,5 @@
     <swe:include file="CCListButtonsTopRight.swt"/>
     <div class="siebui-applet-container siebui-collapsible"></div>
   </div>
-</div>
-<div class="swe:class AppletButtons siebui-applet-buttons">
-  <!-- Search Buttons Area -->
-  <div class="swe:class siebui-btn-grp-search">
-    <swe:include file="CCButtons_Search.swt"/>
-  </div>
-  <!-- Other Buttons Area -->
-  <swe:include file="CCButtonsExtras.swt"/>
-  <!-- Toggle Bar Area -->
-  <swe:include file="CCTogglebar_drop.swt"/>
-</div>
+ </div>
 <!--  Template End: CCListButtonsTopNoMenuButton.swt -->

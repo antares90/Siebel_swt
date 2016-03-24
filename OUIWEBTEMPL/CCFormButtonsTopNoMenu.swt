@@ -140,6 +140,7 @@
     </swe:control>
     </div>
   </swe:if-var>
+	<swe:include file="ATCButtonsCustomTitle.swt"/>
   <!-- Legend Area -->
   <div class="siebui-btn-grp-applet">
     <swe:control id="1500" hintText="Required Legend" hintMapType="Control">

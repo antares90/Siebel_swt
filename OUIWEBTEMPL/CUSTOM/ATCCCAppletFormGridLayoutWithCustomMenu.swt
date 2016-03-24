@@ -7,7 +7,7 @@
 			</div>
 		</swe:error>
 		<swe:include file="CCFormButtonsTopNoMenu.swt"/>
-		<div class="siebui-applet-content siebui-collapsible" style="height: 250px;">
+		<div class="siebui-applet-content siebui-collapsible">
 			<swe:form-applet-layout>
 			</swe:form-applet-layout>
 		</div>

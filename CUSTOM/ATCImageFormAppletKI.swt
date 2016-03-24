@@ -10,7 +10,7 @@
 				<!--<swe:include file="CCTitle_Named.swt"/>-->
 				
 				<!--<swe:include file="CCFormButtonsTop.swt"/>-->
-				<div style="height: 490px; overflow-y: scroll;">
+				<div style="height: 730px; position:relative; top: 48px;">
 					<swe:control id ="1"><swe:this property="FormattedHtml" hintText="ImageControl" hintMapType="ImageControl"/></swe:control>
 				</div>
 			</td>
