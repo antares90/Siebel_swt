@@ -77,13 +77,13 @@
 
     <swe:default>
         <div class="siebui-view-multi-column">
-            <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
+            <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
                 <swe:for-each count=1 iteratorName="currentId" startValue="6">
                     <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet"
                                 property="FormattedHtml" var="Grandchild"/>
                 </swe:for-each>
             </div>
-            <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+            <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
                 <swe:for-each count=1 iteratorName="currentId" startValue="8">
                     <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet"
                                 property="FormattedHtml" var="Grandchild"/>

@@ -7,7 +7,9 @@
     <swe:include file="CCTitle_Named.swt"/>
     <swe:include file="CCFormButtonsTop.swt"/>   
     </td></tr></table>
-	<div id="siebui-fcd-container"></div>
+	<div id="siebui-fcd-container">
+
+	</div>
   </div>
 </swe:form>
 
