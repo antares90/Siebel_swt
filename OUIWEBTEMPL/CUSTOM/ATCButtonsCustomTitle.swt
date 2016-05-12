@@ -1,7 +1,7 @@
 <!-- Template Start: CCListButtonsTopRight.swt -->
 
 <!-- Buttons (Optional, Optional) --->
-<div class="AppletCustomButtons">
+<div class="AppletCustomButtons siebel-inline-block">
 	  <swe:control id="700">
       <!-- optional control -->        
         <swe:this property="FormattedHtml" hintMapType="Custom Control"/>        

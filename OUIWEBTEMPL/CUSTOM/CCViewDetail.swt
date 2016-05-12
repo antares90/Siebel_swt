@@ -67,6 +67,17 @@
     </div>
 </div>
 
+<div class="siebui-view-multi-column">
+    <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
+        <swe:for-each count=1 iteratorName="currentId" startValue="780">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        </swe:for-each>
+    </div>
+    <div class="siebui-span-lg-5 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet id="790" property="FormattedHtml" var="Grandchild"/>
+    </div>
+</div>
+
 <swe:switch>
     <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
         <swe:for-each count=2 iteratorName="currentId" startValue="6">

@@ -74,6 +74,29 @@
 		</td>
 	 </tr>
  </table>
+ 
+ <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+	 <tr valign="top">
+		<td width="60%">
+		   <swe:for-each count=1 iteratorName="currentId" startValue="780">
+			  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+		   </swe:for-each>
+		</td>
+
+		<td width="40%">
+		   <table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
+				 <tr valign="top">
+					<td width="100%">
+					   <swe:for-each count=1 iteratorName="currentId" startValue="790">
+						  <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+					   </swe:for-each>
+					</td>
+				 </tr>
+			</table>
+		</td>
+	 </tr>
+ </table>
+ 
 <swe:switch>
    <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
       <swe:for-each count=2 iteratorName="currentId" startValue="6">

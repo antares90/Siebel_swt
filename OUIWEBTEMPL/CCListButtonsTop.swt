@@ -40,19 +40,15 @@
     </div>
   </swe:if-var>
   <!-- No applet menu on Task Views --> 
-   <swe:include file="ATCButtonsCustomTitle.swt"/>
- 
-   <div class="swe:class AppletButtons siebui-applet-buttons">
-  <!-- Search Buttons Area -->
-  <div class="swe:class siebui-btn-grp-search">
-    <swe:include file="CCButtons_Search.swt"/>
-  </div>
-  <!-- Other Buttons Area -->
-  <swe:include file="CCButtonsExtras.swt"/>
-  <!-- Toggle Bar Area -->
-  <swe:include file="CCTogglebar_drop.swt"/>
-</div>
-  <div class="siebui-btn-grp-applet">
+    <swe:include file="ATCButtonsCustomTitle.swt"/>
+    <div class="swe:class AppletButtons siebui-applet-buttons siebel-inline-block">
+          <div class="swe:class siebui-btn-grp-search">
+            <swe:include file="CCButtons_Search.swt"/>
+          </div>
+          <swe:include file="CCButtonsExtras.swt"/>
+          <swe:include file="CCTogglebar_drop.swt"/>
+    </div>
+  <div class="siebui-btn-grp-applet siebel-inline-block">
     <!-- CRUD Buttons Area -->
     <swe:include file="CCButtonsCRUD.swt"/>
 

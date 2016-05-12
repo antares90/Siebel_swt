@@ -5,7 +5,7 @@
 	  <swe:control id="160">
       <!-- optional control -->
         <td valign="middle" nowrap>
-        <b><swe:this property="FormattedHtml" hintMapType="Control"/></b>
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
         </td>
       </swe:control>
 	  
@@ -19,7 +19,7 @@
 	<swe:control id="162">
       <!-- optional control -->
         <td valign="middle" nowrap>
-        <b><swe:this property="FormattedHtml" hintMapType="Control"/></b>
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
         </td>
       </swe:control>
 	  
@@ -37,7 +37,6 @@
         </td>
       </swe:control>
 	  
-
       <swe:control id="150">
       <!-- optional control -->
         <td valign="middle" nowrap>
@@ -46,6 +45,13 @@
       </swe:control>
 	  
 	<swe:control id="151">
+      <!-- optional control -->
+        <td valign="middle" nowrap>
+        <swe:this property="FormattedHtml" hintMapType="Control"/>
+        </td>
+      </swe:control>
+	  
+	  <swe:control id="152">
       <!-- optional control -->
         <td valign="middle" nowrap>
         <swe:this property="FormattedHtml" hintMapType="Control"/>

@@ -1,0 +1,17 @@
+<!-- Template Start: CCAppletDashboard.swt -->
+<div style="padding: 10px;">
+	<div>
+	</div>
+	<div>
+	   <swe:form>
+			<div>
+				<swe:control id="1111">
+					<!--placeholder for required-->
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+	   </swe:form>
+	</div>
+</div>
+
+<!-- Template End: CCAppletDashboard.swt -->
