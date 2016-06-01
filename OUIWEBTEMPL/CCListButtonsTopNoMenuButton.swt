@@ -36,7 +36,7 @@
   </swe:if-var>
   <swe:include file="ATCButtonsCustomTitle.swt"/>
   
-<div class="swe:class AppletButtons siebui-applet-buttons">
+<div class="swe:class AppletButtons siebui-applet-buttons siebel-inline-block">
   <!-- Search Buttons Area -->
   <div class="swe:class siebui-btn-grp-search">
     <swe:include file="CCButtons_Search.swt"/>

@@ -29,8 +29,7 @@
         }
   </script>
 
-  <!-- Перенес login.js в конец файла, чтобы скрипт отрабатывал после прогрузки всех форм страницы>>LETO-6541>>DNYUDLCHIEV-->
-  <!--   <swe:include-script file="login.js"/>-->
+  <swe:include-script file="login.js"/>
 
   <script language="JavaScript">
     function fireEvent(element,event) {
@@ -208,8 +207,6 @@
   </body>
   </swe:default>
 </swe:switch>
-
-<swe:include-script file="login.js"/>
 
 <swe:scripts/>
 <script language="JavaScript">userfocus()</script>
