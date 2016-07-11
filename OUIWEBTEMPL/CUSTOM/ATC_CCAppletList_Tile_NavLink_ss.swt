@@ -1,0 +1,31 @@
+<!-- Template Start CCAppletList_Tile_NavLink_ss.swt -->
+
+<div class="swe:this.SelectStyle">
+    <div class="AppletHIListBorder siebui-tile-container siebui-tile-navlink">
+        <swe:this property="NoGrid"/>
+        <swe:this property="Horizontal"/>
+        <swe:this property="ScrollVisibleTiles"/>
+        <swe:list>
+            <swe:list-record>
+		<swe:control id="5">
+                    <div class="siebui-tile-navlink-img">
+                        <swe:this property="FormattedHtml" hintText="Field"/>
+                    </div>
+                </swe:control>
+                <swe:control id="501">
+                    <div class="siebui-tile-navlink-img">
+                        <swe:this property="FormattedHtml" hintText="Field"/>
+                    </div>
+                </swe:control>
+                <swe:control id="502">
+                    <div class="siebui-tile-navlink_desc" align="swe:this.TextAlignment">
+                        <swe:this property="FormattedHtml" hintText="Field"/>
+                    </div>
+                </swe:control>
+                <div class="siebui-record-count"></div>
+                </swe:list-record>
+        </swe:list>
+    </div>
+</div>
+
+<!-- Template End CCAppletList_Tile_NavLink_ss.swt -->

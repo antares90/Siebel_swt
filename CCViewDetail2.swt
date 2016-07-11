@@ -14,10 +14,10 @@
 	<swe:applet id="201" hintText="Mini-Applet">
 	    <td align="right"><swe:this property="FormattedHTML"/></td>
 		<td>&nbsp;&nbsp;&nbsp;</td>
-	</swe:applet>	
-		
+	</swe:applet>
+
   </tr>
-</table> 
+</table>
 <!-- ---------- End Threadbar and Mini-Applet ------------->
 
 <!-- ---------- Main Content Area ---------------------------->
@@ -55,21 +55,27 @@
 	<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
 </swe:for-each>
 
-<table datatable="0" summary="" width="100%" border="0" cellspacing="0" cellpadding="3">
-	<tr valign="top">
-		<td width="50%">
-			<swe:for-each count=2 iteratorName="currentId" startValue="6">
-				<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-			</swe:for-each>
-		</td>
+<div class="siebui-view-multi-column">
+  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+    <swe:for-each count=2 iteratorName="currentId" startValue="6">
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+    </swe:for-each>
+  </div>
+  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+    <swe:for-each count=2 iteratorName="currentId" startValue="8">
+      <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+    </swe:for-each>
+  </div>
+</div>
 
-		<td width="50%">
-			<swe:for-each count=2 iteratorName="currentId" startValue="8">
-				<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
-			</swe:for-each>
-		</td>
-	</tr>
-</table>
+
+
+<swe:for-each count="1" iteratorName="currentId" startValue="1000">
+	<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Child"/>
+</swe:for-each>
+<swe:for-each count="1" iteratorName="currentId" startValue="1100">
+	<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Child"/>
+</swe:for-each>
 
 <swe:include file="CCSubordinateAppletsBorderEnd.swt"/>
 

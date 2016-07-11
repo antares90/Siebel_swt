@@ -68,6 +68,15 @@
   </div>
 </div>
 
+
+
+<swe:for-each count="1" iteratorName="currentId" startValue="1000">
+	<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Child"/>
+</swe:for-each>
+<swe:for-each count="1" iteratorName="currentId" startValue="1100">
+	<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Child"/>
+</swe:for-each>
+
 <swe:include file="CCSubordinateAppletsBorderEnd.swt"/>
 
 <swe:include file="CCHTMLFooter.swt"/>
