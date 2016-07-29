@@ -1149,9 +1149,16 @@
 
   </swe:default>
 </swe:switch>
-
+ 
 </swe:default> <!-- End: Non-High Interactivity case -->
 </swe:switch>
+
+  <div style="display:none">
+    <swe:applet id="1000" hintText="Stand alone applet" var="Parent">
+      <swe:this property="FormattedHtml"/>
+    </swe:applet>
+  </div>
+  
 <swe:scripts/>
 </HTML>
 
