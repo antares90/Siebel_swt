@@ -1,0 +1,29 @@
+<swe:form>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+</swe:if>
+		<div class="Custom_Title" tabindex="1">
+          <div class="Text_Title">
+            <swe:this property="Title"/>
+            <swe:include file="ATCButtonsCustomTitle.swt"/>
+          </div>
+    </div>
+
+		<div class="container_fluid width_block">
+		<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-10">
+					<div class="col-lg-6">
+						<swe:control id="1"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
+						<swe:control id ="2"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+					</div>
+					<div class="col-lg-6">
+						<swe:control id="3"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
+						<swe:control id ="4"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+					</div>
+				</div>
+		</div>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+	</div>	
+</swe:if>
+</swe:form>
+
+	

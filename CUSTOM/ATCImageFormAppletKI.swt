@@ -3,16 +3,20 @@
 <swe:include file="CCApplet_NamedSpacer.swt"/>
 
 <swe:form>
-<div class="swe:this.SelectStyle">	
+<div class="swe:this.SelectStyle">
+<div class="Custom_Title">
+          <div class="Text_Title siebel-inline-block">
+            <swe:this property="Title"/>
+          </div>
+  </div>	
 	<table datatable="0" summary="" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="AppletBack">
 		<tr>
 			<td class="AppletHIFormBorder" align="center">
-				<!--<swe:include file="CCTitle_Named.swt"/>-->
-				
-				<!--<swe:include file="CCFormButtonsTop.swt"/>-->
-				<div style="height: 730px; position:relative; top: 48px;">
+			<div class="Custom_Image">
+				<div style="height: 360px; position:relative;">
 					<swe:control id ="1"><swe:this property="FormattedHtml" hintText="ImageControl" hintMapType="ImageControl"/></swe:control>
 				</div>
+			</div>
 			</td>
 		</tr>
 	</table>

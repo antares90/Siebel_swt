@@ -1,0 +1,85 @@
+<!--  Template Start: CCView_1Over2Over1.swt -->
+<span class="siebui-taskui-title"><swe:tasksteptitle></swe:tasksteptitle></span>
+
+<div class="siebui-view-multi-column">
+		<div class="siebui-span-lg-12 siebui-span-md-12">
+			<swe:for-each count=3 iteratorName="currentId" startValue="1">
+				<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+					<!-- start applet-->
+					<swe:this property="FormattedHtml"/>
+					<!-- end applet-->
+				</swe:applet>
+			</swe:for-each>
+			<swe:for-each count=1 iteratorName="currentId" startValue="802">
+					<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+						<!-- start applet-->
+						<swe:this property="FormattedHtml"/>
+						<!-- end applet-->
+					</swe:applet>
+			</swe:for-each>
+		</div>
+		<div class="siebui-span-lg-12 siebui-span-md-6">
+				<swe:for-each count=1 iteratorName="currentId" startValue="902">
+					<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+						<!-- start applet-->
+						<swe:this property="FormattedHtml"/>
+						<!-- end applet-->
+					</swe:applet>
+			</swe:for-each>
+		</div>
+</div>
+
+<!-- ---------- End Top One Applet Region ------------------------>
+
+<swe:applet hintMapType="Applet" id="50" hintText="Parent 2 Applet" property="FormattedHtml" var="Parent"/>
+
+<!-- ---------- Tier 3 navigation Start new code------
+<!-- <swe:include file="CCViewbar_Tabs_DropList.swt"/>  ------------->
+<!------ End Tier 3 navigation end new code------------->
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+   <!-- ---------- Tier 3 & Tier 4 navigation ----------------->
+   <swe:include file="CCViewbar_Tabs_DropList.swt"/>
+   <!-- ---------- End Tier 3 & Tier 4 navigation ------------->
+   <swe:include file="CCSubordinateAppletsBorderStart.swt"/>
+</swe:if>
+
+<!-- ---------- Bottom Two Applet Region ------------------------>
+<div class="siebui-span-lg-6 siebui-span-md-6">
+	<div class="siebui-span-lg-12 siebui-span-md-7 siebui-span-sm-12 siebui-align-right">
+		<swe:for-each count=1 iteratorName="currentId" startValue="502">
+			<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+				<!-- start applet-->
+				<swe:this property="FormattedHtml"/>
+				<!-- end applet-->
+			</swe:applet>
+		</swe:for-each>
+	</div>
+</div>
+<div class="siebui-span-lg-6 siebui-span-md-6">
+	<div class="siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12 siebui-align-right">
+				<swe:for-each count=1 iteratorName="currentId" startValue="702">
+					<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+						<!-- start applet-->
+						<swe:this property="FormattedHtml"/>
+						<!-- end applet-->
+					</swe:applet>
+				</swe:for-each>
+	</div>
+	<div class="siebui-span-lg-12 siebui-span-md-12 siebui-span-sm-12 siebui-align-left" style="min-width: 340px;">
+			<swe:for-each count=1 iteratorName="currentId" startValue="602">
+				<swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+					<!-- start applet-->
+					<swe:this property="FormattedHtml"/>
+					<!-- end applet-->
+				</swe:applet>
+			</swe:for-each>
+	</div>
+</div>
+<!-- ---------- End Bottom Two Applet Region ------------------------>
+
+<!-- ---------- End Main Content Area ------------------------>
+
+<swe:include file="CCHTMLFooter.swt"/>
+<!--  Template End: CCView_1Over2Over1.swt -->
+
+

@@ -1,0 +1,31 @@
+<div class="swe:this.SelectStyle">
+    <div class="AppletHIListBorder siebui-tile-container siebui-tile-navlink">
+        <swe:this property="NoGrid"/>
+        <swe:this property="Horizontal"/>
+        <swe:this property="ScrollVisibleTiles"/>
+        <swe:list>
+            <swe:list-record>
+                <swe:control id="10">
+                    <div class="Custom_Image_Tile">
+                        <swe:this property="FormattedHtml"/>
+                    </div>
+                </swe:control>
+                <swe:control id="20">
+                    <div class="Custom_Tile_Red">
+                        <swe:this property="FormattedHtml"/>
+                    </div>
+                </swe:control>
+                <swe:control id="30">
+                    <div class="Custom_Tile_Text">
+                        <swe:this property="FormattedHtml"/>
+                    </div>
+                </swe:control>
+                <swe:control id="1200">
+                    <div class="">
+                        <swe:this property="FormattedHtml"/>
+                    </div>
+                </swe:control>
+            </swe:list-record>
+        </swe:list>
+    </div>
+</div>

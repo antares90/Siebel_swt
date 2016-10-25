@@ -14,7 +14,7 @@
 <BODY class="toolbar" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onResize="OnResize()">
 <swe:switch>
  <swe:case condition="Web Engine State Properties, IsAccessibleEnchanced">
-	<swe:toolbar name="Communication" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+	<swe:toolbar name="Communication_Risk" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
  </swe:case>
  <swe:case condition="HTML FS Barcoding Tool Bar, IsBarcodeEnabled">
 	<swe:toolbar name="HTML Barcode" bgcolor="#ccccff">
@@ -22,7 +22,7 @@
 	</swe:toolbar>
  </swe:case>
  <swe:default>
-	<swe:toolbar name="Communication" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+	<swe:toolbar name="Communication_Risk" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
  </swe:default>
 </swe:switch>
 
