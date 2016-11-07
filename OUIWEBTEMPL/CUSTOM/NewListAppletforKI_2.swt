@@ -1,53 +1,60 @@
 <swe:form>
-    <swe:if condition="Web Engine State Properties, IsPrintOff">
-        
-    </swe:if> 
+	<swe:if condition="Web Engine State Properties, IsPrintOff">
+    </swe:if>
+	
     <div class="Custom_Title">
-          <div class="Text_Title siebel-inline-block">
- <swe:if-var name="ParentWithPointer">
-    <swe:switch>
-      <swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
-        <swe:nav-control type="Category View" style="Select"/>
-      </swe:case>
-      <swe:default>
-        <div class="swe:class AppletTitle">
-          <swe:this property="Title"/>
+		<div class="Text_Title siebel-inline-block">
+			<swe:if-var name="ParentWithPointer">
+				<swe:switch>
+					<swe:case condition="Web Engine State Properties, IsViewPosition, 'Position:2'">
+						<swe:nav-control type="Category View" style="Select"/>
+					</swe:case>
+					<swe:default>
+						<div class="swe:class AppletTitle">
+							<swe:this property="Title"/>
+						</div>
+					</swe:default>
+				</swe:switch>
+			</swe:if-var>	
+				<swe:this property="Title"/>
         </div>
-      </swe:default>
-    </swe:switch>
-  </swe:if-var>	
-            <swe:this property="Title"/>
-          </div>
-		  
- 
-		  
-          <div class="siebui-btn-grp-applet">	  	  
-              <!-- CRUD Buttons Area -->
-              <swe:include file="CCButtonsCRUD.swt"/>
-              <!-- Query Message Area -->
-              <swe:message type="Query Message"/>
-              <!-- Record Navigation Area -->
-              <swe:message type="Applet Control Message"/>
-                   <!-- Menu Button Area -->
-                   <swe:menu type="Button" class="swe:class AppletMenu"/>
-     
-              <swe:this property="RowCounter"/>
-			  
 
 
-              <swe:include file="CCListButtonsTopRight.swt"/>
-              <div class="siebui-applet-container siebui-collapsible"></div>
-          </div>
-          <swe:include file="ATCButtonsCustomTitle.swt"/>
-          
+		<swe:include file="ATCButtonsCustomTitle.swt"/>
+
+        <div class="siebui-btn-grp-applet">	
+		
+			<div class="swe:class AppletButtons siebui-applet-buttons siebel-inline-block">
+				<swe:include file="CCButtonsExtras.swt"/>
+			</div>	
+			
+			<!-- CRUD Buttons Area -->
+			<swe:include file="CCButtonsCRUD.swt"/>
+			<!-- Query Message Area -->
+			<swe:message type="Query Message"/>
+			<!-- Record Navigation Area -->
+			<swe:message type="Applet Control Message"/>
+			<!-- Menu Button Area -->
+			<swe:menu type="Button" class="swe:class AppletMenu"/>
+			<swe:this property="RowCounter"/>
+			<swe:include file="CCListButtonsTopRight.swt"/>
+			
+			<div class="siebui-applet-container siebui-collapsible"></div>
+
+		</div>
+
     </div>
+
     <swe:if condition="Web Engine State Properties, IsHighInteractive">
-      <swe:if condition="Web Engine State Properties, IsPrintOff">
-        
+		<swe:if condition="Web Engine State Properties, IsPrintOff">     
+		</swe:if>
     </swe:if>
-    </swe:if>
-      <div class = "Custom_LIst">
-        <swe:list>
+	
+    <div class = "Custom_LIst">
+		<swe:list>
+			<swe:include file="CCListHeader.swt"/>
+			<swe:include file="CCListBody.swt"/>
         </swe:list>
-      </div>     
+    </div>   
+	
 </swe:form> 

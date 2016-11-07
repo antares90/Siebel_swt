@@ -105,6 +105,10 @@
                 <swe:toolbaritem property="FormattedHtml"/>
             </swe:toolbar>
         </div>
+        <div id="Button_Logout">
+        <meta charset="utf-8">
+            <a title="Выход из системы" id="logout" href="start.swe?SWECmd=Logoff"></a>
+        </div>
         <div id="HTMLMessageBar" class="siebui-banner-btn siebui-btn-notify header-top tr"></div>
         <div id="tb_13" class="siebui-banner-btn siebui-srch-banner-btn">
             <swe:searchbar></swe:searchbar>
@@ -115,7 +119,7 @@
             </swe:toolbar>
         </div>
 		
-        <div id="MsgLayer"/> <!-- РїРµСЂРµРЅРµСЃР»Рё РїРµСЂРµРґ PDQ + class СѓР±СЂР°Р»Рё LETO-5531 -->
+        <div id="MsgLayer"/> <!-- перенесли перед PDQ + class убрали LETO-5531 -->
         
         <div id="tb_11" class="siebui-banner-btn PDQToolbarContainer">
                         <swe:form>
@@ -140,7 +144,7 @@
                     </div>
         </swe:if>
         <!-- COMMUNICATION PANEL TOOLBAR END -->
-        <!-- РїРµСЂРµРЅРµСЃР»Рё РїРµСЂРµРґ PDQ + class СѓР±СЂР°Р»Рё LETO-5531 <swe:if condition="Communication Panel UI Service, IsNotCommPanelEnabled">
+        <!-- перенесли перед PDQ + class убрали LETO-5531 <swe:if condition="Communication Panel UI Service, IsNotCommPanelEnabled">
           <div id="MsgLayer" class="siebui-tb-cti-status-msg-container"/>
         </swe:if> -->
         </swe:default>

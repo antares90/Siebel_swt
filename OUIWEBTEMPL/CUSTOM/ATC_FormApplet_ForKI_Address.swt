@@ -14,6 +14,10 @@
 						<swe:control id="3"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
 						<swe:control id ="4"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
 					</div>
+					<div class="col-lg-4" style="padding-right: 0; width:55%">
+						<swe:control id="5"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
+						<swe:control id ="6"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+					</div>
 				</div>
 		</div>
 <swe:if condition="Web Engine State Properties, IsPrintOff">

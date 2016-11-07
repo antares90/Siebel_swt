@@ -22,7 +22,7 @@
             </swe:applet>
          </swe:for-each>
    </div>
-   <div class="siebui-span-lg-6 siebui-span-md-12">
+   <div class="siebui-span-lg-4 siebui-span-md-12">
          <swe:for-each count=1 iteratorName="currentId" startValue="8">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
                <!-- start applet-->
@@ -40,7 +40,7 @@
             </swe:applet>
          </swe:for-each>
    </div>
-   <div class="siebui-span-lg-6 siebui-span-md-12">
+   <div class="siebui-span-lg-8 siebui-span-md-12">
          <swe:for-each count=1 iteratorName="currentId" startValue="10">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
                <!-- start applet-->
@@ -49,7 +49,8 @@
             </swe:applet>
          </swe:for-each>
    </div>
-   <div class="siebui-span-lg-6 siebui-span-md-12">
+   <div class="siebui-span-lg-12 siebui-span-md-12">
+      <div class="siebui-span-lg-6 siebui-span-md-12">
          <swe:for-each count=1 iteratorName="currentId" startValue="7">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
                <!-- start applet-->
@@ -66,5 +67,6 @@
                <!-- end applet-->
             </swe:applet>
          </swe:for-each>
+   </div>
    </div>
 </div>

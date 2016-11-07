@@ -71,6 +71,10 @@
 						<swe:control id="17"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
 						<swe:control id ="18"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
 				</div>
+				<div style="width:27%; position:absolute; right:7px">
+						<swe:control id="111"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
+						<swe:control id ="112"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+				</div>
 		</div>
 		</div>
 </swe:form>
