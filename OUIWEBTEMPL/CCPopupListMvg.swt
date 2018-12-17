@@ -9,6 +9,8 @@
     
     <div class="siebui-popup-btm siebui-mvg-btn-modifier">
 	       <swe:control id="3001"><!-- Add, 3001 --><span class="siebui-popup-button"><swe:this property="FormattedHtml" hintMapType="Control" hintText="Other"/></span></swe:control>
+		   <swe:control id="3002"><!-- Add All, 3002 --><span class="siebui-popup-button"><swe:this property="FormattedHtml" hintMapType="Control" 
+		   hintText="Other"/></span></swe:control>
 	       <swe:control id="3003"><!-- Delete,3003 --><span class="siebui-popup-button"><swe:this property="FormattedHtml" hintMapType="Control" hintText="Other"/></span></swe:control>
 	       <swe:control id="3004"><!-- Delete All, 3004 --><span class="siebui-popup-button"><swe:this property="FormattedHtml" hintMapType="Control" hintText="Other"/></span></swe:control>
 	  </div>

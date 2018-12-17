@@ -1,0 +1,45 @@
+<!-- Template Start: CCFrameToolbar.swt -->
+
+<HTML dir="swe:dir">
+<head>
+
+<swe:include-script file="objbase.js"/>
+<swe:include-script file="commToolbar_shared.js"/>
+
+<title><swe:this property="Title"/></title>
+<swe:include file="CCStylesChoice.swt"/>
+
+</head>
+
+<BODY class="toolbar" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onResize="OnResize()">
+
+<div id="CommPanelHeaderCTI" class="siebui-comm-panel-header-cti">
+   <div id="CommPanelCaptionCTI" class="siebui-comm-panel-caption-cti"></div>
+   <div class="siebui-comm-panel-cti-toggle" id="commPanelCTIToggle">
+      <div class="siebui-cti-title-wrap" title="">
+         <a id="commPanelCTIToShowLess" class="siebui-comm-panel-cti-toggle-more" role="button" aria-hidden="false" aria-label="" tabindex="0"></a>
+      </div>
+      <div class="siebui-cti-title-wrap" title="">
+         <a id="commPanelCTIToShowMore" class="siebui-comm-panel-cti-toggle-less" role="button" aria-hidden="true" aria-label="" tabindex="0"></a>
+      </div>
+   </div>
+</div>
+
+<swe:switch>
+ <swe:case condition="Web Engine State Properties, IsAccessibleEnchanced">
+	<swe:toolbar name="Communication Chat" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+ </swe:case>
+ <swe:case condition="HTML FS Barcoding Tool Bar, IsBarcodeEnabled">
+	<swe:toolbar name="HTML Barcode" bgcolor="#ccccff">
+		<swe:toolbaritem property="FormattedHtml"/>
+	</swe:toolbar>
+ </swe:case>
+ <swe:default>
+	<swe:toolbar name="Communication Chat" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+ </swe:default>
+</swe:switch>
+
+</BODY>
+</HTML>
+
+<!-- Template End: CCFrameToolbar.swt -->

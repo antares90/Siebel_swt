@@ -1,0 +1,109 @@
+<swe:form>
+	<div class="container_fluid width_block">
+		<div class="row">
+			<div class="col-lg-9 col-md-12 col-sm-10">
+				<div class="control_resize">
+					<swe:control id="1" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize">
+					<swe:control id="2" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize">
+					<swe:control id="3" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize">
+					<swe:control id="4" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize">
+					<swe:control id="5" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize">
+					<swe:control id="6" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize">
+					<swe:control id="7" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-10">
+				<div class="col-rtdm-max-val">
+					<swe:control id="8" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="col-rtdm-max-val">
+					<swe:control id="9" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-10 col-rtdm-comment">
+				<swe:control id="10" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-8 col-md-12 col-sm-10" style="padding-left: 0;">
+				<div class="control_resize" style="padding-left: 0;">
+					<swe:control id="11" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize" style="padding-left: 0;">
+					<swe:control id="12" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize" style="padding-left: 0;">
+					<swe:control id="13" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize" style="padding-left: 0;">
+					<swe:control id="14" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize" style="padding-left: 0;">
+					<swe:control id="15" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+				<div class="control_resize" style="padding-left: 0;">
+					<swe:control id="16" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+						<swe:this property="FormattedHtml"/>
+					</swe:control>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+</swe:form>

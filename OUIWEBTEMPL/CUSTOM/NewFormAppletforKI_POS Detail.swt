@@ -13,115 +13,167 @@
 		<div class="col-lg-12 col-md-12 col-sm-10">
 			<div class="Custom_Title" tabindex="1">
 	          <div class="Text_Title">
-	           <swe:control id="100"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
+					<swe:control id="100" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+					</swe:control>
 	          </div>
 	    </div>
 		</div>
 				<div class="col-lg-12 col-md-12 col-sm-10">
 					<div class="control_resize">
-						<swe:control id="1"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="2"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="1" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="3"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="4"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="2" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="5"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="6"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="3" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="7"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="8"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="4" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="9"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="10"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="5" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="11"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="12"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="6" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="13"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="14"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="7" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="15"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="16"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="8" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="17"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="18"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="9" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="19"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="20"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="10" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="21"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="22"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="11" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="23"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="24"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="12" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="25"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="26"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="14" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="27"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="28"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="15" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="41"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="42"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+					<swe:control id="16" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 				</div>
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-10">
 			<div class="Custom_Title" tabindex="1">
 	          <div class="Text_Title">
-	           <swe:control id="200"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
+					<swe:control id="200" hintMapType="FormItem">
+						<swe:this property="DisplayName"/>
+					</swe:control>
 	          </div>
 	    </div>
 		</div>
 					<div class="control_resize">
-						<swe:control id="29"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="30"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="17" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="31"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="32"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="18" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="33"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="34"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="19" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="35"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="36"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="20" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="37"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="38"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="21" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="39"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="40"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="22" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="43"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="44"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="23" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="45"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="46"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="24" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
-						<swe:control id="47"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-						<swe:control id ="48"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
+						<swe:control id="25" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
 					</div>
 					<div class="control_resize">
 						<swe:control id="49"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>

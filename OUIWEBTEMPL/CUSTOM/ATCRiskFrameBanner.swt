@@ -17,22 +17,22 @@
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:pageitem>
-        <swe:pageitem id="12">
+        <swe:pageitem id="123">
             <div class="siebui-banner bannerDiv" nowrap>
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:pageitem>
-        <swe:pageitem id="13">
+        <swe:pageitem id="133">
             <div class="siebui-banner bannerDiv" nowrap>
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:pageitem>
-        <swe:pageitem id="14">
+        <swe:pageitem id="143">
             <div class="siebui-banner bannerDiv" nowrap>
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:pageitem>
-        <swe:pageitem id="14">
+        <swe:pageitem id="143">
             <div class="siebui-banner bannerDiv" nowrap>
                 <swe:this property="FormattedHtml"/>
             </div>
@@ -77,11 +77,11 @@
         </swe:case>
         <swe:default>
         <div class="siebui-logo"></div>
-        <div class="applicationMenu" nowrap>
-            <swe:menu type="Default"/>
+        <div class="applicationMenu " nowrap>
+            <swe:menu name="Risk_2" type="Default"/>
         </div>
         <swe:pageitem id="11">
-            <div class="siebui-banner bannerDiv" nowrap>
+            <div class="siebui-banner bannerDiv customFile" nowrap>
                 <swe:this property="FormattedHtml"/>
             </div>
         </swe:pageitem>
@@ -107,7 +107,43 @@
         </div>
         <div id="Button_Logout">
         <meta charset="utf-8">
-            <a title="Выход из системы" id="logout" href="start.swe?SWECmd=Logoff"></a>
+            <a title="Выход из системы" id="logout" href="javascript: log_out()"></a>
+        </div>
+		<script type="text/javascript">
+		function log_out(){
+			var bs = SiebelApp.S_App.GetService("ATC Logout Service");
+			var psOut = bs.InvokeMethod("Lookup");
+			var psRes = psOut.GetChildByType("ResultSet");
+	  
+			var ReplaceFlg = psRes.GetProperty("LogOutFLg");
+	  
+	  
+			var urlka = SiebelApp.S_App.GetPageURL();
+			var sDate = new Date();
+			var aP = 1; 
+			var sURL = urlka + "?SWECmd=Logoff&SWETS=" + sDate.valueOf() + "&SWEPreLd=" + aP;	
+			
+			
+			if(ReplaceFlg == "Y"){			
+	  
+				$.ajax({
+					type : "POST",
+					url :  sURL,
+					data : 1,
+					processData : false,
+					complete : true
+					})
+				window.location.replace("https://auth.pochtabank.ru/oam/server/logout?end_url=https://sales.pochtabank.ru");
+			}else
+			{
+				window.location.replace(sURL);
+			}
+		
+						}
+	  </script>
+		<div id="Button_File">
+        <meta charset="utf-8">
+            <a title="Файл" id="File" href="start.swe?SWECmd=GotoView&SWEView=ATC+Express+Home+View&SWERF=1&SWEHo=192.168.15.201&SWEBU=1&SWEApplet0=Send+SMS+Applet"></a>
         </div>
         <div id="HTMLMessageBar" class="siebui-banner-btn siebui-btn-notify header-top tr"></div>
         <div id="tb_13" class="siebui-banner-btn siebui-srch-banner-btn">

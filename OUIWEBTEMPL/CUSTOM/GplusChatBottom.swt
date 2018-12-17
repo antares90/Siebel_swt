@@ -1,0 +1,75 @@
+<!-- Template Start: GplusChatBottom.swt -->
+
+<table datatable="0" summary="" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+  <swe:form>
+    <tr valign="top">
+      <td class="AppletStyle1">
+
+    <!--Send message line start-->
+    <table datatable="0" summary="" class="AppletBack" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tr valign="top">
+        <td>
+          <table datatable="0" summary="" width="100%">
+            <tr valign="top">
+              <swe:control  id="1221">
+                <td align="left"> 
+                  <span class="mceField" align="swe:this.TextAlignmentLabel">
+                    <swe:this property="FormattedHtml" hintText="Field"/>
+                  </span>
+                </td>
+              </swe:control>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!--Attach transcript line start-->
+      <tr valign="top">
+        <td>
+          <table datatable="0" summary="" width="100%" cellpadding="5">
+            <tr valign="top">
+              <swe:control  id="1222">
+                <td align="left" valign="middle" nowrap> 
+                  <swe:this property="FormattedHtml" hintText="Field"/>
+                </td>
+              </swe:control>
+              <swe:control  id="1322">
+                <td align="left" valign="middle" nowrap>
+                  <swe:this property="FormattedHtml" hintText="Field"/>
+                </td>
+              </swe:control>
+              <td width="100%">&nbsp;</td>
+              <swe:control  id="1622">
+                <td valign="middle" nowrap>
+                    <swe:this property="FormattedHtml" hintText="Field"/>
+                </td>
+              </swe:control>
+              <swe:control  id="1722">
+                <td valign="middle" nowrap>
+                    <swe:this property="FormattedHtml" hintText="Field"/>
+                </td>
+              </swe:control>
+              <td width="50">&nbsp;</td>
+              <swe:control  id="1422">
+                <td valign="middle" nowrap>
+                  <swe:this property="FormattedHtml" hintText="Field"/>
+                </td>
+              </swe:control>
+              <swe:control  id="1522">
+                <td valign="middle" nowrap>
+                  <swe:this property="FormattedHtml" hintText="Field"/>
+                </td>
+              </swe:control>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+      </td>
+    </tr>
+  </swe:form>
+</table>
+
+<!-- Template End: GplusChatBottom.swt -->
+

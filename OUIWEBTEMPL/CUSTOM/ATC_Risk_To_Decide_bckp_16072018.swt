@@ -11,38 +11,6 @@
          </swe:applet>
       </swe:for-each>
    </div>
-   
-   <!--LETO-10750>>DNYUDLCHIEV-->
-   <div class="siebui-span-lg-12 siebui-span-md-12">
-	   <div class="siebui-span-lg-6 siebui-span-md-12">
-		   <swe:for-each count=1 iteratorName="currentId" startValue="301">
-			 <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-				<!-- start applet-->
-				<swe:this property="FormattedHtml"/>
-				<!-- end applet-->
-			 </swe:applet>
-		  </swe:for-each>
-		</div>
-		 <div class="siebui-span-lg-6 siebui-span-md-12">
-		   <swe:for-each count=1 iteratorName="currentId" startValue="302">
-			 <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-				<!-- start applet-->
-				<swe:this property="FormattedHtml"/>
-				<!-- end applet-->
-			 </swe:applet>
-		  </swe:for-each>
-	   </div>
-	</div>
-   <!--<div class="siebui-span-lg-12 siebui-span-md-12">
-		   <swe:for-each count=1 iteratorName="currentId" startValue="303">
-			 <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-				<swe:this property="FormattedHtml"/>
-			 </swe:applet>
-		  </swe:for-each>
-	</div>-->
-	<!--LETO-10750>>DNYUDLCHIEV-->
-	
-	
    <div class="siebui-span-lg-12 siebui-span-md-12">
 		<swe:for-each count=1 iteratorName="currentId" startValue="4">
 		 <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">

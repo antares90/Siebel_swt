@@ -66,18 +66,6 @@
     <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
 </swe:for-each>
 
-<div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
-        <swe:for-each count=2 iteratorName="currentId" startValue="660">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-        </swe:for-each>
-    </div>
-    <div class="siebui-span-lg-5 siebui-span-md-6 siebui-span-sm-12">
-        <swe:for-each count=2 iteratorName="currentId" startValue="670">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-        </swe:for-each>
-    </div>
-	
 <swe:if condition="Web Engine State Properties, IsHighInteractive">
     <swe:for-each count=3 iteratorName="currentId" startValue="703">
         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child or Grandchild Applet (HI Display Only)" property="FormattedHtml" var="Grandchild"/>
@@ -97,7 +85,7 @@
 
 <div class="siebui-view-multi-column">
     <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
-        <swe:for-each count=1 iteratorName="currentId" startValue="780">
+        <swe:for-each count=2 iteratorName="currentId" startValue="780">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
         </swe:for-each>
     </div>
@@ -105,6 +93,19 @@
         <swe:applet id="790" property="FormattedHtml" var="Grandchild"/>
     </div>
 </div>
+<div class="siebui-view-multi-column">
+    <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
+        <swe:for-each count=2 iteratorName="currentId" startValue="792">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+        </swe:for-each>
+    </div>
+</div>
+ <swe:for-each count=2 iteratorName="currentId" startValue="800">
+			<div style="display:none">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+			</div>
+        </swe:for-each>
+
 
 <swe:switch>
     <swe:case condition="Web Engine State ProperTies, IsPrintOn, 'Target:Applet'">
@@ -116,7 +117,7 @@
     <swe:default>
         <div class="siebui-view-multi-column">
 			<div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
-                <swe:for-each count=2 iteratorName="currentId" startValue="6">
+                <swe:for-each count=1 iteratorName="currentId" startValue="6">
                     <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
                 </swe:for-each>
             </div>

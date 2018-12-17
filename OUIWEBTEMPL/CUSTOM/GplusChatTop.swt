@@ -1,0 +1,58 @@
+<!-- Template Start: GplusChatTop.swt -->
+
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+
+<swe:form>
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+  <!--div class="swe:this.SelectStyle"-->	
+</swe:if>
+
+<table datatable="0" summary="" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+  <tr valign="top">
+    <td class="AppletHIFormBorder">
+      <swe:include file="CCTitle_Named.swt"/>
+      <swe:include file="CCFormButtonsTopNoRecNav.swt"/>
+      <swe:error type="Popup">
+        <table datatable="0" summary="" class="swe:class AppletBack" width="100%" cellpadding="0" cellspacing="5" border="0"><tr><td class="error"><swe:this property="FormattedHtml"/></td></tr></table>
+      </swe:error>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<!-- start content -->
+      <table datatable="0" summary="" class="AppletBack" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr valign="top">
+          <td style="padding:5px 5px 0px 5px;" >
+            <swe:control id="1200">
+              <!--Transcript Body start-->
+              <span class="mceField" style="width:100%;" align="swe:this.TextAlignment">
+                <swe:this property="FormattedHtml" hintText="Transcript"/>
+              </span>
+              <!--Transcript Body end-->
+            </swe:control>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="padding:0px 5px 0px 5px;" >
+            <swe:control id="1400">
+              <!--Typing Notice start-->
+              <span class="mceField" style="width:100%;" align="swe:this.TextAlignment">
+                <swe:this property="FormattedHtml" hintText="Notice"/>
+              </span>
+              <!--Typing Notice end-->
+            </swe:control>
+          </td>
+        </tr>
+      </table>
+<!-- end content   -->
+
+    </td>
+  </tr>
+</table>
+
+<swe:if condition="Web Engine State Properties, IsPrintOff">
+  <!--/div-->
+</swe:if>
+</swe:form>
+
+<!-- Template End: GplusChatTop.swt -->

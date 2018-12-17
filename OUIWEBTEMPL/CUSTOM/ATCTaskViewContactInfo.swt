@@ -121,6 +121,15 @@
 
 <div class="siebui-view-multi-column">
     <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet id="474" property="FormattedHtml" var="Grandchild"/>
+    </div>
+    <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+        <swe:applet  id="475" property="FormattedHtml" var="Grandchild"/>
+    </div>
+</div>
+
+<div class="siebui-view-multi-column">
+    <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
         <swe:applet id="476" property="FormattedHtml" var="Grandchild"/>
     </div>
     <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
@@ -163,6 +172,12 @@
         </div>
     </swe:default>
 </swe:switch>
+
+<swe:for-each count=2 iteratorName="currentId" startValue="800">
+	<div style="display:none">
+           <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	</div>
+</swe:for-each>
 
 <swe:if condition="Web Engine State Properties, IsPrintOff">
     <swe:include file="CCSubordinateAppletsBorderEnd.swt"/>

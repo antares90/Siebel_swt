@@ -66,18 +66,6 @@
     <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child or Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
 </swe:for-each>
 
-<div class="siebui-view-multi-column">
-    <div class="siebui-span-lg-7 siebui-span-md-6 siebui-span-sm-12">
-        <swe:for-each count=2 iteratorName="currentId" startValue="660">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-        </swe:for-each>
-    </div>
-    <div class="siebui-span-lg-5 siebui-span-md-6 siebui-span-sm-12">
-        <swe:for-each count=2 iteratorName="currentId" startValue="670">
-            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
-        </swe:for-each>
-    </div>
-	
 <swe:if condition="Web Engine State Properties, IsHighInteractive">
     <swe:for-each count=3 iteratorName="currentId" startValue="703">
         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child or Grandchild Applet (HI Display Only)" property="FormattedHtml" var="Grandchild"/>

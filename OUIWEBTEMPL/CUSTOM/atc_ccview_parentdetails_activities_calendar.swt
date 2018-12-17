@@ -30,14 +30,26 @@
 <!-- ---------- End Salutation Applet ------------------------>
 </swe:applet>
 
-<!-- ---------- Main Content Area ---------------------------->
+
+<!-- ---------- LETO-9697>>dnyudlchiev ---------------------------->
 <div class="siebui-view-multi-column">
-  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
-      <swe:applet hintMapType="Applet" id="1" hintText="Parent Applet 1" property="FormattedHtml" var="Parent"/>
-  </div>
-  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
-      <swe:applet hintMapType="Applet" id="2" hintText="Parent Applet 2" property="FormattedHtml" var="Parent"/>
-  </div>
+    <div class="siebui-span-lg-8 siebui-span-md-6 siebui-span-sm-12">
+        <swe:for-each count=1 iteratorName="currentId" startValue="1">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Parent Applet"
+                        property="FormattedHtml" var="ParentWithPointer"/>
+        </swe:for-each>
+
+        <swe:for-each count=1 iteratorName="currentId" startValue="2">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet"
+                        property="FormattedHtml" var="Child"/>
+        </swe:for-each>
+    </div>
+    <div class="siebui-span-lg-4 siebui-span-md-6 siebui-span-sm-12">
+        <swe:for-each count=1 iteratorName="currentId" startValue="3">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Child Applet"
+                        property="FormattedHtml" var="Child"/>
+        </swe:for-each>
+    </div>
 </div>
 
 

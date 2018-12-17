@@ -39,5 +39,10 @@
       <!-- optional control -->        
         <swe:this property="FormattedHtml" hintMapType="Custom Control"/>        
       </swe:control>
+	  
+	  <swe:control id="708">
+      <!-- optional control -->        
+        <swe:this property="FormattedHtml" hintMapType="Custom Control"/>        
+      </swe:control>
    </div>
 <!-- Template End: CCListButtonsTopRight.swt -->

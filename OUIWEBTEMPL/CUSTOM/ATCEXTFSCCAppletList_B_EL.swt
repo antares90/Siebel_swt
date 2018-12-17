@@ -1,0 +1,56 @@
+<!-- Template Start: CCAppletList_B_EL.swt -->
+<swe:control id="1100">
+  <div class=CmdTxt>
+    <swe:this property="FormattedHtml" hintText="Outside Applet Help Text" hintMapType="Control"/>
+  </div>
+</swe:control>
+<swe:form>
+  <swe:include file="CCTitle_Named.swt"/>
+  <div class="swe:this.SelectStyle">
+    <swe:include file="CCListButtonsTop.swt"/>
+    <swe:error type="Popup">
+      <div class="swe:class AppletBack error siebui-error">
+        <swe:this property="FormattedHtml"/>
+      </div>
+    </swe:error>
+    <div class="AppletHIListBorder siebui-applet-content siebui-collapsible">
+      <swe:list>
+        <table valign="top" width="100%" datatable="1" summary="swe:this.ListSummary">
+          <swe:include file="CCListHeader.swt"/>
+          <swe:include file="CCListBody.swt"/>
+        </table>
+      </swe:list>
+    </div>
+  </div>
+  <div style="display:none">
+  <swe:for-each startValue="10000" count="10" iteratorName="currentId">
+      <swe:control id="swe:currentId" hintMapType="FormItem">
+        <swe:this property="FormattedHtml" hintText="Field"/>
+      </swe:control> 
+	  </swe:for-each>
+ <div>
+  </span>
+  <link rel="stylesheet" href="files/custom/magnific-popup-cst.css"/>
+  <div id="EXTFSFilePopup" class="white-popup mfp-hide">
+              <span>
+                <b>Укажите имя файла или URL:</b>
+             </span>
+              <br />
+              <input type="file" class="siebui-ctrl-file " id="s_SweFileName" value="" />
+              <br />
+              <span id="s_SweFileName_Label">Имя файла</span>
+              <input type="text" id="s_SweUrl" value="" aria-labelledby="s_SweUrl_Label" aria-label="Адрес URL" style="height: 20px; width:200px;" class="siebui-ctrl-url siebui-align-left siebui-input-align-left" maxlength="300" />
+              <br />
+              <span class="siebui-popup-button">
+                <button type="button" class="siebui-ctrl-btn siebui-icon-writerecord appletButton" id="Save_Ctrl" data-display="Добавить">
+                   <span>Добавить</span>
+              </button>
+              </span>
+              <span class="siebui-popup-button">
+                <button type="button" class="siebui-ctrl-btn siebui-icon-closeapplet appletButton" id="Cancel_Ctrl" data-display="Отмена">
+                   <span>Отмена</span>
+              </button>
+              </span>
+    </div>
+</swe:form>
+<!-- Template End: CCAppletList_B_EL.swt -->

@@ -1,0 +1,342 @@
+<!--  
+Template: ATCCommonView.swt
+Web Temlate: ATC Common View
+Template Start: CCViewDetail2.swt 
+Author: VBABKIN
+Project: BSGV
+-->
+
+<swe:include file="CCHTMLHeader.swt"/>
+
+<swe:include file="CCTaskViewTitle.swt"/>
+
+<!-- ---------- Threadbar and Mini-Applet ----------------->
+<table datatable="0" summary="" border="0" cellspacing="0" cellpadding="1" width="100%">
+  <tr>
+	<swe:if condition="Web Engine State Properties, IsLowInteractive">
+    <td valign="absmiddle">
+		<swe:include file="CCThreadbar.swt"/>
+	</td>
+	</swe:if>
+	<swe:applet id="201" hintText="Mini-Applet">
+	    <td align="right"><swe:this property="FormattedHTML"/></td>
+		<td>&nbsp;&nbsp;&nbsp;</td>
+	</swe:applet>
+
+  </tr>
+</table>
+<!-- ---------- End Threadbar and Mini-Applet ------------->
+
+<!-- ---------- Main Content Area ---------------------------->
+
+<!-- ---------------------------------------------------------------------------- Section 1 ------------------------------------------------------------------->
+	<!-- |   1xx0  | -->
+	<!-- |1xx1|1xx2| -->
+	<!-- xx = 1..20 -->
+
+	<swe:applet hintMapType="Applet" id="1010" hintText="1 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1021" hintText="1 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1022" hintText="1 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1030" hintText="2 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1041" hintText="2 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1042" hintText="2 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1050" hintText="3 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1061" hintText="3 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1062" hintText="3 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1070" hintText="4 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1081" hintText="4 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1082" hintText="4 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1090" hintText="5 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1101" hintText="5 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1102" hintText="5 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1110" hintText="6 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1121" hintText="6 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1122" hintText="6 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1130" hintText="7 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1141" hintText="7 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1142" hintText="7 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1150" hintText="8 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1161" hintText="8 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1162" hintText="8 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1170" hintText="9 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1181" hintText="9 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1182" hintText="9 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="1190" hintText="10 Wide Parent Applet" property="FormattedHtml" var="Parent"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1201" hintText="10 Left Parent Applet" property="FormattedHtml" var="Parent"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="1202" hintText="10 Right Parent Applet"  property="FormattedHtml" var="Parent"/>
+	  </div>
+	</div>
+
+<!-- ---------------------------------------------------------------------------- End of Section 1 ------------------------------------------------------------------->
+
+<!-- ---------- Subtabs Tier 1 ----------------->
+<swe:include file="CCViewbar_Tabs.swt"/>
+<!-- ---------- End of Subtabs Tier 1 ------------->
+
+<swe:include file="CCSubordinateAppletsBorderStart.swt"/>
+
+<!-- ---------------------------------------------------------------------------- Section 2 ------------------------------------------------------------------->
+	<!-- |   2xx0  | -->
+	<!-- |2xx1|2xx2| -->
+	<!-- xx = 1..20 -->
+
+	<swe:applet hintMapType="Applet" id="2010" hintText="1 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2021" hintText="1 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2022" hintText="1 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2030" hintText="2 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2041" hintText="2 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2042" hintText="2 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2050" hintText="3 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2061" hintText="3 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2062" hintText="3 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2070" hintText="4 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2081" hintText="4 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2082" hintText="4 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2090" hintText="5 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2101" hintText="5 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2102" hintText="5 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2110" hintText="6 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2121" hintText="6 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2122" hintText="6 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2130" hintText="7 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2141" hintText="7 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2142" hintText="7 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2150" hintText="8 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2161" hintText="8 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2162" hintText="8 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2170" hintText="9 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2181" hintText="9 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2182" hintText="9 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="2190" hintText="10 Wide Child Applet" property="FormattedHtml" var="Child"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2201" hintText="10 Left Child Applet" property="FormattedHtml" var="Child"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="2202" hintText="10 Right Child Applet"  property="FormattedHtml" var="Child"/>
+	  </div>
+	</div>
+
+<!-- ---------------------------------------------------------------------------- End of Section 2 ------------------------------------------------------------------->
+
+<!-- ---------- Subtabs Tier 2 ----------------->
+<swe:include file="CCSubViewbar_Tabs.swt"/>
+<!-- ---------- End of Subtabs Tier 2 ----------------->
+
+<!-- ---------------------------------------------------------------------------- Section 3 ------------------------------------------------------------------->
+	<!-- |   3xx0  | -->
+	<!-- |3xx1|3xx2| -->
+	<!-- xx = 1..20 -->
+
+	<swe:applet hintMapType="Applet" id="3010" hintText="1 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3021" hintText="1 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3022" hintText="1 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3030" hintText="2 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3041" hintText="2 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3042" hintText="2 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3050" hintText="3 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3061" hintText="3 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3062" hintText="3 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3070" hintText="4 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3081" hintText="4 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3082" hintText="4 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3090" hintText="5 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3101" hintText="5 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3102" hintText="5 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3110" hintText="6 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3121" hintText="6 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3122" hintText="6 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3130" hintText="7 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3141" hintText="7 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3142" hintText="7 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3150" hintText="8 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3161" hintText="8 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3162" hintText="8 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3170" hintText="9 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3181" hintText="9 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3182" hintText="9 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+	<swe:applet hintMapType="Applet" id="3190" hintText="10 Wide Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	<div class="siebui-view-multi-column">
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3201" hintText="10 Left Grandchild Applet" property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	  <div class="siebui-span-lg-6 siebui-span-md-6 siebui-span-sm-12">
+		  <swe:applet hintMapType="Applet" id="3202" hintText="10 Right Grandchild Applet"  property="FormattedHtml" var="Grandchild"/>
+	  </div>
+	</div>
+
+<!-- ---------------------------------------------------------------------------- End of Section 3 ------------------------------------------------------------------->
+
+<swe:include file="CCSubordinateAppletsBorderEnd.swt"/>
+
+<swe:include file="CCHTMLFooter.swt"/>
+
+<!-- ---------- End Main Content Area ------------------------>
+
+<!--  Template End: CCViewDetail2.swt -->

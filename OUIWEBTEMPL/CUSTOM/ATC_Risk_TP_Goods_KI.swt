@@ -14,7 +14,16 @@
 </div>
 <div class="siebui-view-multi-column">
    <div class="siebui-span-lg-12 siebui-span-md-12">
-         <swe:for-each count=2 iteratorName="currentId" startValue="4">
+         <swe:for-each count=1 iteratorName="currentId" startValue="4">
+            <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+               <!-- start applet-->
+               <swe:this property="FormattedHtml"/>
+               <!-- end applet-->
+            </swe:applet>
+         </swe:for-each>
+   </div>
+   <div class="siebui-span-lg-12 siebui-span-md-12">
+         <swe:for-each count=1 iteratorName="currentId" startValue="5">
             <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
                <!-- start applet-->
                <swe:this property="FormattedHtml"/>

@@ -11,110 +11,155 @@
 <div class="container_fluid width_block">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-10">
-						<div class="col-lg-2">
-							<swe:control id="1"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="2"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-							<swe:control id="3"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="4"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2 vcenter" style="padding-left: 0;">
-							<div class="col-lg-12" style="padding-left: 0;">
-									<div class="col-lg-1" style="padding-left: 0;">
-										<swe:control id ="5"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-									</div>
-									<div class="col-lg-10" style="padding-left: 0;">
-										<swe:control id="6"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-									</div>
-							</div>
-							<div class="col-lg-12" style="padding-left: 0;">
-									<div class="col-lg-1" style="padding-left: 0;">
-										<swe:control id ="7"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-									</div>
-									<div class="col-lg-10" style="padding-left: 0;">
-										<swe:control id="8"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-									</div>
-							</div>
-							<div class="col-lg-12" style="padding-left: 0;">
-									<div class="col-lg-1" style="padding-left: 0;">
-									<swe:control id ="9"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-								</div>
-								<div class="col-lg-10" style="padding-left: 0;">
-									<swe:control id="10"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-								</div>
-							</div>
-							<div class="col-lg-12" style="padding-left: 0;">
-									<div class="col-lg-1" style="padding-left: 0;">
-									<swe:control id ="11"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-								</div>
-								<div class="col-lg-10" style="padding-left: 0;">
-									<swe:control id="12"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-								</div>
-							</div>
-					</div>
-						<div class="col-lg-2">
-							<swe:control id="13"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="14"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-							<swe:control id="15"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="16"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-						<div class="col-lg-12 vcenter" style="padding-left: 0;">
-								<div class="col-lg-1" style="padding-left: 0;">
-									<swe:control id ="17"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-								</div>
-								<div class="col-lg-10" style="padding-left: 0;">
-									<swe:control id="18"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-								</div>
-						</div>
-						<div class="col-lg-12 vcenter" style="padding-left: 0;">
-								<div class="col-lg-1" style="padding-left: 0;">
-									<swe:control id ="19"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-								</div>
-								<div class="col-lg-10" style="padding-left: 0;">
-									<swe:control id="20"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-								</div>
-						</div>
-					<div class="col-lg-12 vcenter" style="padding-left: 0;">
-							<div class="col-lg-1" style="padding-left: 0;">
-								<swe:control id ="21"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-							</div>
-							<div class="col-lg-10" style="padding-left: 0;">
-								<swe:control id="22"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							</div>
-					</div>
+			<div class="col-lg-2">
+				<swe:control id="1" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
 			</div>
-
+			<div class="col-lg-2">
+				<swe:control id="2" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2">
+				<swe:control id="3" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2">
+				<swe:control id="4" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2">
+				<swe:control id="5" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2 vcenter" style="padding-left: 0;">
+				<div class="col-lg-12" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="6" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="6" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+				<div class="col-lg-12" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="7" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="7" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+				<div class="col-lg-12" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="8" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="8" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-lg-12 col-md-12 col-sm-10"  style="  margin-top: -38px;">
-						<div class="col-lg-2">
-							<swe:control id="23"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="24"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-							<swe:control id="25"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="26"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-							<swe:control id="27"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="28"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-							<swe:control id="29"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="30"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
-						<div class="col-lg-2">
-							<swe:control id="31"><swe:this property="DisplayName" class="LabelField"/></swe:this></swe:control>
-							<swe:control id ="32"><swe:this property="FormattedHtml" hintText="Field"/></swe:control>
-						</div>
+		<div class="col-lg-12 col-md-12 col-sm-10"  style="  margin-top: -15px;">
+			<div class="col-lg-2">
+				<swe:control id="9" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2">
+				<div class="col-lg-12 vcenter" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="10" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="10" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+				<div class="col-lg-12 vcenter" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="11" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="11" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="col-lg-12 vcenter" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="12" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="12" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+				<div class="col-lg-12 vcenter" style="padding-left: 0;">
+					<div class="col-lg-1" style="padding-left: 0;">
+						<swe:control id="13" hintMapType="FormItem">
+							<swe:this property="FormattedHtml"/>
+						</swe:control>
+					</div>
+					<div class="col-lg-10" style="padding-left: 0;">
+						<swe:control id="13" hintMapType="FormItem">
+							<swe:this property="DisplayName"/>
+						</swe:control>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<swe:control id="14" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2">
+				<swe:control id="15" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
+			<div class="col-lg-2">
+				<swe:control id="16" hintMapType="FormItem">
+					<swe:this property="DisplayName"/>
+					<swe:this property="FormattedHtml"/>
+				</swe:control>
+			</div>
 		</div>
 	</div>
 </div>
 <swe:if condition="Web Engine State Properties, IsPrintOff">
 </swe:if>
 </swe:form>
-
-	

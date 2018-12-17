@@ -54,21 +54,25 @@
          </swe:for-each>
       </div>
    </div>
+   <div class="siebui-span-lg-4 siebui-span-md-12">
+		<swe:for-each count=1 iteratorName="currentId" startValue="5">
+         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+            <!-- start applet-->
+            <swe:this property="FormattedHtml"/>
+            <!-- end applet-->
+         </swe:applet>
+      </swe:for-each>
+   </div>
+   <div class="siebui-span-lg-8 siebui-span-md-12">
+		<swe:for-each count=1 iteratorName="currentId" startValue="6">
+         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
+            <!-- start applet-->
+            <swe:this property="FormattedHtml"/>
+            <!-- end applet-->
+         </swe:applet>
+      </swe:for-each>
+   </div>
    <div class="siebui-span-lg-6 siebui-span-md-12">
-      <swe:for-each count=1 iteratorName="currentId" startValue="5">
-         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-            <!-- start applet-->
-            <swe:this property="FormattedHtml"/>
-            <!-- end applet-->
-         </swe:applet>
-      </swe:for-each>
-       <swe:for-each count=1 iteratorName="currentId" startValue="6">
-         <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
-            <!-- start applet-->
-            <swe:this property="FormattedHtml"/>
-            <!-- end applet-->
-         </swe:applet>
-      </swe:for-each>
        <swe:for-each count=1 iteratorName="currentId" startValue="11">
          <swe:applet hintMapType="Applet" id="swe:currentId" hintText="Applet" var="Grandchild">
             <!-- start applet-->

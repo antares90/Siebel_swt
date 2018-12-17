@@ -1,0 +1,18 @@
+<!--LETO-10536-->
+<swe:form>
+<div id="AtcVoiceAuthIFrameHTMLMessage" height="250px" width="100%"></div>
+<!--<iframe name="VoiceAuth" src="http://kursksu.ru" align="top" height="50px" width="500px"></iframe>-->
+    <div class="AppletBack AppletHIFormBorder">
+        <swe:error type="Popup">
+            <div class="error siebui-error">
+                <swe:this property="FormattedHtml"/>
+            </div>
+        </swe:error>
+        <!--<swe:include file="CCFormButtonsTopNoMenu.swt"/>-->
+        <div class="siebui-applet-content siebui-collapsible">
+            <swe:form-applet-layout>
+            </swe:form-applet-layout>
+        </div>
+        </span>
+    </div>
+</swe:form>
