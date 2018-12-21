@@ -358,19 +358,3 @@
 <swe:htmltype name="DRMLabel">
   <font size="4" color="#3399FF"><swe:this property="DisplayName"/> </font>
 </swe:htmltype>
-
-<!----------- Genesys Chat Transcript Container ------>
-<swe:htmltype name="GChatControl">
-<div style="background-color:transparent;overflow-y:scroll;overflow-x:auto;border: 1px solid; padding: 0 2 0 2;" >
-    <swe:this property="Data" type="PlainText"/>
-</div>
-</swe:htmltype>
-
-<!----------- Genesys Chat Notice Container ------>
-<swe:htmltype name="GChatControl2">
-<div style="background-color:transparent;overflow-y:auto;overflow-x:auto;border: 0px solid; padding: 0 2 0 2;" align="swe:this.TextAlignment">
-    <swe:this property="Data" type="PlainText"/>
-</div>
-</swe:htmltype>
-
-

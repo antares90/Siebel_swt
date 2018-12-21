@@ -81,7 +81,7 @@
                                             <swe:include file="ATCCCFrameViewbar.swt"/>
                                         </swe:frame>
 
-                                        <swe:frame type="Toolbar" name="Toolbar1"
+                                        <swe:frame type="Toolbar" name="Toolbar"
                                                    htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                             <swe:include file="ATCCCFrameToolbar.swt"/>
                                         </swe:frame>
@@ -175,7 +175,7 @@
                                             <swe:include file="ATCCCFrameViewbar.swt"/>
                                         </swe:frame>
 
-                                        <swe:frame type="Toolbar" name="Toolbar2"
+                                        <swe:frame type="Toolbar" name="Toolbar"
                                                    htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                             <swe:include file="ATCCCFrameToolbar.swt"/>
                                         </swe:frame>
@@ -269,7 +269,7 @@
                                                     <swe:include file="ATCCCFrameViewbar.swt"/>
                                                 </swe:frame>
 
-                                                <swe:frame type="Toolbar" name="Toolbar3"
+                                                <swe:frame type="Toolbar" name="Toolbar"
                                                            htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                     <swe:include file="ATCCCFrameToolbar.swt"/>
                                                 </swe:frame>
@@ -330,7 +330,7 @@
                                                 <swe:include file="CCFrameContentHI.swt"/>
                                             </swe:frame>
 
-                                            <swe:frame type="Toolbar" name="Toolbar4"
+                                            <swe:frame type="Toolbar" name="Toolbar"
                                                        htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                 <swe:include file="CCFrameMsgbar.swt"/>
                                                 <!--this is the message bar at the bottom-->
@@ -455,7 +455,7 @@
                                             <swe:include file="ATCCCFrameViewbar.swt"/>
                                         </swe:frame>
 
-                                        <swe:frame type="Toolbar" name="Toolbar5"
+                                        <swe:frame type="Toolbar" name="Toolbar"
                                                    htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                             <swe:include file="ATCCCFrameToolbar.swt"/>
                                         </swe:frame>
@@ -545,7 +545,7 @@
                                             <swe:include file="ATCCCFrameViewbar.swt"/>
                                         </swe:frame>
 
-                                        <swe:frame type="Toolbar" name="Toolbar6"
+                                        <swe:frame type="Toolbar" name="Toolbar"
                                                    htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                             <swe:include file="ATCCCFrameToolbar.swt"/>
                                         </swe:frame>
@@ -640,7 +640,7 @@
                                                     <swe:include file="ATCCCFrameViewbar.swt"/>
                                                 </swe:frame>
 
-                                                <swe:frame type="Toolbar" name="Toolbar7"
+                                                <swe:frame type="Toolbar" name="Toolbar"
                                                            htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                     <swe:include file="ATCCCFrameToolbar.swt"/>
                                                 </swe:frame>
@@ -702,10 +702,9 @@
                                                 <swe:include file="CCFrameContentHI.swt"/>
                                             </swe:frame>
 
-                                            <swe:frame type="Toolbar" name="Toolbar8"
+                                            <swe:frame type="Toolbar" name="Toolbar"
                                                        htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                 <swe:include file="CCFrameMsgbar.swt"/>
-												<SCRIPT LANGUAGE="JAVASCRIPT">if(theApplication().GetProfileAttr('Primary Responsibility Name')){document.getElementById('Toolbar8').setAttribute("name", "Toolbar8_");}</SCRIPT> 
                                             </swe:frame>
                                         </swe:frameset>
 
@@ -814,7 +813,7 @@
                                         <swe:include file="ATCCCFrameBanner.swt"/>
                                     </swe:frame>
 
-                                    <swe:frame type="Toolbar" name="Toolbar9"
+                                    <swe:frame type="Toolbar" name="Toolbar"
                                                htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                         <swe:include file="ATCCCFrameToolbar.swt"/>
                                     </swe:frame>
@@ -885,7 +884,7 @@
                                         <swe:include file="ATCCCFrameBanner.swt"/>
                                     </swe:frame>
 
-                                    <swe:frame type="Toolbar" name="Toolbar10"
+                                    <swe:frame type="Toolbar" name="Toolbar"
                                                htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                         <swe:include file="ATCCCFrameToolbar.swt"/>
                                     </swe:frame>
@@ -961,7 +960,7 @@
                                                 <swe:include file="ATCCCFrameBanner.swt"/>
                                             </swe:frame>
 
-                                            <swe:frame type="Toolbar" name="Toolbar11"
+                                            <swe:frame type="Toolbar" name="Toolbar"
                                                        htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                 <swe:include file="ATCCCFrameToolbar.swt"/>
                                             </swe:frame>
@@ -1100,7 +1099,7 @@
                                         <swe:include file="ATCCCFrameBanner.swt"/>
                                     </swe:frame>
 
-                                    <swe:frame type="Toolbar" name="Toolbar12"
+                                    <swe:frame type="Toolbar" name="Toolbar"
                                                htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                         <swe:include file="ATCCCFrameToolbar.swt"/>
                                     </swe:frame>
@@ -1169,7 +1168,7 @@
                                         <swe:include file="ATCCCFrameBanner.swt"/>
                                     </swe:frame>
 
-                                    <swe:frame type="Toolbar" name="Toolbar13"
+                                    <swe:frame type="Toolbar" name="Toolbar"
                                                htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                         <swe:include file="ATCCCFrameToolbar.swt"/>
                                     </swe:frame>
@@ -1246,7 +1245,7 @@
                                                 <swe:include file="ATCCCFrameBanner.swt"/>
                                             </swe:frame>
 
-                                            <swe:frame type="Toolbar" name="Toolbar14"
+                                            <swe:frame type="Toolbar" name="Toolbar"
                                                        htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                 <swe:include file="ATCCCFrameToolbar.swt"/>
                                             </swe:frame>
@@ -1297,7 +1296,7 @@
                                                 <swe:include file="CCFrameContent_Logic.swt"/>
                                             </swe:frame>
 
-                                            <swe:frame type="Toolbar" name="Toolbar15"
+                                            <swe:frame type="Toolbar" name="Toolbar"
                                                        htmlAttr="marginheight='0' marginwidth='0' noresize scrolling='No'">
                                                 <swe:include file="CCFrameMsgbar.swt"/>
                                             </swe:frame>

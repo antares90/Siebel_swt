@@ -13,8 +13,18 @@
 
 <BODY class="toolbar" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onResize="OnResize()">
 <swe:switch>
- <swe:case condition="Web Engine State Properties, IsAccessibleEnchanced">
+ <!--<swe:case condition="Web Engine State Properties, IsAccessibleEnchanced">
 	<swe:toolbar name="Communication" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+	<SCRIPT LANGUAGE="JAVASCRIPT">document.getElementById('Toolbar1').after("<div name='test'>")</SCRIPT> 
+	<SCRIPT LANGUAGE="JAVASCRIPT">document.getElementById('Toolbar1').after(<swe:toolbar name='Communication' javaapplet='true' width='2048' height='31' bgcolor='#efefef' />")</SCRIPT> 
+	<SCRIPT LANGUAGE="JAVASCRIPT">document.getElementById('Toolbar1').firstChild.appendChild(document.createElement("<swe:toolbar name='Communication' javaapplet='true' width='2048' height='31' bgcolor='#efefef' />"))</SCRIPT>
+	<SCRIPT LANGUAGE="JAVASCRIPT">document.getElementById('Toolbar1').firstChild.after("<div name='asd' />")</SCRIPT>
+	<SCRIPT LANGUAGE="JAVASCRIPT">document.getElementById('Toolbar1').insertBefore("<div name='asd' />", null)</SCRIPT>
+ </swe:case>
+ <swe:case condition="SiebelUserProfileService, GetProfileAttribute, Name:Primary Responsibility Name, Value:'ATC Education Sale'">-->
+ <swe:case condition="ATC Common, IsPrimaryResponsibility, Name:'ATC All View'">
+	<swe:toolbar name="Communication" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+	<SCRIPT LANGUAGE="JAVASCRIPT">document.getElementById('Toolbar1').after("<div name='test'>")</SCRIPT> 
  </swe:case>
  <swe:case condition="HTML FS Barcoding Tool Bar, IsBarcodeEnabled">
 	<swe:toolbar name="HTML Barcode" bgcolor="#ccccff">
@@ -22,7 +32,7 @@
 	</swe:toolbar>
  </swe:case>
  <swe:default>
-	<swe:toolbar name="Communication" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
+	<swe:toolbar name="Communication2" javaapplet="true" width="2048" height="31" bgcolor="#efefef" />
  </swe:default>
 </swe:switch>
 
